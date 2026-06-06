@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="r_template_reference">
+  <title>TEMPLATE: Reference - Replace With Topic Name</title>
+  <prolog>
+    <metadata>
+      <!-- REQUIRED: Document ID -->
+      <data name="docid" value="DOC-PROD-XXX-v1.0"/>
+      
+      <!-- REQUIRED: Classification -->
+      <data name="product" value="Product A"/>
+      <data name="product-version" value="1.0+"/>
+      <data name="audience" value="developer|admin"/>
+      <data name="status" value="draft"/>
+      
+      <!-- REQUIRED: Review Info -->
+      <data name="created-date" value="2026-01-15"/>
+      <data name="revised-date" value="2026-06-06"/>
+      <data name="author" value="Your Name"/>
+      <data name="reviewed-by" value="Reviewer Name"/>
+      <data name="review-frequency" value="quarterly"/>
+      
+      <!-- REQUIRED: Compliance -->
+      <data name="security-level" value="public"/>
+      <data name="translatable" value="yes"/>
+    </metadata>
+  </prolog>
+  
+  <refbody>
+    <!-- SHORT DESCRIPTION -->
+    <section>
+      <title>Overview</title>
+      <p>Brief description of what this reference contains.
+        What does someone look this up for?</p>
+    </section>
+    
+    <!-- PURPOSE -->
+    <section>
+      <title>Purpose</title>
+      <p>When would a user need this information?
+        What problem does it solve?</p>
+    </section>
+    
+    <!-- TABLE OF OPTIONS/PARAMETERS -->
+    <section>
+      <title>Parameters or Options</title>
+      <table frame="all" rowheader="firstcol">
+        <title>Configuration Parameters</title>
+        <tgroup cols="4">
+          <colspec colname="c1" colwidth="1.5*"/>
+          <colspec colname="c2" colwidth="1*"/>
+          <colspec colname="c3" colwidth="1*"/>
+          <colspec colname="c4" colwidth="2*"/>
+          <thead>
+            <row>
+              <entry>Parameter</entry>
+              <entry>Valid Values</entry>
+              <entry>Default</entry>
+              <entry>Description</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>PARAMETER_NAME</entry>
+              <entry>value1, value2</entry>
+              <entry>value1</entry>
+              <entry>What this parameter does</entry>
+            </row>
+            <row>
+              <entry>PARAM_2</entry>
+              <entry>0-100</entry>
+              <entry>50</entry>
+              <entry>Description of parameter 2</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    
+    <!-- EXAMPLES -->
+    <section>
+      <title>Examples</title>
+      <p>Provide 1-2 practical examples:</p>
+      <codeblock>
+# Example 1: How to use this
+PARAMETER_NAME = value1
+PARAM_2 = 75
+      </codeblock>
+    </section>
+    
+    <!-- ERROR CODES / RETURN VALUES -->
+    <section>
+      <title>Return values or error codes</title>
+      <table frame="all" rowheader="firstcol">
+        <title>Error Codes</title>
+        <tgroup cols="2">
+          <colspec colname="c1" colwidth="1*"/>
+          <colspec colname="c2" colwidth="2*"/>
+          <thead>
+            <row>
+              <entry>Code</entry>
+              <entry>Meaning</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>0</entry>
+              <entry>Success - operation completed</entry>
+            </row>
+            <row>
+              <entry>1</entry>
+              <entry>Error - invalid parameter</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    
+    <!-- RELATED TOPICS -->
+    <section>
+      <title>Related references</title>
+      <ul>
+        <li><xref href="r_other_reference.dita">Related Reference Topic</xref></li>
+        <li><xref href="c_concept.dita">Related Concept: Understanding the Feature</xref></li>
+        <li><xref href="t_procedure.dita">Related Task: How to Configure</xref></li>
+      </ul>
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_template_task">
+  <title>TEMPLATE: How to Do Something - Replace This Title</title>
+  <prolog>
+    <metadata>
+      <!-- REQUIRED: Document ID -->
+      <data name="docid" value="DOC-PROD-XXX-v1.0"/>
+      
+      <!-- REQUIRED: Classification -->
+      <data name="product" value="Product A"/>
+      <data name="product-version" value="1.0+"/>
+      <data name="audience" value="admin|user|developer"/>
+      <data name="status" value="draft"/>
+      
+      <!-- REQUIRED: Review Info -->
+      <data name="created-date" value="2026-01-15"/>
+      <data name="revised-date" value="2026-06-06"/>
+      <data name="author" value="Your Name"/>
+      <data name="reviewed-by" value="Reviewer Name"/>
+      <data name="review-frequency" value="quarterly"/>
+      
+      <!-- REQUIRED: Compliance -->
+      <data name="security-level" value="public"/>
+      <data name="translatable" value="yes"/>
+    </metadata>
+  </prolog>
+  
+  <taskbody>
+    <!-- SHORT DESCRIPTION: 1-2 sentences about what this task accomplishes -->
+    <shortdesc>This task explains how to accomplish a specific goal.
+      Replace with your task description.
+    </shortdesc>
+    
+    <!-- SECTION 1: Purpose -->
+    <section>
+      <title>About this task</title>
+      <p>Explain why and when users would perform this task.
+        Estimated time to complete: X minutes</p>
+    </section>
+    
+    <!-- SECTION 2: Prerequisites -->
+    <prereq>
+      <p>List anything users need before starting:</p>
+      <ul>
+        <li>Requirement 1</li>
+        <li>Requirement 2</li>
+        <li>You have read: <xref href="c_concept_topic.dita">Concept Topic Name</xref></li>
+      </ul>
+    </prereq>
+    
+    <!-- SECTION 3: Step-by-Step Instructions -->
+    <steps>
+      <step>
+        <cmd>First action (use action verb).</cmd>
+        <info>Include any helpful info about this step.</info>
+        <stepresult>What should happen after this step.</stepresult>
+      </step>
+      
+      <step>
+        <cmd>Second action.</cmd>
+        <info>Additional information if needed.</info>
+        <stepresult>Expected result after this step.</stepresult>
+      </step>
+      
+      <step>
+        <cmd>Third action.</cmd>
+        <stepresult>Final result when all steps are complete.</stepresult>
+      </step>
+    </steps>
+    
+    <!-- SECTION 4: Expected Result -->
+    <result>
+      <p>Describe what the user should see or be able to do after completing these steps.
+        This confirms successful completion.</p>
+    </result>
+    
+    <!-- SECTION 5: Tips & Troubleshooting -->
+    <postreq>
+      <p><b>Tips:</b></p>
+      <ul>
+        <li>Helpful tip 1</li>
+        <li>Helpful tip 2</li>
+      </ul>
+      <p><b>Troubleshooting:</b></p>
+      <ul>
+        <li>If X happens, try Y. See <xref href="t_troubleshoot.dita">Troubleshooting</xref>.</li>
+      </ul>
+      <p><b>Next steps:</b></p>
+      <ul>
+        <li><xref href="t_next_task.dita">Next related task</xref></li>
+      </ul>
+    </postreq>
+  </taskbody>
+</task>

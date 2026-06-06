@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="c_template_concept">
+  <title>TEMPLATE: Concept Topic - Replace This Title</title>
+  <prolog>
+    <metadata>
+      <!-- REQUIRED: Document ID -->
+      <data name="docid" value="DOC-PROD-XXX-v1.0"/>
+      
+      <!-- REQUIRED: Classification -->
+      <data name="product" value="Product A"/>
+      <data name="product-version" value="1.0+"/>
+      <data name="audience" value="admin|user|developer|executive"/>
+      <data name="status" value="draft"/>
+      
+      <!-- REQUIRED: Review Info -->
+      <data name="created-date" value="2026-01-15"/>
+      <data name="revised-date" value="2026-06-06"/>
+      <data name="author" value="Your Name"/>
+      <data name="reviewed-by" value="Reviewer Name"/>
+      <data name="review-frequency" value="quarterly"/>
+      
+      <!-- REQUIRED: Compliance -->
+      <data name="security-level" value="public"/>
+      <data name="translatable" value="yes"/>
+    </metadata>
+  </prolog>
+  
+  <body>
+    <!-- SECTION 1: Short Description (1-2 sentences) -->
+    <p>Start with a clear, one or two sentence description of what this concept is.
+      This is what appears in search results and help topics lists.</p>
+    
+    <!-- SECTION 2: Purpose/Background -->
+    <section>
+      <title>Purpose</title>
+      <p>Explain why this concept exists and why users need to understand it.
+        Answer the question: "Why should I care about this?"
+      </p>
+    </section>
+    
+    <!-- SECTION 3: Key Concepts -->
+    <section>
+      <title>Key concepts</title>
+      <p>Break down the main ideas into a bulleted list:</p>
+      <ul>
+        <li>First concept - brief explanation</li>
+        <li>Second concept - brief explanation</li>
+        <li>Third concept - brief explanation</li>
+      </ul>
+    </section>
+    
+    <!-- SECTION 4: How It Works -->
+    <section>
+      <title>How it works</title>
+      <p>Explain the mechanism or process in plain language.
+        Use analogies if helpful for clarity.</p>
+    </section>
+    
+    <!-- SECTION 5: Examples -->
+    <section>
+      <title>Examples</title>
+      <p>Provide 1-2 real-world examples that illustrate the concept.
+        Manufacturing examples work best.</p>
+    </section>
+    
+    <!-- SECTION 6: Related Topics -->
+    <section>
+      <title>Related topics</title>
+      <ul>
+        <li><xref href="t_how_to_configure.dita">How to configure this feature</xref></li>
+        <li><xref href="r_reference_guide.dita">Reference: Configuration options</xref></li>
+        <li><xref href="t_troubleshoot.dita">Troubleshooting guide</xref></li>
+      </ul>
+    </section>
+  </body>
+</topic>
