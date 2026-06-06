@@ -1,0 +1,53 @@
+# DITA Output
+/out/
+/output/
+/publish/
+/*.pdf
+/*.html
+
+# DITA Temp Files
+*.dita.bak
+*.ditamap.bak
+*.ent.bak
+
+# oXygen
+.oxygen/
+.project
+.classpath
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+.gradle/
+build/
+node_modules/
+
+# Temp
+tmp/
+temp/
+*.tmp
+
+# Logs
+*.log
+logs/
+
+# Translation Files (TMS)
+.tm/
+.xliff
+*.xliff
+*.po
+
+# Environment
+.env
+.env.local
+*.key
+*.pem
