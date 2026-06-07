@@ -143,5 +143,5 @@ Subject Scheme 与 `02-METADATA-SCHEMA.md` 中定义的元数据架构**协同�
 
 ---
 
-**文件：** `06-TEMPLATES/12-SUBJECT-SCHEME-TEMPLATE.ditamap`  
+**文件：** `templates/12-SUBJECT-SCHEME-TEMPLATE.ditamap`  
 **下次评审日期：** 2026 年 Q4

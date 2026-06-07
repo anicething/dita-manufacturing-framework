@@ -6,7 +6,7 @@
 **Status:** Approved
 
 > **v1.1 更新：** 为全部 8 种专门主题类型新增模板。
-> 模板位于 `06-TEMPLATES/`。
+> 模板位于 `templates/`。
 
 ---
 
@@ -277,5 +277,5 @@
 ---
 
 **Document ID:** ARCH-003  
-**模板位置：** `06-TEMPLATES/`  
+**模板位置：** `templates/`  
 **下次评审日期：** 2026 年 Q4

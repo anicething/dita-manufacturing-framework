@@ -101,7 +101,7 @@ Every topic, regardless of type, must include these fields in `<prolog>`:
 
 All metadata values are governed by **Subject Scheme**
 (see `05-SUBJECT-SCHEME-GUIDE.md`). The authoritative list
-is defined in `06-TEMPLATES/12-SUBJECT-SCHEME-TEMPLATE.ditamap`.
+is defined in `templates/12-SUBJECT-SCHEME-TEMPLATE.ditamap`.
 
 ### 2.1 Audience Values
 
@@ -162,7 +162,7 @@ notice      — Property damage only
 
 ## 4. Metadata Template
 
-A reusable metadata block is provided in `06-TEMPLATES/04-METADATA-TEMPLATE.xml`.
+A reusable metadata block is provided in `templates/04-METADATA-TEMPLATE.xml`.
 
 ---
 
@@ -170,6 +170,6 @@ A reusable metadata block is provided in `06-TEMPLATES/04-METADATA-TEMPLATE.xml`
 **Related Documents:**
 - `04-EXTENDED-TOPIC-TYPES.md` — Topic type definitions
 - `05-SUBJECT-SCHEME-GUIDE.md` — Controlled value governance
-- `06-TEMPLATES/12-SUBJECT-SCHEME-TEMPLATE.ditamap` — Subject Scheme file
+- `templates/12-SUBJECT-SCHEME-TEMPLATE.ditamap` — Subject Scheme file
 
 **Next Review Date:** Q4 2026

@@ -280,8 +280,8 @@ DR-2000 高速:        300 个主题
 **篇幅：** 1-3 页  
 **受众：** 维修技术员  
 **可复用性：** 中等（可在使用相同组件的产品线之间部分复用）  
-**模板：** `06-TEMPLATES/06-TROUBLESHOOTING-TEMPLATE.dita`  
-**示例：** `examples/topics/en/new-types/ALARM-700016-TROUBLESHOOTING.dita`
+**模板：** `templates/06-TROUBLESHOOTING-TEMPLATE.dita`  
+**示例：** `examples/topics/ALARM-700016-TROUBLESHOOTING.dita`
 
 ### 4.5 术语条目（v1.1 新增）
 
@@ -298,8 +298,8 @@ DR-2000 高速:        300 个主题
 **篇幅：** 1 段  
 **受众：** 全部  
 **可复用性：** 非常高（跨所有主题 100% 复用）  
-**模板：** `06-TEMPLATES/07-GLOSSARY-ENTRY-TEMPLATE.dita`  
-**示例：** `examples/topics/en/new-types/GLOSS-LOTO.dita`
+**模板：** `templates/07-GLOSSARY-ENTRY-TEMPLATE.dita`  
+**示例：** `examples/topics/GLOSS-LOTO.dita`
 
 ### 4.6 危害声明（v1.1 新增）
 
@@ -318,8 +318,8 @@ DR-2000 高速:        300 个主题
 **篇幅：** 1-2 页  
 **受众：** 操作员、维修人员、安全审计员  
 **可复用性：** 高（跨所有使用相同子系统的产品共享）  
-**模板：** `06-TEMPLATES/08-HAZARD-STATEMENT-TEMPLATE.dita`  
-**示例：** `examples/topics/en/new-types/HAZARD-FLYING-CHIPS.dita`
+**模板：** `templates/08-HAZARD-STATEMENT-TEMPLATE.dita`  
+**示例：** `examples/topics/HAZARD-FLYING-CHIPS.dita`
 
 ## 5. 图结构组织
 

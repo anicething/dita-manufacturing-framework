@@ -143,5 +143,5 @@ Subject Scheme works with, not instead of, the metadata schema defined in `02-ME
 
 ---
 
-**File:** `06-TEMPLATES/12-SUBJECT-SCHEME-TEMPLATE.ditamap`  
+**File:** `templates/12-SUBJECT-SCHEME-TEMPLATE.ditamap`  
 **Next Review Date:** Q4 2026

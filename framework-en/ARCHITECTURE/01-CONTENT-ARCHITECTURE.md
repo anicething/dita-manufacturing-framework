@@ -280,8 +280,8 @@ Title (Alarm Code + Symptom)
 **Length:** 1-3 pages  
 **Audience:** Maintenance technicians  
 **Reusability:** Medium (partially reusable across product lines with the same components)  
-**Template:** `06-TEMPLATES/06-TROUBLESHOOTING-TEMPLATE.dita`  
-**Example:** `examples/topics/en/new-types/ALARM-700016-TROUBLESHOOTING.dita`
+**Template:** `templates/06-TROUBLESHOOTING-TEMPLATE.dita`  
+**Example:** `examples/topics/ALARM-700016-TROUBLESHOOTING.dita`
 
 ### 4.5 Glossary Entry (v1.1 addition)
 
@@ -298,8 +298,8 @@ Term
 **Length:** 1 paragraph  
 **Audience:** All  
 **Reusability:** Very High (100% reuse across all topics)  
-**Template:** `06-TEMPLATES/07-GLOSSARY-ENTRY-TEMPLATE.dita`  
-**Example:** `examples/topics/en/new-types/GLOSS-LOTO.dita`
+**Template:** `templates/07-GLOSSARY-ENTRY-TEMPLATE.dita`  
+**Example:** `examples/topics/GLOSS-LOTO.dita`
 
 ### 4.6 Hazard Statement (v1.1 addition)
 
@@ -318,8 +318,8 @@ Hazard Name
 **Length:** 1-2 pages  
 **Audience:** Operators, maintenance, safety auditors  
 **Reusability:** High (shared across all products with the same subsystem)  
-**Template:** `06-TEMPLATES/08-HAZARD-STATEMENT-TEMPLATE.dita`  
-**Example:** `examples/topics/en/new-types/HAZARD-FLYING-CHIPS.dita`
+**Template:** `templates/08-HAZARD-STATEMENT-TEMPLATE.dita`  
+**Example:** `examples/topics/HAZARD-FLYING-CHIPS.dita`
 
 ## 5. Map Organization
 

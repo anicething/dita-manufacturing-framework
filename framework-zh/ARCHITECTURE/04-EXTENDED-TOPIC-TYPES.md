@@ -101,7 +101,7 @@ DITA 1.3 定义了超过 25 种主题类型。尽管概念/任务/参考覆盖�
 </troubleshooting>
 ```
 
-**模板：** `06-TEMPLATES/06-TROUBLESHOOTING-TEMPLATE.dita`
+**模板：** `templates/06-TROUBLESHOOTING-TEMPLATE.dita`
 
 ---
 
@@ -127,7 +127,7 @@ DITA 1.3 定义了超过 25 种主题类型。尽管概念/任务/参考覆盖�
 </glossentry>
 ```
 
-**模板：** `06-TEMPLATES/07-GLOSSARY-ENTRY-TEMPLATE.dita`
+**模板：** `templates/07-GLOSSARY-ENTRY-TEMPLATE.dita`
 
 **术语分组（`glossgroup`）：** 将相关条目收集到一个主题下 — 例如，所有安全术语归入一组。
 
@@ -154,7 +154,7 @@ DITA 1.3 定义了超过 25 种主题类型。尽管概念/任务/参考覆盖�
 </p>
 ```
 
-**模板：** `06-TEMPLATES/08-HAZARD-STATEMENT-TEMPLATE.dita`
+**模板：** `templates/08-HAZARD-STATEMENT-TEMPLATE.dita`
 
 ---
 
@@ -187,7 +187,7 @@ DITA 1.3 定义了超过 25 种主题类型。尽管概念/任务/参考覆盖�
 ```
 
 **参考仓库：** `02-ARCHITECTURE/05-SUBJECT-SCHEME-GUIDE.md`  
-**模板：** `06-TEMPLATES/12-SUBJECT-SCHEME-TEMPLATE.ditamap`
+**模板：** `templates/12-SUBJECT-SCHEME-TEMPLATE.ditamap`
 
 ---
 
@@ -221,7 +221,7 @@ DITA 1.3 定义了超过 25 种主题类型。尽管概念/任务/参考覆盖�
 </bookmap>
 ```
 
-**模板：** `06-TEMPLATES/11-BOOKMAP-TEMPLATE.ditamap`
+**模板：** `templates/11-BOOKMAP-TEMPLATE.ditamap`
 
 ---
 
@@ -258,7 +258,7 @@ DITA 1.3 定义了超过 25 种主题类型。尽管概念/任务/参考覆盖�
 </taskrequirements>
 ```
 
-**模板：** `06-TEMPLATES/09-TASK-REQUIREMENTS-TEMPLATE.dita`
+**模板：** `templates/09-TASK-REQUIREMENTS-TEMPLATE.dita`
 
 ---
 
@@ -272,7 +272,7 @@ DITA 1.3 定义了超过 25 种主题类型。尽管概念/任务/参考覆盖�
 - `learningContent` — 核心教学内容主体（可包含概念/任务/参考内容）
 - `learningSummary` — 回顾、知识检查、下一步
 
-**模板：** `06-TEMPLATES/10-LEARNING-OBJECT-TEMPLATE.dita`
+**模板：** `templates/10-LEARNING-OBJECT-TEMPLATE.dita`
 
 ---
 

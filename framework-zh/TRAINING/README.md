@@ -1,19 +1,20 @@
 # DITA Training / DITA 培训
 
-This directory contains the complete **DITA Manufacturing Framework Training Curriculum** — a three-level professional training program for technical writers, engineers, and documentation specialists in the manufacturing industry.
+This directory contains the **DITA Manufacturing Framework Training Curriculum** — organized into four categories covering concept, framework, writing, and implementation topics.
 
-此目录包含完整的 **DITA 制造框架培训课程** —— 面向制造业技术写作人员、工程师和文档专家的三级专业培训体系。
+此目录包含完整的 **DITA 制造框架培训课程** —— 分为概念、框架、写作和落地四大类别。
 
 ---
 
 ## Curriculum Overview / 课程概览
 
-| Level / 级别 | Duration / 时长 | Modules / 模块 | Target Audience / 目标学员 |
-|--------------|-----------------|----------------|---------------------------|
-| **Novice / 初级** | 2 days (16 hrs) | 8 modules | New technical writers, engineers new to DITA |
-| **Professional / 进阶** | 2 days (16 hrs) | 8 modules | Experienced writers, content architects |
-| **Expert / 专家** | 2 days (16 hrs) | 6 modules | Senior architects, team leads, tool admins |
-| **Total** | **6 days (48 hrs)** | **22 modules** | **Entire documentation team** |
+| 类别 | 模块数 | 侧重点 |
+|------|--------|--------|
+| **01-CONCEPT / 概念** | 7 个模块 | DITA 基础、主题类型、XML、Subject Scheme、专用化、信息架构 |
+| **02-FRAMEWORK / 框架** | 3 个模块 | 框架概述、模板使用、元数据基础 |
+| **03-WRITING / 写作** | 5 个模块 | Bookmap/PDF、Subject Scheme 深入、多语言发布、产品培训 |
+| **04-IMPLEMENTATION / 落地** | 3 个模块 | CI/CD、审批流程、持续改进 |
+| **总计** | **18 个模块** | **完整的 DITA 制造培训课程** |
 
 ---
 
@@ -21,98 +22,117 @@ This directory contains the complete **DITA Manufacturing Framework Training Cur
 
 ```
 TRAINING/
-├── README.md                    ← This file / 本文件
-├── dita-theme.css               ← Custom Marp presentation theme
-├── 01-ONBOARDING-GUIDE.md       ← 框架入职培训（4 周）
-├── 02-QUICK-START.md            ← 快速入门指南
-├── 03-TRAINING-EXERCISES.md     ← 练习项目
-├── 04-CERTIFICATION-CHECKLIST.md← 认证评估清单
-│
-├── curriculum/                  ← 完整培训课程
-│   ├── dita-novice/             ←   初级 (8 个模块)
-│   ├── dita-professional/       ←   进阶 (8 个模块)
-│   ├── dita-expert/             ←   专家 (6 个模块)
-│   ├── framework/               ←   框架培训模块
-│   └── product/                 ←   产品培训模块
-└── ...培训模块
+├── README.md                    ← 本文件
+├── dita-theme.css               ← 自定义 Marp 幻灯片主题
+├── 01-CONCEPT/                  ← 概念培训
+│   ├── 01-DITA-JI-CHU.md
+│   ├── 02-SAN-HE-XIN-LEI-XING.md
+│   ├── 03-DITA-XML-JI-CHU.md
+│   ├── 04-KUO-ZHAN-ZHU-TI-LEI-XING.md
+│   ├── 05-SUBJECT-SCHEME.md
+│   ├── 06-DITA-ZHUAN-YONG-HUA.md
+│   └── 07-XIN-XI-JIA-GOU.md
+├── 02-FRAMEWORK/                ← 框架培训
+│   ├── 01-KUANG-JIA-GAI-SHU.md
+│   ├── 02-SHI-YONG-MO-BAN.md
+│   └── 03-YUAN-SHU-JU-JI-CHU.md
+├── 03-WRITING/                  ← 写作与发布培训
+│   ├── 01-SUBJECT-SCHEME-SHEN-RU.md
+│   ├── 02-BOOKMAP-PDF.md
+│   ├── 03-NEI-RONG-FU-YONG.md
+│   ├── 04-DUO-YU-YAN-FA-BU.md
+│   └── 05-CHAN-PIN-PEI-XUN.md
+└── 04-IMPLEMENTATION/           ← 落地与工作流
+    ├── 01-CI-CD-LIU-SHUI-XIAN.md
+    ├── 02-SHEN-PI-LIU-CHENG.md
+    └── 03-CHI-XU-GAI-JIN.md
 ```
 
 ---
 
 ## How to View the Slides / 如何查看幻灯片
 
-The slides use **Marp** (Markdown Presentation Ecosystem). Each `.md` file is a standalone slide deck.
+幻灯片使用 **Marp**（Markdown 演示生态系统）。每个 `.md` 文件是一个独立的幻灯片集。
 
-### Option 1: VS Code with Marp Extension (Recommended)
+### 方式一：VS Code + Marp 扩展（推荐）
 
-1. Install the [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) extension
-2. Open any `.md` file in `training/`
-3. Click "Open Preview to the Side" or press `Ctrl+Shift+V`
-4. The custom theme `dita-theme.css` is automatically applied
+1. 安装 [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) 扩展
+2. 打开 `TRAINING/` 中的任意 `.md` 文件
+3. 点击"打开侧边预览"或按 `Ctrl+Shift+V`
+4. 自定义主题 `dita-theme.css` 将自动应用
 
-### Option 2: Marp CLI
-
-```bash
-npx @marp-team/marp-cli curriculum/dita-novice/01-DITA-JI-CHU.md
-```
-
-### Option 3: Export to PDF
+### 方式二：Marp CLI
 
 ```bash
-npx @marp-team/marp-cli curriculum/dita-novice/01-DITA-JI-CHU.md --pdf
+npx @marp-team/marp-cli 01-CONCEPT/01-DITA-JI-CHU.md
+```
+
+### 方式三：导出为 PDF
+
+```bash
+npx @marp-team/marp-cli 01-CONCEPT/01-DITA-JI-CHU.md --pdf
 ```
 
 ---
 
-## Novice Course (Level 1) / 初级课程
+## 01-CONCEPT：概念培训
 
-**Duration:** 2 days (16 hours)
-**Prerequisites:** None — this is an entry-level course.
+深入的 DITA 概念培训，帮助建立扎实的基础。适合所有级别。
 
-| Module | Title | Description |
-|--------|-------|-------------|
-| 01 | DITA Fundamentals | What is DITA, history, core principles, benefits |
-| 02 | Three Core Topic Types | Concept, Task, Reference — when to use each |
-| 03 | DITA XML Basics | XML syntax, elements, attributes, DTDs, well-formedness |
-| 04 | Using Templates | 12 framework templates, how to choose and use them |
-| 05 | Metadata Basics | Prolog, metadata elements, M1-M7 rules |
-| 06 | DITA Map Basics | .ditamap structure, topicref, hierarchy, keys |
-| 07 | Approval Workflow | 10-step approval process, Git, PR reviews |
-| 08 | Hands-On Project | Capstone: create a complete small documentation set |
+| 模块 | 标题 | 说明 |
+|------|------|------|
+| 01 | DITA 基础 | DITA 是什么、历史、核心原则、优势 |
+| 02 | 三大核心主题类型 | 概念、任务、参考——何时使用每种类型 |
+| 03 | DITA XML 基础 | XML 语法、元素、属性、DTD、格式良好 |
+| 04 | 扩展主题类型 | 故障排查、术语、危害、任务前置条件、学习对象 |
+| 05 | Subject Scheme | 受控值、分类法管理、Schematron |
+| 06 | DITA 专用化 | 领域与主题专用化、.mod/.ent/.dtd |
+| 07 | 信息架构 | IA 设计、粒度、内容-任务矩阵、复用模式 |
 
 ---
 
-## Professional Course (Level 2) / 进阶课程
+## 02-FRAMEWORK：框架培训
 
-**Duration:** 2 days (16 hours)
-**Prerequisites:** Novice course or equivalent DITA experience.
+如何使用 DITA 制造框架进行日常编写。
 
-| Module | Title | Description |
-|--------|-------|-------------|
-| 01 | Extended Topic Types | Troubleshooting, Glossary, Hazard, Task Reqs, Learning Object |
-| 02 | Content Reuse | Conref, conkeyref, content referencing patterns |
-| 03 | Subject Scheme | Controlled values, taxonomy management, Schematron |
-| 04 | Bookmap & PDF | Bookmap structure, PDF publishing, DITA-OT Chemistry |
-| 05 | Localization | Translation workflow, XLIFF, 9-language framework |
-| 06 | Metadata Governance | M1-M7 rules, automated checks, quality metrics |
-| 07 | Multilingual Publishing | Multi-language builds, CJK fonts, batch publishing |
-| 08 | Professional Project | Capstone: full product documentation with localization |
+| 模块 | 标题 | 说明 |
+|------|------|------|
+| 01 | 框架概述 | 12 个模板、主题类型、审批流程、CI/CD |
+| 02 | 使用模板 | 复制→重命名→替换→验证 工作流 |
+| 03 | 元数据基础 | Prolog、元数据元素、M1-M7 规则 |
+| 04 | DITA Map 基础 | Ditamap 结构、地图类型、嵌套、keydef |
+| 05 | 元数据治理 | 元数据策略、评审周期、合规性 |
 
 ---
 
-## Expert Course (Level 3) / 专家课程
+## 03-WRITING：写作与发布
 
-**Duration:** 2 days (16 hours)
-**Prerequisites:** Professional course or equivalent experience.
+高级写作技巧和多渠道发布。
 
-| Module | Title | Description |
-|--------|-------|-------------|
-| 01 | DITA Specialization | Domain vs topic specialization, .mod/.ent/.dtd |
-| 02 | CI/CD Pipeline | GitHub Actions, automated validation, publishing |
-| 03 | Content Metrics & KPIs | Reuse ratio, coverage, readability, compliance scoring |
-| 04 | Team Management | DITA CoE, ownership models, roles, budgeting |
-| 05 | Framework Customization | Custom topic types, DITA-OT plugins, new output formats |
-| 06 | Continuous Improvement | Maturity model, 12-month roadmap, AI/ML in docs |
+| 模块 | 标题 | 说明 |
+|------|------|------|
+| 01 | 内容复用 | Conref、conkeyref、内容引用模式 |
+| 02 | Bookmap 与 PDF | Bookmap 结构、PDF 发布、DITA-OT Chemistry |
+| 03 | 本地化 | 本地化策略、XLIFF、翻译工作流 |
+| 04 | 多语言发布 | 多语言构建、CJK 字体、批量发布 |
+| 05 | 产品培训 | 产品特定的文档模式 |
+
+---
+
+## 04-IMPLEMENTATION：落地与工作流
+
+工具链搭建、自动化和持续改进。
+
+| 模块 | 标题 | 说明 |
+|------|------|------|
+| 01 | 入职指南 | 新团队成员入职、工具设置、初始任务 |
+| 02 | 审批流程 | 10 步审批流程、Git、PR 评审 |
+| 03 | 实践项目 | 基础实践练习 |
+| 04 | 进阶项目 | 中级实践场景 |
+| 05 | CI/CD 流水线 | 自动化验证、发布流水线 |
+| 06 | 指标与 KPI | 文档质量指标、度量 |
+| 07 | 团队管理 | 团队结构、角色、职责 |
+| 08 | 持续改进 | 成熟度模型、指标、KPI、路线图 |
 
 ---
 
@@ -120,15 +140,15 @@ npx @marp-team/marp-cli curriculum/dita-novice/01-DITA-JI-CHU.md --pdf
 
 The `dita-theme.css` provides professional manufacturing styling:
 
-| CSS Class / 样式类 | Appearance / 外观 |
-|--------------------|--------------------|
-| `<!-- _class: title -->` | Dark blue gradient background, white text |
-| `<!-- _class: divider -->` | Solid blue background, centered text |
-| `<!-- _class: exercise -->` | Green top border, ⚡ prefix on h1 |
-| `<!-- _class: keypoint -->` | Orange border, rounded corners |
-| `<!-- _class: note -->` | Yellow left border, warning-style |
-| `<!-- _class: tip -->` | Blue left border, info-style |
-| `<!-- _class: columns -->` | Flexbox two-column layout |
+| CSS 类 | 效果 |
+|--------|------|
+| `<!-- _class: title -->` | 深蓝色渐变背景，白色文字 |
+| `<!-- _class: divider -->` | 纯蓝背景，居中文字 |
+| `<!-- _class: exercise -->` | 绿色顶部边框，h1 带 ⚡ 前缀 |
+| `<!-- _class: keypoint -->` | 橙色边框，圆角 |
+| `<!-- _class: note -->` | 黄色左边框，警告样式 |
+| `<!-- _class: tip -->` | 蓝色左边框，信息样式 |
+| `<!-- _class: columns -->` | Flexbox 双栏布局 |
 
 ---
 
@@ -142,5 +162,5 @@ The `dita-theme.css` provides professional manufacturing styling:
 
 ---
 
-**Version / 版本:** v1.0
+**Version / 版本:** v1.1
 **Last Updated / 最后更新:** 2026-06-07

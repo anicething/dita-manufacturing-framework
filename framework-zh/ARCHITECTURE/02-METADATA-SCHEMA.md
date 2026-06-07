@@ -101,7 +101,7 @@
 
 所有元数据值均由 **Subject Scheme** 管控
 （参见 `05-SUBJECT-SCHEME-GUIDE.md`）。权威列表
-定义在 `06-TEMPLATES/12-SUBJECT-SCHEME-TEMPLATE.ditamap` 中。
+定义在 `templates/12-SUBJECT-SCHEME-TEMPLATE.ditamap` 中。
 
 ### 2.1 受众值
 
@@ -162,7 +162,7 @@ notice      — 仅造成财产损失
 
 ## 4. 元数据模板
 
-可复用的元数据块提供于 `06-TEMPLATES/04-METADATA-TEMPLATE.xml`。
+可复用的元数据块提供于 `templates/04-METADATA-TEMPLATE.xml`。
 
 ---
 
@@ -170,6 +170,6 @@ notice      — 仅造成财产损失
 **相关文档：**
 - `04-EXTENDED-TOPIC-TYPES.md` — 主题类型定义
 - `05-SUBJECT-SCHEME-GUIDE.md` — 受控值治理
-- `06-TEMPLATES/12-SUBJECT-SCHEME-TEMPLATE.ditamap` — Subject Scheme 文件
+- `templates/12-SUBJECT-SCHEME-TEMPLATE.ditamap` — Subject Scheme 文件
 
 **下次评审日期：** 2026 年 Q4

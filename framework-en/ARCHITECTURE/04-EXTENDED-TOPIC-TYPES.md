@@ -101,7 +101,7 @@ What kind of content is this?
 </troubleshooting>
 ```
 
-**Template:** `06-TEMPLATES/06-TROUBLESHOOTING-TEMPLATE.dita`
+**Template:** `templates/06-TROUBLESHOOTING-TEMPLATE.dita`
 
 ---
 
@@ -127,7 +127,7 @@ What kind of content is this?
 </glossentry>
 ```
 
-**Template:** `06-TEMPLATES/07-GLOSSARY-ENTRY-TEMPLATE.dita`
+**Template:** `templates/07-GLOSSARY-ENTRY-TEMPLATE.dita`
 
 **Glossary Group** (`glossgroup`) collects related entries under one topic — e.g., all safety terms in one group.
 
@@ -154,7 +154,7 @@ What kind of content is this?
 </p>
 ```
 
-**Template:** `06-TEMPLATES/08-HAZARD-STATEMENT-TEMPLATE.dita`
+**Template:** `templates/08-HAZARD-STATEMENT-TEMPLATE.dita`
 
 ---
 
@@ -187,7 +187,7 @@ What kind of content is this?
 ```
 
 **Repository:** `02-ARCHITECTURE/05-SUBJECT-SCHEME-GUIDE.md`  
-**Template:** `06-TEMPLATES/12-SUBJECT-SCHEME-TEMPLATE.ditamap`
+**Template:** `templates/12-SUBJECT-SCHEME-TEMPLATE.ditamap`
 
 ---
 
@@ -221,7 +221,7 @@ What kind of content is this?
 </bookmap>
 ```
 
-**Template:** `06-TEMPLATES/11-BOOKMAP-TEMPLATE.ditamap`
+**Template:** `templates/11-BOOKMAP-TEMPLATE.ditamap`
 
 ---
 
@@ -258,7 +258,7 @@ What kind of content is this?
 </taskrequirements>
 ```
 
-**Template:** `06-TEMPLATES/09-TASK-REQUIREMENTS-TEMPLATE.dita`
+**Template:** `templates/09-TASK-REQUIREMENTS-TEMPLATE.dita`
 
 ---
 
@@ -272,7 +272,7 @@ What kind of content is this?
 - `learningContent` — Core instructional body (can include Concept/Task/Reference content)
 - `learningSummary` — Recap, knowledge check, next steps
 
-**Template:** `06-TEMPLATES/10-LEARNING-OBJECT-TEMPLATE.dita`
+**Template:** `templates/10-LEARNING-OBJECT-TEMPLATE.dita`
 
 ---
 

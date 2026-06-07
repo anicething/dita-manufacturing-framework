@@ -6,7 +6,7 @@
 **Status:** Approved  
 
 > **v1.1 Update:** Added templates for all 8 specialized topic types.
-> Templates are available in `06-TEMPLATES/`.
+> Templates are available in `templates/`.
 
 ---
 
@@ -277,5 +277,5 @@
 ---
 
 **Document ID:** ARCH-003  
-**Templates Location:** `06-TEMPLATES/`  
+**Templates Location:** `templates/`  
 **Next Review Date:** Q4 2026
