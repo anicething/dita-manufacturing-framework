@@ -6,10 +6,7 @@
   Domain:   (topic hi-d) for hazard statement domain
 -->
 <reference id="template-hazard-statement"
-            xml:lang="en-US"
-            domains="(topic reference)
-                     (topic hi-d)"
->
+            xml:lang="en-US">
   <title>Hazard: [Hazard Name]</title>
   <shortdesc>Safety hazard identification and mitigation for [specific scenario].</shortdesc>
   <prolog>
@@ -30,16 +27,14 @@
     <!-- Primary hazard statement — rendered as a safety box in output -->
     <section id="primary-statement">
       <title>Safety Warning</title>
-      <p hazard="">
-        <hazardstatement type="[danger|warning|caution|notice]">
-          <messagepanel>
-            <typeofhazard>[Type of hazard — e.g., "Flying Chips"]</typeofhazard>
-            <consequence>[What happens if not avoided — e.g., "Severe eye injury"]</consequence>
-            <howtoavoid>[How to avoid — e.g., "Wear safety glasses with side shields"]</howtoavoid>
-          </messagepanel>
-          <hazardsymbol href="[hazard-icon-filename].svg"/>
-        </hazardstatement>
-      </p>
+      <hazardstatement type="warning">
+        <messagepanel>
+          <typeofhazard>[Type of hazard — e.g., "Flying Chips"]</typeofhazard>
+          <consequence>[What happens if not avoided — e.g., "Severe eye injury"]</consequence>
+          <howtoavoid>[How to avoid — e.g., "Wear safety glasses with side shields"]</howtoavoid>
+        </messagepanel>
+        <hazardsymbol href="[hazard-icon-filename].svg"/>
+      </hazardstatement>
     </section>
 
     <!-- Detailed description -->

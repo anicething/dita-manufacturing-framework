@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossentry.dtd">
 <glossentry id="template-glossary-entry"
-            xml:lang="zh-CN"
-            domains="(topic glossentry)"
->
+            xml:lang="zh-CN">
   <glossterm>[术语名称]</glossterm>
   <glossdef>
     <p>对该术语给出清晰、简洁的定义。用一两句话即可。
@@ -19,15 +17,10 @@
     </metadata>
   </prolog>
 
-  <!-- 可选：替代形式（首字母缩写、缩写、表面形式） -->
-  <glossAlternative>
-    <glossSurfaceForm>[如有需要，填写完整表面形式]</glossSurfaceForm>
-    <glossAcronym>[首字母缩写]</glossAcronym>
-    <glossAbbreviation>[缩写]</glossAbbreviation>
-  </glossAlternative>
-
-  <!-- 可选：相关术语 -->
-  <glossRelated>
-    <glossxref href="[相关术语文件].dita"/>
-  </glossRelated>
+  <!-- 可选：相关术语（以独立术语条目添加并交叉引用） -->
+  <related-links>
+    <link href="[相关术语文件].dita">
+      <linktext>[相关术语名称]</linktext>
+    </link>
+  </related-links>
 </glossentry>

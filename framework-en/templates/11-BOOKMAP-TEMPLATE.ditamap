@@ -7,20 +7,13 @@
   <booktitle>
     <mainbooktitle>[Product Name] [Document Type]</mainbooktitle>
     <booktitlealt>Version X.X — [Edition info]</booktitlealt>
-    <navtitle>[Short navigation title]</navtitle>
   </booktitle>
 
   <bookmeta>
     <author>ExampleCorp Documentation Team</author>
-    <publisher>Example Manufacturing Co., Ltd.</publisher>
-    <copyright>
-      <copyryear year="2026"/>
-      <copyrholder>Example Manufacturing Co., Ltd.</copyrholder>
-    </copyright>
-    <bookid>
-      <booknumber>DOC-[PROD]-[NUM]-[LANG]</booknumber>
-      <edition>X.X</edition>
-    </bookid>
+    <publisherinformation>
+      <organization>Example Manufacturing Co., Ltd.</organization>
+    </publisherinformation>
     <critdates>
       <created date="2026-01-15"/>
       <revised date="2026-06-01"/>
@@ -31,6 +24,15 @@
         <vrm version="X.X" release="X" modification="X"/>
       </vrmlist>
     </prodinfo>
+    <bookid>
+      <edition>X.X</edition>
+      <booknumber>DOC-[PROD]-[NUM]-[LANG]</booknumber>
+    </bookid>
+    <bookrights>
+      <bookowner>
+        <organization>Example Manufacturing Co., Ltd.</organization>
+      </bookowner>
+    </bookrights>
   </bookmeta>
 
   <!-- ===== FRONT MATTER ===== -->
@@ -76,12 +78,12 @@
 
   <!-- ===== BACK MATTER ===== -->
   <backmatter>
-    <appendix id="app-specs" navtitle="Technical Specifications">
+    <topichead navtitle="Technical Specifications">
       <topicref href="[specs-reference].dita"/>
-    </appendix>
-    <appendix id="app-glossary" navtitle="Glossary">
+    </topichead>
+    <topichead navtitle="Glossary">
       <topicref href="[glossary-map].ditamap"/>
-    </appendix>
+    </topichead>
     <amendments/>
     <indexlist/>
   </backmatter>

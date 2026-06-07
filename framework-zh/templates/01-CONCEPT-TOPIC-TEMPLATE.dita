@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="c_template_concept">
+<topic id="c_template_concept" xml:lang="zh-CN">
   <title>模板：概念主题 - 请替换此标题</title>
+  <shortdesc>用一两句清晰的话描述这个概念是什么。这会出现在搜索结果和帮助主题列表中。</shortdesc>
   <prolog>
     <metadata>
       <!-- 必填：文档 ID -->
@@ -27,11 +28,7 @@
   </prolog>
 
   <body>
-    <!-- 第1节：简短描述（1-2句话） -->
-    <p>用一两句清晰的话描述这个概念是什么。
-      这会出现在搜索结果和帮助主题列表中。</p>
-
-    <!-- 第2节：目的/背景 -->
+    <!-- 第1节：目的/背景 -->
     <section>
       <title>目的</title>
       <p>解释这个概念为什么存在，以及用户为什么需要了解它。
@@ -68,9 +65,9 @@
     <section>
       <title>相关主题</title>
       <ul>
-        <li><xref href="t_how_to_configure.dita">如何配置此功能</xref></li>
-        <li><xref href="r_reference_guide.dita">参考：配置选项</xref></li>
-        <li><xref href="t_troubleshoot.dita">故障排除指南</xref></li>
+        <li><xref href="[related-task-topic].dita">如何配置此功能</xref></li>
+        <li><xref href="[related-reference-topic].dita">参考：配置选项</xref></li>
+        <li><xref href="[related-troubleshooting-topic].dita">故障排除指南</xref></li>
       </ul>
     </section>
   </body>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
-<reference id="r_template_reference">
+<reference id="r_template_reference" xml:lang="en-US">
   <title>TEMPLATE: Reference - Replace With Topic Name</title>
+  <shortdesc>Brief description of what this reference contains. What does someone look this up for?</shortdesc>
   <prolog>
     <metadata>
       <!-- REQUIRED: Document ID -->
@@ -27,13 +28,6 @@
   </prolog>
   
   <refbody>
-    <!-- SHORT DESCRIPTION -->
-    <section>
-      <title>Overview</title>
-      <p>Brief description of what this reference contains.
-        What does someone look this up for?</p>
-    </section>
-    
     <!-- PURPOSE -->
     <section>
       <title>Purpose</title>
@@ -120,9 +114,9 @@ PARAM_2 = 75
     <section>
       <title>Related references</title>
       <ul>
-        <li><xref href="r_other_reference.dita">Related Reference Topic</xref></li>
-        <li><xref href="c_concept.dita">Related Concept: Understanding the Feature</xref></li>
-        <li><xref href="t_procedure.dita">Related Task: How to Configure</xref></li>
+        <li><xref href="[related-reference-topic].dita">Related Reference Topic</xref></li>
+        <li><xref href="[related-concept-topic].dita">Related Concept: Understanding the Feature</xref></li>
+        <li><xref href="[related-task-topic].dita">Related Task: How to Configure</xref></li>
       </ul>
     </section>
   </refbody>

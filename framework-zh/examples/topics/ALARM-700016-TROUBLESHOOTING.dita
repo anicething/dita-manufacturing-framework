@@ -44,7 +44,7 @@
         <cmd>拆下回液过滤器滤芯（料号：F-0800-01）并检查。</cmd>
         <info>如果滤芯明显被切屑或油泥堵塞，进行清洁。
                如果滤芯损坏，更换新滤芯（料号：F-0800-01-R）。
-               参见 <xref href="../../topics/zh-CN/new-types/COOLANT-FILTER-TASK.dita">冷却液过滤器更换操作</xref>。</info>
+               参见 <xref href="COOLANT-FILTER-TASK.dita">冷却液过滤器更换操作</xref>（在同一目录下创建此主题）。</info>
       </remedy>
       <remedy>
         <cmd>重新安装过滤器壳体、关闭检修口（锁好钥匙锁）、

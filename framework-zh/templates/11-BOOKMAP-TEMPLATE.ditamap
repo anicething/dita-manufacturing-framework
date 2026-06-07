@@ -2,28 +2,20 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="template-bookmap"
          xml:lang="zh-CN"
-         title="[产品名称] — [文档类型]"
 >
   <booktitle>
     <mainbooktitle>[产品名称] [文档类型]</mainbooktitle>
     <booktitlealt>版本 X.X — [版本信息]</booktitlealt>
-    <navtitle>[简短导航标题]</navtitle>
   </booktitle>
 
   <bookmeta>
     <author>示例文档团队</author>
-    <publisher>示例制造有限公司</publisher>
-    <copyright>
-      <copyryear year="2026"/>
-      <copyrholder>示例制造有限公司</copyrholder>
-    </copyright>
-    <bookid>
-      <booknumber>DOC-[产品]-[编号]-[语言]</booknumber>
-      <edition>X.X</edition>
-    </bookid>
+    <publisherinformation>
+      <organization>示例制造有限公司</organization>
+    </publisherinformation>
     <critdates>
       <created date="2026-01-15"/>
-      <revised date="2026-06-01"/>
+      <revised modified="2026-06-01"/>
     </critdates>
     <prodinfo>
       <prodname>[产品名称]</prodname>
@@ -31,6 +23,15 @@
         <vrm version="X.X" release="X" modification="X"/>
       </vrmlist>
     </prodinfo>
+    <bookid>
+      <edition>X.X</edition>
+      <booknumber>DOC-[产品]-[编号]-[语言]</booknumber>
+    </bookid>
+    <bookrights>
+      <bookowner>
+        <organization>示例制造有限公司</organization>
+      </bookowner>
+    </bookrights>
   </bookmeta>
 
   <!-- ===== 前页 ===== -->
@@ -76,13 +77,12 @@
 
   <!-- ===== 后页 ===== -->
   <backmatter>
-    <appendix id="app-specs" navtitle="技术规格">
+    <topichead navtitle="技术规格">
       <topicref href="[规格参考].dita"/>
-    </appendix>
-    <appendix id="app-glossary" navtitle="术语表">
+    </topichead>
+    <topichead navtitle="术语表">
       <topicref href="[术语地图].ditamap"/>
-    </appendix>
+    </topichead>
     <amendments/>
-    <indexlist/>
   </backmatter>
 </bookmap>

@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
 <!--
-  Task Requirements template — uses the task-requirements domain
-  The <taskrequirements> element sits inside <taskbody> before <steps>.
-  Requires: DITA-OT with task-requirements domain plugin.
+  Task Requirements template
+  Documents prerequisites (personnel, equipment, parts, environment, safety)
+  using standard DITA elements within <prereq>.
 -->
 <task id="template-task-with-requirements"
-      xml:lang="en-US"
-      domains="(topic task)
-               (topic hi-d)
-               (topic pr-d)"
->
+      xml:lang="en-US">
   <title>[Task Title: Verb + Object]</title>
   <shortdesc>[One-sentence summary of the task].</shortdesc>
   <prolog>
@@ -29,42 +25,36 @@
     </metadata>
   </prolog>
   <taskbody>
-    <!-- ===== TASK REQUIREMENTS (structured prerequisites) ===== -->
-    <taskrequirements id="[task-id]-requirements">
-      <reqcond>
-        <personnel>
-          <skill level="[1-5]">Required skill level description</skill>
-          <certification>Required certification (if any)</certification>
-        </personnel>
-
-        <equipment>
-          <item>Tool or instrument name (P/N: XXX)</item>
-          <item>Additional tool (P/N: XXX)</item>
-        </equipment>
-
-        <parts>
-          <item>Consumable or replacement part (P/N: XXX)</item>
-        </parts>
-
-        <environment>
-          <temp min="[min°C]" max="[max°C]">Temperature range description</temp>
-          <humidity max="[%]">Humidity limit</humidity>
-          <cleanliness class="[ISO class]">Cleanliness requirement</cleanliness>
-        </environment>
-
-        <safety>
-          <hazardref href="[hazard-topic-id].dita">Required safety precaution</hazardref>
-        </safety>
-      </reqcond>
-    </taskrequirements>
-
-    <!-- ===== PREREQUISITES (prose) ===== -->
+    <!-- ===== PREREQUISITES (personnel, equipment, parts, environment, safety) ===== -->
     <prereq>
-      <p>Additional textual prerequisites and context.</p>
+      <p>Before starting this task, ensure the following requirements are met:</p>
+      <p><b>Personnel:</b></p>
+      <ul>
+        <li>Required skill level: [1-5] — [description]</li>
+        <li>Required certification: [certification name (if any)]</li>
+      </ul>
+      <p><b>Equipment:</b></p>
+      <ul>
+        <li>[Tool or instrument name] (P/N: XXX)</li>
+        <li>[Additional tool] (P/N: XXX)</li>
+      </ul>
+      <p><b>Parts:</b></p>
+      <ul>
+        <li>[Consumable or replacement part] (P/N: XXX)</li>
+      </ul>
+      <p><b>Environmental conditions:</b></p>
+      <ul>
+        <li>Temperature: [min°C] to [max°C]</li>
+        <li>Humidity: max [%]</li>
+        <li>Cleanliness: [ISO class]</li>
+      </ul>
+      <note type="safety">
+        <xref href="[hazard-topic-id].dita">Required safety precaution</xref>
+      </note>
     </prereq>
 
     <!-- ===== STEPS ===== -->
-    <steps id="[task-id]-steps">
+    <steps id="task-steps">
       <step id="step-1">
         <cmd>First action verb + object.</cmd>
         <info>Supporting detail.</info>

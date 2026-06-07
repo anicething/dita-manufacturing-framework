@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE learningObject PUBLIC "-//OASIS//DTD DITA Learning Object//EN" "learningObject.dtd">
 <learningObject id="template-learning-module"
-                xml:lang="zh-CN"
-                domains="(topic learningObject)"
->
+                xml:lang="zh-CN">
   <title>培训模块：[模块标题]</title>
   <shortdesc>涵盖[主题]的完整培训模块。</shortdesc>
   <prolog>
@@ -55,7 +53,7 @@
           <p>核心教学文本。可包含概念类说明、任务类操作流程和参考类数据。</p>
           <fig>
             <title>示意图</title>
-            <image href="illustration.png"/>
+            <image href="[illustration-file].png"/>
           </fig>
         </section>
         <section id="section-2">
@@ -87,15 +85,17 @@
           <learningAssessment id="template-assessment">
             <title>知识检查</title>
             <learningAssessmentbody>
-              <lcQuestion>问题内容？</lcQuestion>
-              <lcAnswerOption>
-                <lcAnswerContent>正确答案</lcAnswerContent>
-                <lcFeedback>解释说明。</lcFeedback>
-              </lcAnswerOption>
-              <lcAnswerOption>
-                <lcAnswerContent>干扰项</lcAnswerContent>
-                <lcFeedback>为何错误。</lcFeedback>
-              </lcAnswerOption>
+              <lcSingleSelect>
+                <lcQuestion>问题内容？</lcQuestion>
+                <lcAnswerOption>
+                  <lcAnswerContent>正确答案</lcAnswerContent>
+                  <lcFeedback>解释说明。</lcFeedback>
+                </lcAnswerOption>
+                <lcAnswerOption>
+                  <lcAnswerContent>干扰项</lcAnswerContent>
+                  <lcFeedback>为何错误。</lcFeedback>
+                </lcAnswerOption>
+              </lcSingleSelect>
             </learningAssessmentbody>
           </learningAssessment>
         </assessments>

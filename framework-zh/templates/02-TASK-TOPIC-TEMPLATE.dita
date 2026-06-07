@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<task id="t_template_task">
+<task id="t_template_task" xml:lang="zh-CN">
   <title>模板：如何做某事 — 请替换此标题</title>
+  <shortdesc>此任务说明如何完成特定目标。请替换为您的任务描述。</shortdesc>
   <prolog>
     <metadata>
       <!-- 必填：文档 ID -->
@@ -27,27 +28,21 @@
   </prolog>
 
   <taskbody>
-    <!-- 简短描述：用1-2句话说明此任务完成什么 -->
-    <shortdesc>此任务说明如何完成特定目标。
-      请替换为您的任务描述。
-    </shortdesc>
-
-    <!-- 第1节：目的 -->
-    <section>
-      <title>关于此任务</title>
-      <p>解释用户为什么以及何时需要执行此任务。
-        预计完成时间：X 分钟</p>
-    </section>
-
-    <!-- 第2节：前提条件 -->
+    <!-- 第1节：前提条件 -->
     <prereq>
       <p>列出用户在开始之前需要准备的事项：</p>
       <ul>
         <li>要求 1</li>
         <li>要求 2</li>
-        <li>您已阅读：<xref href="c_concept_topic.dita">概念主题名称</xref></li>
+        <li>您已阅读：<xref href="[related-concept-topic].dita">概念主题名称</xref></li>
       </ul>
     </prereq>
+
+    <!-- 第2节：背景说明 -->
+    <context>
+      <p>解释用户为什么以及何时需要执行此任务。
+        预计完成时间：X 分钟</p>
+    </context>
 
     <!-- 第3节：逐步操作说明 -->
     <steps>
@@ -84,11 +79,11 @@
       </ul>
       <p><b>故障排除：</b></p>
       <ul>
-        <li>如果出现 X，请尝试 Y。参见 <xref href="t_troubleshoot.dita">故障排除</xref>。</li>
+        <li>如果出现 X，请尝试 Y。参见 <xref href="[troubleshooting-topic].dita">故障排除</xref>。</li>
       </ul>
       <p><b>下一步：</b></p>
       <ul>
-        <li><xref href="t_next_task.dita">下一个相关任务</xref></li>
+        <li><xref href="[next-task-topic].dita">下一个相关任务</xref></li>
       </ul>
     </postreq>
   </taskbody>

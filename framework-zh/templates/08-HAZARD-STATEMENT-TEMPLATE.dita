@@ -6,10 +6,7 @@
   领域：(topic hi-d) 用于危险声明领域
 -->
 <reference id="template-hazard-statement"
-            xml:lang="zh-CN"
-            domains="(topic reference)
-                     (topic hi-d)"
->
+            xml:lang="zh-CN">
   <title>危险：[危险名称]</title>
   <shortdesc>针对[特定场景]的安全危险识别与缓解措施。</shortdesc>
   <prolog>
@@ -30,16 +27,14 @@
     <!-- 主要危险声明 — 在输出中渲染为安全提示框 -->
     <section id="primary-statement">
       <title>安全警告</title>
-      <p hazard="">
-        <hazardstatement type="[danger|warning|caution|notice]">
-          <messagepanel>
-            <typeofhazard>[危险类型 — 例如「飞溅碎屑」]</typeofhazard>
-            <consequence>[如果未能避免的后果 — 例如「严重眼部伤害」]</consequence>
-            <howtoavoid>[如何避免 — 例如「佩戴带侧护罩的安全眼镜」]</howtoavoid>
-          </messagepanel>
-          <hazardsymbol href="[危险图标文件名].svg"/>
-        </hazardstatement>
-      </p>
+      <hazardstatement type="warning">
+        <messagepanel>
+          <typeofhazard>[危险类型 — 例如「飞溅碎屑」]</typeofhazard>
+          <consequence>[如果未能避免的后果 — 例如「严重眼部伤害」]</consequence>
+          <howtoavoid>[如何避免 — 例如「佩戴带侧护罩的安全眼镜」]</howtoavoid>
+        </messagepanel>
+        <hazardsymbol href="[危险图标文件名].svg"/>
+      </hazardstatement>
     </section>
 
     <!-- 详细描述 -->

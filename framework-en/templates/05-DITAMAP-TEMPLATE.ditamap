@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map id="master_map">
+<map id="master_map" xml:lang="en-US">
   <!-- Map Title -->
   <title>Product A Documentation Master Map</title>
   
@@ -17,7 +17,7 @@
   <!-- ============================================ -->
   <!-- SECTION 1: GETTING STARTED -->
   <!-- ============================================ -->
-  <topicref href="maps/c_getting_started.ditamap" 
+  <topicref href="[getting-started-map].ditamap" 
             navtitle="Getting Started"
             format="ditamap">
     <topicmeta>
@@ -28,44 +28,44 @@
   <!-- ============================================ -->
   <!-- SECTION 2: ADMIN GUIDE -->
   <!-- ============================================ -->
-  <topicref href="maps/c_admin_guide.ditamap" 
+  <topicref href="[admin-guide-map].ditamap" 
             navtitle="Administrator Guide"
             format="ditamap"/>
   
   <!-- ============================================ -->
   <!-- SECTION 3: USER GUIDE -->
   <!-- ============================================ -->
-  <topicref href="maps/c_user_guide.ditamap" 
+  <topicref href="[user-guide-map].ditamap" 
             navtitle="User Guide"
             format="ditamap"/>
   
   <!-- ============================================ -->
   <!-- SECTION 4: TECHNICAL REFERENCE -->
   <!-- ============================================ -->
-  <topicref href="maps/c_reference.ditamap" 
+  <topicref href="[reference-map].ditamap" 
             navtitle="Technical Reference"
             format="ditamap"/>
   
   <!-- ============================================ -->
   <!-- SECTION 5: TROUBLESHOOTING -->
   <!-- ============================================ -->
-  <topicref href="maps/c_troubleshooting.ditamap" 
+  <topicref href="[troubleshooting-map].ditamap" 
             navtitle="Troubleshooting"
             format="ditamap"/>
   
   <!-- ============================================ -->
   <!-- SECTION 6: RELEASE INFORMATION -->
   <!-- ============================================ -->
-  <topicref href="topics/c_release_notes.dita" 
+  <topicref href="[release-notes-topic].dita" 
             navtitle="Release Notes"/>
   
   <!-- ============================================ -->
   <!-- SECTION 7: APPENDICES -->
   <!-- ============================================ -->
-  <topicref href="topics/r_glossary.dita" 
+  <topicref href="[glossary-topic].dita" 
             navtitle="Glossary"/>
-  <topicref href="topics/c_faq.dita" 
+  <topicref href="[faq-topic].dita" 
             navtitle="Frequently Asked Questions"/>
-  <topicref href="topics/c_support_contact.dita" 
+  <topicref href="[support-contact-topic].dita" 
             navtitle="Support & Contact Information"/>
 </map>

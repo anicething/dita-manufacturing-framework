@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE learningObject PUBLIC "-//OASIS//DTD DITA Learning Object//EN" "learningObject.dtd">
 <learningObject id="template-learning-module"
-                xml:lang="en-US"
-                domains="(topic learningObject)"
->
+                xml:lang="en-US">
   <title>Training Module: [Module Title]</title>
   <shortdesc>Complete training module covering [subject].</shortdesc>
   <prolog>
@@ -56,7 +54,7 @@
              Task‑style procedures, and Reference‑style data.</p>
           <fig>
             <title>Illustration</title>
-            <image href="illustration.png"/>
+            <image href="[illustration-file].png"/>
           </fig>
         </section>
         <section id="section-2">
@@ -88,15 +86,17 @@
           <learningAssessment id="template-assessment">
             <title>Knowledge Check</title>
             <learningAssessmentbody>
-              <lcQuestion>Question text?</lcQuestion>
-              <lcAnswerOption>
-                <lcAnswerContent>Correct answer</lcAnswerContent>
-                <lcFeedback>Explanation.</lcFeedback>
-              </lcAnswerOption>
-              <lcAnswerOption>
-                <lcAnswerContent>Distractor</lcAnswerContent>
-                <lcFeedback>Why this is incorrect.</lcFeedback>
-              </lcAnswerOption>
+              <lcSingleSelect>
+                <lcQuestion>Question text?</lcQuestion>
+                <lcAnswerOption>
+                  <lcAnswerContent>Correct answer</lcAnswerContent>
+                  <lcFeedback>Explanation.</lcFeedback>
+                </lcAnswerOption>
+                <lcAnswerOption>
+                  <lcAnswerContent>Distractor</lcAnswerContent>
+                  <lcFeedback>Why this is incorrect.</lcFeedback>
+                </lcAnswerOption>
+              </lcSingleSelect>
             </learningAssessmentbody>
           </learningAssessment>
         </assessments>

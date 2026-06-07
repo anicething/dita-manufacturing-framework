@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
-<reference id="r_template_reference">
+<reference id="r_template_reference" xml:lang="zh-CN">
   <title>模板：参考主题 — 请替换为主题名称</title>
+  <shortdesc>简要描述本参考主题包含的内容。用户为什么需要查阅此内容？</shortdesc>
   <prolog>
     <metadata>
       <!-- 必填：文档 ID -->
@@ -27,13 +28,6 @@
   </prolog>
 
   <refbody>
-    <!-- 简短描述 -->
-    <section>
-      <title>概述</title>
-      <p>简要描述本参考主题包含的内容。
-        用户为什么需要查阅此内容？</p>
-    </section>
-
     <!-- 用途 -->
     <section>
       <title>用途</title>
@@ -120,9 +114,9 @@ PARAM_2 = 75
     <section>
       <title>相关参考</title>
       <ul>
-        <li><xref href="r_other_reference.dita">相关参考主题</xref></li>
-        <li><xref href="c_concept.dita">相关概念：了解该功能</xref></li>
-        <li><xref href="t_procedure.dita">相关任务：如何配置</xref></li>
+        <li><xref href="[related-reference-topic].dita">相关参考主题</xref></li>
+        <li><xref href="[related-concept-topic].dita">相关概念：了解该功能</xref></li>
+        <li><xref href="[related-task-topic].dita">相关任务：如何配置</xref></li>
       </ul>
     </section>
   </refbody>

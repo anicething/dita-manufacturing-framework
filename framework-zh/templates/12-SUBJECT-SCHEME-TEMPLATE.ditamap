@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme//EN" "subjectScheme.dtd">
-<subjectScheme id="template-subject-scheme">
+<subjectScheme id="template-subject-scheme" xml:lang="zh-CN">
   <title>元数据受控值 — DITA 制造框架</title>
-  <shortdesc>定义框架中所有元数据属性的允许值，确保一致的过滤和报告。</shortdesc>
-
-  <!-- ===== 方案处理器 ===== -->
-  <schemehandler>
-    <topicref href="http://docs.oasis-open.org/dita/v1.3/authoritative/
-                    base-type/scheme.shell.ditamap"/>
-  </schemehandler>
+  <!-- ===== 方案引用 ===== -->
+  <schemeref href="http://docs.oasis-open.org/dita/v1.3/authoritative/base-type/scheme.shell.ditamap"/>
 
   <!-- ===== 读者/受众 ===== -->
   <hasInstance>

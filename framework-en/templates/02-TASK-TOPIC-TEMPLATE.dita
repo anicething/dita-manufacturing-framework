@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<task id="t_template_task">
+<task id="t_template_task" xml:lang="en-US">
   <title>TEMPLATE: How to Do Something - Replace This Title</title>
+  <shortdesc>This task explains how to accomplish a specific goal. Replace with your task description.</shortdesc>
   <prolog>
     <metadata>
       <!-- REQUIRED: Document ID -->
@@ -27,28 +28,22 @@
   </prolog>
   
   <taskbody>
-    <!-- SHORT DESCRIPTION: 1-2 sentences about what this task accomplishes -->
-    <shortdesc>This task explains how to accomplish a specific goal.
-      Replace with your task description.
-    </shortdesc>
-    
-    <!-- SECTION 1: Purpose -->
-    <section>
-      <title>About this task</title>
-      <p>Explain why and when users would perform this task.
-        Estimated time to complete: X minutes</p>
-    </section>
-    
-    <!-- SECTION 2: Prerequisites -->
+    <!-- SECTION 1: Prerequisites -->
     <prereq>
       <p>List anything users need before starting:</p>
       <ul>
         <li>Requirement 1</li>
         <li>Requirement 2</li>
-        <li>You have read: <xref href="c_concept_topic.dita">Concept Topic Name</xref></li>
+        <li>You have read: <xref href="[related-concept-topic].dita">Concept Topic Name</xref></li>
       </ul>
     </prereq>
-    
+
+    <!-- SECTION 2: Context -->
+    <context>
+      <p>Explain why and when users would perform this task.
+        Estimated time to complete: X minutes</p>
+    </context>
+
     <!-- SECTION 3: Step-by-Step Instructions -->
     <steps>
       <step>
@@ -84,11 +79,11 @@
       </ul>
       <p><b>Troubleshooting:</b></p>
       <ul>
-        <li>If X happens, try Y. See <xref href="t_troubleshoot.dita">Troubleshooting</xref>.</li>
+        <li>If X happens, try Y. See <xref href="[troubleshooting-topic].dita">Troubleshooting</xref>.</li>
       </ul>
       <p><b>Next steps:</b></p>
       <ul>
-        <li><xref href="t_next_task.dita">Next related task</xref></li>
+        <li><xref href="[next-task-topic].dita">Next related task</xref></li>
       </ul>
     </postreq>
   </taskbody>

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE troubleshooting PUBLIC "-//OASIS//DTD DITA Troubleshooting//EN" "troubleshooting.dtd">
 <troubleshooting id="template-troubleshooting"
-                xml:lang="en-US"
-                domains="(topic troubleshooting)
-                         (topic hi-d)
-                         (topic ut-d)"
->
+                xml:lang="en-US">
   <title>Troubleshooting: [Alarm Code / Symptom Title]</title>
   <shortdesc>Diagnose and resolve [brief description of the problem].</shortdesc>
   <prolog>
@@ -32,34 +28,56 @@
     </condition>
 
     <!-- ===== Cause 1 (most likely) ===== -->
-    <cause>
-      <p><b>Probable cause (XX%):</b> Brief description of the root cause.</p>
+    <troubleSolution>
+      <cause>
+        <p><b>Probable cause (XX%):</b> Brief description of the root cause.</p>
+      </cause>
       <remedy>
-        <cmd>The first step of the remedy.</cmd>
-        <info>Additional details, references to Task topics, or notes.</info>
-        <stepresult>What confirms this step worked.</stepresult>
+        <steps>
+          <step>
+            <cmd>The first step of the remedy.</cmd>
+            <info>Additional details, references to Task topics, or notes.</info>
+            <stepresult>What confirms this step worked.</stepresult>
+          </step>
+        </steps>
       </remedy>
       <remedy>
-        <cmd>Second step if the first didn't resolve.</cmd>
-        <info>Further detail or cross‑reference.</info>
+        <steps>
+          <step>
+            <cmd>Second step if the first didn't resolve.</cmd>
+            <info>Further detail or cross‑reference.</info>
+          </step>
+        </steps>
       </remedy>
-    </cause>
+    </troubleSolution>
 
     <!-- ===== Cause 2 (less likely) ===== -->
-    <cause>
-      <p><b>Probable cause (XX%):</b> Alternative root cause.</p>
+    <troubleSolution>
+      <cause>
+        <p><b>Probable cause (XX%):</b> Alternative root cause.</p>
+      </cause>
       <remedy>
-        <cmd>Remedy steps for this cause.</cmd>
-        <info>Supporting content.</info>
+        <steps>
+          <step>
+            <cmd>Remedy steps for this cause.</cmd>
+            <info>Supporting content.</info>
+          </step>
+        </steps>
       </remedy>
-    </cause>
+    </troubleSolution>
 
     <!-- ===== Cause 3 (rare) ===== -->
-    <cause>
-      <p><b>Probable cause (&lt; 5%):</b> Rare but documented cause.</p>
+    <troubleSolution>
+      <cause>
+        <p><b>Probable cause (&lt; 5%):</b> Rare but documented cause.</p>
+      </cause>
       <remedy>
-        <cmd>Remedy steps for this rare cause.</cmd>
+        <steps>
+          <step>
+            <cmd>Remedy steps for this rare cause.</cmd>
+          </step>
+        </steps>
       </remedy>
-    </cause>
+    </troubleSolution>
   </troublebody>
 </troubleshooting>

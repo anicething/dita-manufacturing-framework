@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossentry.dtd">
 <glossentry id="template-glossary-entry"
-            xml:lang="en-US"
-            domains="(topic glossentry)"
->
+            xml:lang="en-US">
   <glossterm>[Term Name]</glossterm>
   <glossdef>
     <p>A clear, concise definition of the term. Use one or two sentences.
@@ -19,15 +17,10 @@
     </metadata>
   </prolog>
 
-  <!-- Optional: alternative forms (acronym, abbreviation, surface form) -->
-  <glossAlternative>
-    <glossSurfaceForm>[Full surface form if needed]</glossSurfaceForm>
-    <glossAcronym>[ACRONYM]</glossAcronym>
-    <glossAbbreviation>[abbr.]</glossAbbreviation>
-  </glossAlternative>
-
-  <!-- Optional: related terms -->
-  <glossRelated>
-    <glossxref href="[related-term-file].dita"/>
-  </glossRelated>
+  <!-- Optional: related terms (add as separate glossary entries with cross-references) -->
+  <related-links>
+    <link href="[related-term-file].dita">
+      <linktext>[Related Term Name]</linktext>
+    </link>
+  </related-links>
 </glossentry>

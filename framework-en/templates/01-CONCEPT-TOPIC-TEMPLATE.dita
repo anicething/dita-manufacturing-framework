@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="c_template_concept">
+<topic id="c_template_concept" xml:lang="en-US">
   <title>TEMPLATE: Concept Topic - Replace This Title</title>
+  <shortdesc>Start with a clear, one or two sentence description of what this concept is. This is what appears in search results and help topics lists.</shortdesc>
   <prolog>
     <metadata>
       <!-- REQUIRED: Document ID -->
@@ -27,11 +28,7 @@
   </prolog>
   
   <body>
-    <!-- SECTION 1: Short Description (1-2 sentences) -->
-    <p>Start with a clear, one or two sentence description of what this concept is.
-      This is what appears in search results and help topics lists.</p>
-    
-    <!-- SECTION 2: Purpose/Background -->
+    <!-- SECTION 1: Purpose/Background -->
     <section>
       <title>Purpose</title>
       <p>Explain why this concept exists and why users need to understand it.
@@ -68,9 +65,9 @@
     <section>
       <title>Related topics</title>
       <ul>
-        <li><xref href="t_how_to_configure.dita">How to configure this feature</xref></li>
-        <li><xref href="r_reference_guide.dita">Reference: Configuration options</xref></li>
-        <li><xref href="t_troubleshoot.dita">Troubleshooting guide</xref></li>
+        <li><xref href="[related-task-topic].dita">How to configure this feature</xref></li>
+        <li><xref href="[related-reference-topic].dita">Reference: Configuration options</xref></li>
+        <li><xref href="[related-troubleshooting-topic].dita">Troubleshooting guide</xref></li>
       </ul>
     </section>
   </body>

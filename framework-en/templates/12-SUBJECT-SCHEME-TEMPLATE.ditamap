@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme//EN" "subjectScheme.dtd">
-<subjectScheme id="template-subject-scheme">
+<subjectScheme id="template-subject-scheme" xml:lang="en-US">
   <title>Metadata Controlled Values — DITA Manufacturing Framework</title>
-  <shortdesc>Defines the allowed values for all metadata attributes used
-             across the framework. Ensures consistent filtering and reporting.</shortdesc>
-
-  <!-- ===== SCHEME HANDLER ===== -->
-  <schemehandler>
-    <topicref href="http://docs.oasis-open.org/dita/v1.3/authoritative/
-                    base-type/scheme.shell.ditamap"/>
-  </schemehandler>
+  <!-- ===== SCHEME REFERENCE ===== -->
+  <schemeref href="http://docs.oasis-open.org/dita/v1.3/authoritative/base-type/scheme.shell.ditamap"/>
 
   <!-- ===== AUDIENCE ===== -->
   <hasInstance>

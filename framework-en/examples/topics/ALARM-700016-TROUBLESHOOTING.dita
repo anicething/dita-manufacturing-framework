@@ -49,7 +49,7 @@
         <info>If the filter element is visibly clogged with chips or
                sludge, proceed to clean it. If the element is damaged,
                replace it with a new one (P/N: F-0800-01-R).
-               See <xref href="../../topics/zh-CN/new-types/COOLANT-FILTER-TASK.dita">Coolant Filter Replacement Task</xref>.</info>
+               See <xref href="COOLANT-FILTER-TASK.dita">Coolant Filter Replacement Task</xref> (create this topic in the same directory).</info>
       </remedy>
       <remedy>
         <cmd>Reassemble the filter housing, close the hatch (key-lock engage),
