@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--
+  Task Requirements template — uses the task-requirements domain
+  The <taskrequirements> element sits inside <taskbody> before <steps>.
+  Requires: DITA-OT with task-requirements domain plugin.
+-->
+<task id="template-task-with-requirements"
+      xml:lang="en-US"
+      domains="(topic task)
+               (topic hi-d)
+               (topic pr-d)"
+>
+  <title>[Task Title: Verb + Object]</title>
+  <shortdesc>[One-sentence summary of the task].</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="maintenance" job="technician" experiencelevel="experienced"/>
+      <category>[Category]</category>
+      <prodinfo>
+        <prodname>[Product Name]</prodname>
+        <vrmlist>
+          <vrm version="X.X" release="X" modification="X"/>
+        </vrmlist>
+      </prodinfo>
+      <othermeta name="content-type" content="task"/>
+      <othermeta name="estimated-time" content="[minutes]"/>
+      <othermeta name="required-skill-level" content="[Level X]"/>
+    </metadata>
+  </prolog>
+  <taskbody>
+    <!-- ===== TASK REQUIREMENTS (structured prerequisites) ===== -->
+    <taskrequirements id="[task-id]-requirements">
+      <reqcond>
+        <personnel>
+          <skill level="[1-5]">Required skill level description</skill>
+          <certification>Required certification (if any)</certification>
+        </personnel>
+
+        <equipment>
+          <item>Tool or instrument name (P/N: XXX)</item>
+          <item>Additional tool (P/N: XXX)</item>
+        </equipment>
+
+        <parts>
+          <item>Consumable or replacement part (P/N: XXX)</item>
+        </parts>
+
+        <environment>
+          <temp min="[min°C]" max="[max°C]">Temperature range description</temp>
+          <humidity max="[%]">Humidity limit</humidity>
+          <cleanliness class="[ISO class]">Cleanliness requirement</cleanliness>
+        </environment>
+
+        <safety>
+          <hazardref href="[hazard-topic-id].dita">Required safety precaution</hazardref>
+        </safety>
+      </reqcond>
+    </taskrequirements>
+
+    <!-- ===== PREREQUISITES (prose) ===== -->
+    <prereq>
+      <p>Additional textual prerequisites and context.</p>
+    </prereq>
+
+    <!-- ===== STEPS ===== -->
+    <steps id="[task-id]-steps">
+      <step id="step-1">
+        <cmd>First action verb + object.</cmd>
+        <info>Supporting detail.</info>
+        <stepresult>Expected result of this step.</stepresult>
+      </step>
+      <step id="step-n">
+        <cmd>Final step.</cmd>
+      </step>
+    </steps>
+
+    <!-- ===== POST-REQUISITES ===== -->
+    <postreq>
+      <p>What to do after completing the task.</p>
+    </postreq>
+  </taskbody>
+</task>

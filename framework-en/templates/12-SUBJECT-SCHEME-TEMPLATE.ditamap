@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme//EN" "subjectScheme.dtd">
+<subjectScheme id="template-subject-scheme">
+  <title>Metadata Controlled Values — DITA Manufacturing Framework</title>
+  <shortdesc>Defines the allowed values for all metadata attributes used
+             across the framework. Ensures consistent filtering and reporting.</shortdesc>
+
+  <!-- ===== SCHEME HANDLER ===== -->
+  <schemehandler>
+    <topicref href="http://docs.oasis-open.org/dita/v1.3/authoritative/
+                    base-type/scheme.shell.ditamap"/>
+  </schemehandler>
+
+  <!-- ===== AUDIENCE ===== -->
+  <hasInstance>
+    <subjectdef keys="audience">
+      <subjectdef keys="operator">
+        <topicmeta><navtitle>Operator</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="maintenance">
+        <topicmeta><navtitle>Maintenance Technician</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="engineer">
+        <topicmeta><navtitle>Engineer</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="field-service">
+        <topicmeta><navtitle>Field Service</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="trainer">
+        <topicmeta><navtitle>Trainer</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="all">
+        <topicmeta><navtitle>All Audiences</navtitle></topicmeta>
+      </subjectdef>
+    </subjectdef>
+  </hasInstance>
+  <enumerationdef>
+    <attributedef name="audience"/>
+    <subjectdef keyref="audience"/>
+  </enumerationdef>
+
+  <!-- ===== CONTENT TYPE ===== -->
+  <hasInstance>
+    <subjectdef keys="content-type">
+      <subjectdef keys="concept">
+        <topicmeta><navtitle>Concept</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="task">
+        <topicmeta><navtitle>Task</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="reference">
+        <topicmeta><navtitle>Reference</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="troubleshooting">
+        <topicmeta><navtitle>Troubleshooting</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="glossary-entry">
+        <topicmeta><navtitle>Glossary Entry</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="hazard-statement">
+        <topicmeta><navtitle>Hazard Statement</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="task-requirements">
+        <topicmeta><navtitle>Task Requirements</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="learning-object">
+        <topicmeta><navtitle>Learning Object</navtitle></topicmeta>
+      </subjectdef>
+    </subjectdef>
+  </hasInstance>
+  <enumerationdef>
+    <attributedef name="content-type"/>
+    <subjectdef keyref="content-type"/>
+  </enumerationdef>
+
+  <!-- ===== DOCUMENT STATUS ===== -->
+  <hasInstance>
+    <subjectdef keys="document-status">
+      <subjectdef keys="draft">
+        <topicmeta><navtitle>Draft</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="review">
+        <topicmeta><navtitle>Under Review</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="approved">
+        <topicmeta><navtitle>Approved</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="published">
+        <topicmeta><navtitle>Published</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="archived">
+        <topicmeta><navtitle>Archived</navtitle></topicmeta>
+      </subjectdef>
+    </subjectdef>
+  </hasInstance>
+  <enumerationdef>
+    <attributedef name="document-status"/>
+    <subjectdef keyref="document-status"/>
+  </enumerationdef>
+
+  <!-- ===== PRODUCT ===== -->
+  <hasInstance>
+    <subjectdef keys="product">
+      <subjectdef keys="MC-5000">
+        <topicmeta><navtitle>MC-5000 VMC</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="MC-8000">
+        <topicmeta><navtitle>MC-8000 5-Axis</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="DR-2000">
+        <topicmeta><navtitle>DR-2000 High-Speed</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="common">
+        <topicmeta><navtitle>Shared / Common</navtitle></topicmeta>
+      </subjectdef>
+    </subjectdef>
+  </hasInstance>
+  <enumerationdef>
+    <attributedef name="product"/>
+    <subjectdef keyref="product"/>
+  </enumerationdef>
+
+  <!-- ===== HAZARD SEVERITY ===== -->
+  <hasInstance>
+    <subjectdef keys="hazard-severity">
+      <subjectdef keys="danger">
+        <topicmeta><navtitle>Danger — will cause death or serious injury</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="warning">
+        <topicmeta><navtitle>Warning — could cause death or serious injury</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="caution">
+        <topicmeta><navtitle>Caution — may cause minor or moderate injury</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="notice">
+        <topicmeta><navtitle>Notice — property damage only</navtitle></topicmeta>
+      </subjectdef>
+    </subjectdef>
+  </hasInstance>
+  <enumerationdef>
+    <attributedef name="hazard-severity"/>
+    <subjectdef keyref="hazard-severity"/>
+  </enumerationdef>
+
+  <!-- ===== SKILL LEVEL (Personnel) ===== -->
+  <hasInstance>
+    <subjectdef keys="skill-level">
+      <subjectdef keys="level-1">
+        <topicmeta><navtitle>Level 1 — Trainee (supervised only)</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="level-2">
+        <topicmeta><navtitle>Level 2 — Junior Technician</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="level-3">
+        <topicmeta><navtitle>Level 3 — Experienced Technician</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="level-4">
+        <topicmeta><navtitle>Level 4 — Senior Technician</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="level-5">
+        <topicmeta><navtitle>Level 5 — Master Technician / Engineer</navtitle></topicmeta>
+      </subjectdef>
+    </subjectdef>
+  </hasInstance>
+  <enumerationdef>
+    <attributedef name="skill-level"/>
+    <subjectdef keyref="skill-level"/>
+  </enumerationdef>
+
+  <!-- ===== LANGUAGE ===== -->
+  <hasInstance>
+    <subjectdef keys="language">
+      <subjectdef keys="en-US"><topicmeta><navtitle>English (US)</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="zh-CN"><topicmeta><navtitle>Chinese (Simplified)</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="de-DE"><topicmeta><navtitle>German</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="fr-FR"><topicmeta><navtitle>French</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="es-ES"><topicmeta><navtitle>Spanish</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="ja-JP"><topicmeta><navtitle>Japanese</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="ko-KR"><topicmeta><navtitle>Korean</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="pt-BR"><topicmeta><navtitle>Portuguese (Brazil)</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="it-IT"><topicmeta><navtitle>Italian</navtitle></topicmeta></subjectdef>
+    </subjectdef>
+  </hasInstance>
+  <enumerationdef>
+    <attributedef name="xml:lang"/>
+    <subjectdef keyref="language"/>
+  </enumerationdef>
+</subjectScheme>

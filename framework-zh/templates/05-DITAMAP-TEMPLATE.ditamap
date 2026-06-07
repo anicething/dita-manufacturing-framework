@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="master_map">
+  <!-- 图标题 -->
+  <title>产品 A 文档主图</title>
+
+  <!-- 图元数据 -->
+  <topicmeta>
+    <author>技术传播团队</author>
+    <publisher>Manufacturing Inc.</publisher>
+    <created date="2026-01-15"/>
+    <revised date="2026-06-06"/>
+    <data name="product" value="Product A"/>
+    <data name="version" value="2.1"/>
+  </topicmeta>
+
+  <!-- ============================================ -->
+  <!-- 第1节：入门指南 -->
+  <!-- ============================================ -->
+  <topicref href="maps/c_getting_started.ditamap"
+            navtitle="入门指南"
+            format="ditamap">
+    <topicmeta>
+      <navtitle>入门指南</navtitle>
+    </topicmeta>
+  </topicref>
+
+  <!-- ============================================ -->
+  <!-- 第2节：管理员指南 -->
+  <!-- ============================================ -->
+  <topicref href="maps/c_admin_guide.ditamap"
+            navtitle="管理员指南"
+            format="ditamap"/>
+
+  <!-- ============================================ -->
+  <!-- 第3节：用户指南 -->
+  <!-- ============================================ -->
+  <topicref href="maps/c_user_guide.ditamap"
+            navtitle="用户指南"
+            format="ditamap"/>
+
+  <!-- ============================================ -->
+  <!-- 第4节：技术参考 -->
+  <!-- ============================================ -->
+  <topicref href="maps/c_reference.ditamap"
+            navtitle="技术参考"
+            format="ditamap"/>
+
+  <!-- ============================================ -->
+  <!-- 第5节：故障排除 -->
+  <!-- ============================================ -->
+  <topicref href="maps/c_troubleshooting.ditamap"
+            navtitle="故障排除"
+            format="ditamap"/>
+
+  <!-- ============================================ -->
+  <!-- 第6节：发布信息 -->
+  <!-- ============================================ -->
+  <topicref href="topics/c_release_notes.dita"
+            navtitle="发行说明"/>
+
+  <!-- ============================================ -->
+  <!-- 第7节：附录 -->
+  <!-- ============================================ -->
+  <topicref href="topics/r_glossary.dita"
+            navtitle="术语表"/>
+  <topicref href="topics/c_faq.dita"
+            navtitle="常见问题解答"/>
+  <topicref href="topics/c_support_contact.dita"
+            navtitle="支持与联系信息"/>
+</map>

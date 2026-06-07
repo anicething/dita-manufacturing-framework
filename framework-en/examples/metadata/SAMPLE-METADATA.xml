@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <!-- Sample metadata block for MC-5000 topics -->
+  <!-- Reference: Framework / 02-ARCHITECTURE / 02-METADATA-SCHEMA.md -->
+
+  <!-- ===== Required Fields ===== -->
+  <othermeta name="document-id" content="MC5000-SAFETY-001"/>
+  <othermeta name="content-type" content="concept"/>
+  <othermeta name="document-status" content="approved"/>
+  <othermeta name="approval-date" content="2026-03-15"/>
+  <othermeta name="owner-department" content="Safety Engineering"/>
+  <othermeta name="owner-name" content="Chen Wei"/>
+  <othermeta name="language" content="en-US"/>
+  <othermeta name="product" content="MC-5000 VMC"/>
+  <othermeta name="version" content="2.1.A.3"/>
+
+  <!-- ===== Conditional Processing ===== -->
+  <othermeta name="audience-target" content="operator;maintenance"/>
+  <othermeta name="platform" content="MC-5000"/>
+  <othermeta name="revision" content="A"/>
+
+  <!-- ===== Reuse Metadata ===== -->
+  <othermeta name="reuse-target" content="50%"/>
+  <othermeta name="reuse-sources" content="MC5000-SAFETY-FRAMEWORK-CORE;MC5000-INTERLOCK-STANDARDS"/>
+  <othermeta name="is-reusable" content="true"/>
+
+  <!-- ===== Compliance Tracking ===== -->
+  <othermeta name="iso-standards" content="ISO 12100;ISO 13849-1;ISO 14120"/>
+  <othermeta name="compliance-audit-date" content="2026-06-01"/>
+  <othermeta name="compliance-status" content="passed"/>
+
+  <!-- ===== Localization ===== -->
+  <othermeta name="localization-priority" content="tier-1"/>
+  <othermeta name="localization-status" content="source-ready"/>
+  <othermeta name="translation-memory-id" content="TM-MC5000-SAFETY-001"/>
+  <othermeta name="word-count" content="850"/>
+
+  <!-- ===== Workflow Tracking ===== -->
+  <othermeta name="workflow-step" content="published"/>
+  <othermeta name="last-reviewed" content="2026-05-20"/>
+  <othermeta name="next-review" content="2026-08-20"/>
+  <othermeta name="reviewer" content="Zhang Li (Safety Lead)"/>
+  <othermeta name="approver" content="Wang Ming (Engineering Director)"/>
+</metadata>

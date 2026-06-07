@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!--
+  任务需求模板 — 使用任务需求领域
+  <taskrequirements> 元素位于 <taskbody> 内部，在 <steps> 之前。
+  要求：DITA-OT 需带有 task-requirements 领域插件。
+-->
+<task id="template-task-with-requirements"
+      xml:lang="zh-CN"
+      domains="(topic task)
+               (topic hi-d)
+               (topic pr-d)"
+>
+  <title>[任务标题：动词 + 宾语]</title>
+  <shortdesc>[一句话总结任务内容]。</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="maintenance" job="technician" experiencelevel="experienced"/>
+      <category>[类别]</category>
+      <prodinfo>
+        <prodname>[产品名称]</prodname>
+        <vrmlist>
+          <vrm version="X.X" release="X" modification="X"/>
+        </vrmlist>
+      </prodinfo>
+      <othermeta name="content-type" content="task"/>
+      <othermeta name="estimated-time" content="[分钟数]"/>
+      <othermeta name="required-skill-level" content="[技能等级 X]"/>
+    </metadata>
+  </prolog>
+  <taskbody>
+    <!-- ===== 任务需求（结构化前提条件） ===== -->
+    <taskrequirements id="[任务ID]-requirements">
+      <reqcond>
+        <personnel>
+          <skill level="[1-5]">所需技能等级描述</skill>
+          <certification>所需认证（如有）</certification>
+        </personnel>
+
+        <equipment>
+          <item>工具或仪器名称（P/N: XXX）</item>
+          <item>附加工具（P/N: XXX）</item>
+        </equipment>
+
+        <parts>
+          <item>耗材或替换零件（P/N: XXX）</item>
+        </parts>
+
+        <environment>
+          <temp min="[最低°C]" max="[最高°C]">温度范围描述</temp>
+          <humidity max="[%]">湿度上限</humidity>
+          <cleanliness class="[ISO 等级]">洁净度要求</cleanliness>
+        </environment>
+
+        <safety>
+          <hazardref href="[危险主题ID].dita">所需安全预防措施</hazardref>
+        </safety>
+      </reqcond>
+    </taskrequirements>
+
+    <!-- ===== 前提条件（文字描述） ===== -->
+    <prereq>
+      <p>附加的文字性前提条件和背景信息。</p>
+    </prereq>
+
+    <!-- ===== 步骤 ===== -->
+    <steps id="[任务ID]-steps">
+      <step id="step-1">
+        <cmd>第一步动作动词 + 宾语。</cmd>
+        <info>辅助详细信息。</info>
+        <stepresult>此步骤的预期结果。</stepresult>
+      </step>
+      <step id="step-n">
+        <cmd>最后一步。</cmd>
+      </step>
+    </steps>
+
+    <!-- ===== 后续要求 ===== -->
+    <postreq>
+      <p>完成此任务后需要做什么。</p>
+    </postreq>
+  </taskbody>
+</task>

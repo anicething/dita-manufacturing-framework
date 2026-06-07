@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="company-variables-zh">
+  <title>公司信息（中文）</title>
+  <conbody>
+    <p id="company-fullname">示例制造有限公司</p>
+    <p id="company-address">台湾新竹科学园区创新路123号</p>
+    <p id="company-phone">+886-3-578-1234</p>
+    <p id="company-fax">+886-3-578-5678</p>
+    <p id="company-email">info@examplecorp.com</p>
+    <p id="company-website">www.examplecorp.com</p>
+    <p id="company-registration">统一编号：12345678</p>
+  </conbody>
+</concept>

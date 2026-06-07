@@ -1,96 +1,25 @@
 # Contributing to DITA Manufacturing Framework
 
-## Overview
+The DITA Manufacturing Framework provides governance and authoring documentation in two language versions:
 
-This framework is designed to be customized and improved for your organization. We welcome contributions that enhance the governance, architecture, templates, or training materials.
+- **English (source):** [`framework-en/CONTRIBUTING.md`](framework-en/CONTRIBUTING.md)
+- **简体中文:** [`framework-zh/CONTRIBUTING.md`](framework-zh/CONTRIBUTING.md)
 
-## Types of Contributions
+Please refer to the language-specific contributing guide above for the complete contribution workflow, branch strategy, review criteria, and communication channels.
 
-### Documentation Improvements
-- Fix typos or unclear explanations
-- Add examples or clarifications
-- Improve organization or structure
-- Update outdated information
+---
 
-### Template Enhancements
-- Improve DITA templates
-- Add new template types
-- Optimize metadata schemas
-- Create new example maps
+## Quick Overview
 
-### Process Improvements
-- Suggest workflow enhancements
-- Improve approval processes
-- Add new quality checks
-- Optimize publishing pipeline
+1. **Review** the relevant framework documentation to understand the current state
+2. **Create** a feature branch following the naming convention in the language-specific guide
+3. **Make** your changes following the framework's style and standards
+4. **Submit** a pull request with a clear description and rationale
+5. **Obtain** approval per the Change Authority Matrix
+6. **Merge** after approval
 
-### Additions
-- New training materials
-- Tool setup guides
-- Industry-specific customizations
-- Additional language support
+All contributions are subject to review for alignment with framework goals, ISO compliance, multi-product impact, and consistency with existing standards.
 
-## How to Contribute
+---
 
-### 1. Create a Feature Branch
-```bash
-git checkout -b feature/your-improvement
-```
-
-### 2. Make Your Changes
-- Follow the existing documentation style
-- Use consistent formatting
-- Include relevant metadata
-- Test changes if applicable
-
-### 3. Commit Your Changes
-```bash
-git commit -m "Brief description of improvement"
-```
-
-### 4. Submit a Pull Request
-- Provide clear description of changes
-- Reference related documents
-- Highlight benefits
-- Note any compatibility issues
-
-### 5. Review Process
-- Architecture team reviews for consistency
-- DGC may review for governance impact
-- Changes merged after approval
-
-## Style Guidelines
-
-### Markdown
-- Use consistent heading levels
-- Include table of contents for long documents
-- Use code blocks for XML/DITA examples
-- Link to related documents
-
-### DITA
-- Follow OASIS DITA standards
-- Include all required metadata
-- Use conrefs for shared content
-- Validate XML syntax
-
-### Metadata
-- Update Document ID if changing document
-- Update Version number
-- Include Last Updated date
-- Note Status (Draft/Approved)
-
-## Review Criteria
-
-All contributions will be reviewed for:
-- ✅ Alignment with framework goals
-- ✅ ISO compliance implications
-- ✅ Impact on multiple products
-- ✅ Clarity and completeness
-- ✅ Consistency with existing standards
-- ✅ No sensitive information
-
-## Questions?
-
-Contact the Documentation Governance Committee or open an issue in the repository.
-
-Thank you for improving our DITA framework!
+**License:** MIT — see [LICENSE](LICENSE) for details.

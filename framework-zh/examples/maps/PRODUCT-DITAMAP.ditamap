@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="dr5000-product-documentation-zh"
+     xml:lang="zh-CN"
+     domains="(map mapgroup-d)"
+     title="MC-5000 立式加工中心 — 产品文档"
+>
+  <topicmeta>
+    <navtitle>MC-5000 系列文档</navtitle>
+    <shortdesc>MC-5000 立式加工中心完整文档集，涵盖安全、操作、维护和技术参考。</shortdesc>
+    <prodinfo>
+      <prodname>MC-5000 立式加工中心</prodname>
+      <vrmlist>
+        <vrm version="2.1" release="A" modification="3"/>
+      </vrmlist>
+    </prodinfo>
+    <audience type="operator" job="operation" experiencelevel="all"/>
+    <audience type="maintenance" job="technician" experiencelevel="experienced"/>
+    <audience type="engineer" job="applications" experiencelevel="all"/>
+  </topicmeta>
+
+  <frontmatter>
+    <bookmeta>
+      <author>示例制造 文档团队</author>
+      <publisher>示例制造有限公司</publisher>
+      <copyright>
+        <copyryear year="2026"/>
+        <copyrholder>示例制造有限公司</copyrholder>
+      </copyright>
+      <prodinfo>
+        <prodname>MC-5000 立式加工中心</prodname>
+        <vrmlist>
+          <vrm version="2.1" release="A" modification="3"/>
+        </vrmlist>
+      </prodinfo>
+    </bookmeta>
+  </frontmatter>
+
+  <!-- ===== 第一章：安全 ===== -->
+  <chapter id="safety-zh" navtitle="安全">
+    <topicref href="../../topics/zh-CN/MC5000-SAFETY-CONCEPT.dita" navtitle="安全系统概述">
+      <topicref href="../../topics/zh-CN/MC5000-EMERGENCY-STOP.dita" navtitle="急停操作流程" processing-role="resource-only">
+        <topicmeta>
+          <shortdesc>待编写 — 安全工程部门审核中</shortdesc>
+        </topicmeta>
+      </topicref>
+    </topicref>
+  </chapter>
+
+  <!-- ===== 第二章：维护 ===== -->
+  <chapter id="maintenance-zh" navtitle="维护">
+    <topicref href="../../topics/zh-CN/SPINDLE-ALIGNMENT-TASK.dita" navtitle="主轴激光校准"/>
+    <topicref href="../../topics/zh-CN/MC5000-LUBRICATION.dita" navtitle="润滑周期表" processing-role="resource-only">
+      <topicmeta>
+        <shortdesc>待编写 — 计划于 2026 年第三季度完成</shortdesc>
+      </topicmeta>
+    </topicref>
+  </chapter>
+
+  <!-- ===== 第三章：技术参考 ===== -->
+  <chapter id="specifications-zh" navtitle="技术参考">
+    <topicref href="../../topics/zh-CN/MC5000-SPECS-REFERENCE.dita" navtitle="技术规格"/>
+  </chapter>
+
+  <!-- ===== 第四章：操作 ===== -->
+  <chapter id="operations-zh" navtitle="操作">
+    <topicref href="../../topics/zh-CN/MC5000-BASIC-OPERATION.dita" navtitle="基本操作" processing-role="resource-only">
+      <topicmeta>
+        <shortdesc>待编写 — 计划于推广第 4 个月完成</shortdesc>
+      </topicmeta>
+    </topicref>
+  </chapter>
+
+  <!-- ===== 附录 ===== -->
+  <backmatter>
+    <topicref href="../../topics/zh-CN/MC5000-MAINTENANCE-LOG.dita" navtitle="维护日志模板">
+      <topicmeta>
+        <navtitle>附录A：维护日志模板</navtitle>
+      </topicmeta>
+    </topicref>
+  </backmatter>
+
+  <!-- ===== 关系表（交叉引用） ===== -->
+  <reltable id="cross-references-zh">
+    <relheader>
+      <relcolspec type="concept" label="概念"/>
+      <relcolspec type="task" label="操作步骤"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref href="../../topics/zh-CN/MC5000-SAFETY-CONCEPT.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="../../topics/zh-CN/SPINDLE-ALIGNMENT-TASK.dita"/>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>

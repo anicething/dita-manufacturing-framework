@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="dr5000-safety-system-zh"
+         xml:lang="zh-CN"
+         domains="(topic concept)
+                  (topic hi-d)
+                  (topic ut-d)"
+>
+  <title>MC-5000 安全系统概述</title>
+  <shortdesc>MC-5000 立式加工中心采用三层安全架构，在自动和手动操作过程中保护操作人员、设备和工作不受伤害。</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="operator" job="maintenance" experiencelevel="experienced"/>
+      <category>安全</category>
+      <category>系统架构</category>
+      <prodinfo>
+        <prodname>MC-5000 立式加工中心</prodname>
+        <vrmlist>
+          <vrm version="2.1" release="A" modification="3"/>
+        </vrmlist>
+      </prodinfo>
+      <othermeta name="content-type" content="concept"/>
+      <othermeta name="reuse-target" content="50%"/>
+      <othermeta name="iso-standards" content="GB/T 15706, GB/T 16855.1, GB/T 19876"/>
+    </metadata>
+  </prolog>
+  <conbody>
+    <section id="architecture-overview-zh">
+      <title>安全架构</title>
+      <p>MC-5000 安全系统采用<b>三层安全架构</b>，符合 GB/T 16855.1（ISO 13849-1 等效标准）和 GB/T 15706 的要求：</p>
+      <dl>
+        <dlentry>
+          <dt>第一层 — 物理防护</dt>
+          <dd>互锁门、光幕、急停按钮和切屑防护罩。在操作人员与危险运动之间提供主要屏障。</dd>
+        </dlentry>
+        <dlentry>
+          <dt>第二层 — 控制系统</dt>
+          <dd>西门子 SINUMERIK ONE 安全集成 PLC，采用双通道冗余 I/O。实时监控门状态、主轴负载、轴定位和冷却液流量。</dd>
+        </dlentry>
+        <dlentry>
+          <dt>第三层 — 软件监控</dt>
+          <dd>实时诊断、安全速度监控、安全扭矩关断（STO）和安全制动控制（SBC）。所有安全功能符合 GB/T 16855.1 Category 3 / PLd 要求。</dd>
+        </dlentry>
+      </dl>
+    </section>
+    <section id="safety-interlocks-zh">
+      <title>安全互锁区域</title>
+      <p>MC-5000 定义了四个互锁区域，每个区域在触发时具有特定的响应行为：</p>
+      <simpletable id="interlock-table-zh" relcolwidth="0.20 0.35 0.25 0.20">
+        <sthead>
+          <stentry>区域</stentry>
+          <stentry>覆盖范围</stentry>
+          <stentry>触发动作</stentry>
+          <stentry>复位方式</stentry>
+        </sthead>
+        <strow>
+          <stentry>区域 1</stentry>
+          <stentry>主门和侧窗</stentry>
+          <stentry>主轴立即停止 + 轴保持</stentry>
+          <stentry>HMI 手动复位</stentry>
+        </strow>
+        <strow>
+          <stentry>区域 2</stentry>
+          <stentry>上料区光幕</stentry>
+          <stentry>轴快速减速（≤ 50 ms）</stentry>
+          <stentry>遮挡消除后自动复位</stentry>
+        </strow>
+        <strow>
+          <stentry>区域 3</stentry>
+          <stentry>排屑器检修门</stentry>
+          <stentry>排屑器电机断电</stentry>
+          <stentry>现场手动复位</stentry>
+        </strow>
+        <strow>
+          <stentry>区域 4</stentry>
+          <stentry>冷却液箱检修口</stentry>
+          <stentry>冷却液泵关闭 + 挂牌锁定</stentry>
+          <stentry>钥匙锁定复位</stentry>
+        </strow>
+      </simpletable>
+    </section>
+    <section id="compliance-zh">
+      <title>法规符合性</title>
+      <p>MC-5000 安全系统已通过以下标准的认证：</p>
+      <ul>
+        <li><b>GB/T 15706</b> — 机械安全 设计通则 风险评估与风险降低</li>
+        <li><b>GB/T 16855.1</b> — 机械安全 控制系统安全相关部件（Category 3, PLd）</li>
+        <li><b>GB/T 19876</b> — 机械安全 防护装置的定位</li>
+        <li><b>GB/T 17454.1</b> — 压敏防护装置</li>
+        <li><b>GB 5226.1</b> — 机械电气安全</li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

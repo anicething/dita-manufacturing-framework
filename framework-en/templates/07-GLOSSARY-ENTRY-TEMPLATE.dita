@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossentry.dtd">
+<glossentry id="template-glossary-entry"
+            xml:lang="en-US"
+            domains="(topic glossentry)"
+>
+  <glossterm>[Term Name]</glossterm>
+  <glossdef>
+    <p>A clear, concise definition of the term. Use one or two sentences.
+       Include domain context if the term has multiple meanings.</p>
+  </glossdef>
+  <prolog>
+    <metadata>
+      <audience type="all"/>
+      <category>Glossary</category>
+      <othermeta name="content-type" content="glossary-entry"/>
+      <othermeta name="glossary-domain" content="[safety|technical|commercial|legal]"/>
+      <othermeta name="translatable" content="yes"/>
+    </metadata>
+  </prolog>
+
+  <!-- Optional: alternative forms (acronym, abbreviation, surface form) -->
+  <glossAlternative>
+    <glossSurfaceForm>[Full surface form if needed]</glossSurfaceForm>
+    <glossAcronym>[ACRONYM]</glossAcronym>
+    <glossAbbreviation>[abbr.]</glossAbbreviation>
+  </glossAlternative>
+
+  <!-- Optional: related terms -->
+  <glossRelated>
+    <glossxref href="[related-term-file].dita"/>
+  </glossRelated>
+</glossentry>

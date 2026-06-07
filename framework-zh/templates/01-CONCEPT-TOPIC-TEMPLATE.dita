@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="c_template_concept">
+  <title>模板：概念主题 - 请替换此标题</title>
+  <prolog>
+    <metadata>
+      <!-- 必填：文档 ID -->
+      <data name="docid" value="DOC-PROD-XXX-v1.0"/>
+
+      <!-- 必填：分类信息 -->
+      <data name="product" value="Product A"/>
+      <data name="product-version" value="1.0+"/>
+      <data name="audience" value="admin|user|developer|executive"/>
+      <data name="status" value="draft"/>
+
+      <!-- 必填：审核信息 -->
+      <data name="created-date" value="2026-01-15"/>
+      <data name="revised-date" value="2026-06-06"/>
+      <data name="author" value="Your Name"/>
+      <data name="reviewed-by" value="Reviewer Name"/>
+      <data name="review-frequency" value="quarterly"/>
+
+      <!-- 必填：合规信息 -->
+      <data name="security-level" value="public"/>
+      <data name="translatable" value="yes"/>
+    </metadata>
+  </prolog>
+
+  <body>
+    <!-- 第1节：简短描述（1-2句话） -->
+    <p>用一两句清晰的话描述这个概念是什么。
+      这会出现在搜索结果和帮助主题列表中。</p>
+
+    <!-- 第2节：目的/背景 -->
+    <section>
+      <title>目的</title>
+      <p>解释这个概念为什么存在，以及用户为什么需要了解它。
+        回答这个问题：「我为什么要关心这个？」
+      </p>
+    </section>
+
+    <!-- 第3节：核心概念 -->
+    <section>
+      <title>核心概念</title>
+      <p>将主要思想分解为项目符号列表：</p>
+      <ul>
+        <li>第一个概念 — 简要说明</li>
+        <li>第二个概念 — 简要说明</li>
+        <li>第三个概念 — 简要说明</li>
+      </ul>
+    </section>
+
+    <!-- 第4节：工作原理 -->
+    <section>
+      <title>工作原理</title>
+      <p>用简单易懂的语言解释机制或过程。
+        必要时可使用类比来帮助理解。</p>
+    </section>
+
+    <!-- 第5节：示例 -->
+    <section>
+      <title>示例</title>
+      <p>提供 1-2 个说明该概念的真实案例。
+        制造业相关的示例效果最好。</p>
+    </section>
+
+    <!-- 第6节：相关主题 -->
+    <section>
+      <title>相关主题</title>
+      <ul>
+        <li><xref href="t_how_to_configure.dita">如何配置此功能</xref></li>
+        <li><xref href="r_reference_guide.dita">参考：配置选项</xref></li>
+        <li><xref href="t_troubleshoot.dita">故障排除指南</xref></li>
+      </ul>
+    </section>
+  </body>
+</topic>

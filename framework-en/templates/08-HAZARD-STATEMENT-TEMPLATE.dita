@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--
+  Hazard Statement template — uses Machine Industry Domain elements
+  Requires: DITA-OT with machine-industry plugin
+  Domain:   (topic hi-d) for hazard statement domain
+-->
+<reference id="template-hazard-statement"
+            xml:lang="en-US"
+            domains="(topic reference)
+                     (topic hi-d)"
+>
+  <title>Hazard: [Hazard Name]</title>
+  <shortdesc>Safety hazard identification and mitigation for [specific scenario].</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="operator" job="all" experiencelevel="all"/>
+      <category>Safety</category>
+      <category>Hazard</category>
+      <prodinfo>
+        <prodname>[Product Name]</prodname>
+      </prodinfo>
+      <othermeta name="content-type" content="hazard-reference"/>
+      <othermeta name="hazard-type" content="[mechanical|electrical|thermal|chemical|cryogenic|pressure|radiation]"/>
+      <othermeta name="iso-reference" content="[ISO standard number]"/>
+      <othermeta name="severity" content="[danger|warning|caution|notice]"/>
+    </metadata>
+  </prolog>
+  <refbody>
+    <!-- Primary hazard statement — rendered as a safety box in output -->
+    <section id="primary-statement">
+      <title>Safety Warning</title>
+      <p hazard="">
+        <hazardstatement type="[danger|warning|caution|notice]">
+          <messagepanel>
+            <typeofhazard>[Type of hazard — e.g., "Flying Chips"]</typeofhazard>
+            <consequence>[What happens if not avoided — e.g., "Severe eye injury"]</consequence>
+            <howtoavoid>[How to avoid — e.g., "Wear safety glasses with side shields"]</howtoavoid>
+          </messagepanel>
+          <hazardsymbol href="[hazard-icon-filename].svg"/>
+        </hazardstatement>
+      </p>
+    </section>
+
+    <!-- Detailed description -->
+    <section id="description">
+      <title>Hazard Description</title>
+      <p>Describe when and where this hazard occurs during normal operation,
+         maintenance, or service. Include relevant machine states.</p>
+    </section>
+
+    <!-- Risk assessment -->
+    <section id="risk-assessment">
+      <title>Risk Assessment</title>
+      <simpletable id="risk-table" relcolwidth="0.20 0.15 0.15 0.15 0.35">
+        <sthead>
+          <stentry>Scenario</stentry>
+          <stentry>Severity</stentry>
+          <stentry>Probability</stentry>
+          <stentry>Risk Level</stentry>
+          <stentry>Mitigation</stentry>
+        </sthead>
+        <strow>
+          <stentry>[e.g., Door open while spindle running]</stentry>
+          <stentry>[S1-S4]</stentry>
+          <stentry>[P1-P5]</stentry>
+          <stentry>[low|medium|high|critical]</stentry>
+          <stentry>Interlock system + training</stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <!-- Applicable standards -->
+    <section id="standards">
+      <title>Applicable Standards</title>
+      <ul>
+        <li>ISO 12100:2010 — Risk assessment</li>
+        <li>[Additional standards]</li>
+      </ul>
+    </section>
+  </refbody>
+</reference>

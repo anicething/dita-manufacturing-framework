@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!--
+  危险声明模板 — 使用机器工业领域元素
+  要求：DITA-OT 需带有 machine-industry 插件
+  领域：(topic hi-d) 用于危险声明领域
+-->
+<reference id="template-hazard-statement"
+            xml:lang="zh-CN"
+            domains="(topic reference)
+                     (topic hi-d)"
+>
+  <title>危险：[危险名称]</title>
+  <shortdesc>针对[特定场景]的安全危险识别与缓解措施。</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="operator" job="all" experiencelevel="all"/>
+      <category>安全</category>
+      <category>危险</category>
+      <prodinfo>
+        <prodname>[产品名称]</prodname>
+      </prodinfo>
+      <othermeta name="content-type" content="hazard-reference"/>
+      <othermeta name="hazard-type" content="[mechanical|electrical|thermal|chemical|cryogenic|pressure|radiation]"/>
+      <othermeta name="iso-reference" content="[ISO 标准编号]"/>
+      <othermeta name="severity" content="[danger|warning|caution|notice]"/>
+    </metadata>
+  </prolog>
+  <refbody>
+    <!-- 主要危险声明 — 在输出中渲染为安全提示框 -->
+    <section id="primary-statement">
+      <title>安全警告</title>
+      <p hazard="">
+        <hazardstatement type="[danger|warning|caution|notice]">
+          <messagepanel>
+            <typeofhazard>[危险类型 — 例如「飞溅碎屑」]</typeofhazard>
+            <consequence>[如果未能避免的后果 — 例如「严重眼部伤害」]</consequence>
+            <howtoavoid>[如何避免 — 例如「佩戴带侧护罩的安全眼镜」]</howtoavoid>
+          </messagepanel>
+          <hazardsymbol href="[危险图标文件名].svg"/>
+        </hazardstatement>
+      </p>
+    </section>
+
+    <!-- 详细描述 -->
+    <section id="description">
+      <title>危险描述</title>
+      <p>描述此危险在正常运行、维护或维修过程中何时何地发生。
+         包含相关的机床状态。</p>
+    </section>
+
+    <!-- 风险评估 -->
+    <section id="risk-assessment">
+      <title>风险评估</title>
+      <simpletable id="risk-table" relcolwidth="0.20 0.15 0.15 0.15 0.35">
+        <sthead>
+          <stentry>场景</stentry>
+          <stentry>严重性</stentry>
+          <stentry>概率</stentry>
+          <stentry>风险等级</stentry>
+          <stentry>缓解措施</stentry>
+        </sthead>
+        <strow>
+          <stentry>[例如：主轴运转时门打开]</stentry>
+          <stentry>[S1-S4]</stentry>
+          <stentry>[P1-P5]</stentry>
+          <stentry>[low|medium|high|critical]</stentry>
+          <stentry>联锁系统 + 培训</stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <!-- 适用标准 -->
+    <section id="standards">
+      <title>适用标准</title>
+      <ul>
+        <li>ISO 12100:2010 — 风险评估</li>
+        <li>[其他标准]</li>
+      </ul>
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE learningObject PUBLIC "-//OASIS//DTD DITA Learning Object//EN" "learningObject.dtd">
+<learningObject id="template-learning-module"
+                xml:lang="zh-CN"
+                domains="(topic learningObject)"
+>
+  <title>培训模块：[模块标题]</title>
+  <shortdesc>涵盖[主题]的完整培训模块。</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="operator" job="training" experiencelevel="novice"/>
+      <category>培训</category>
+      <othermeta name="content-type" content="learning-object"/>
+      <othermeta name="duration" content="[小时] 小时"/>
+      <othermeta name="module-type" content="[课堂培训|在线学习|混合教学]"/>
+      <othermeta name="certification-relevant" content="[是|否]"/>
+    </metadata>
+  </prolog>
+  <learningObjectbody>
+    <!-- ===== 学习概览：目标、前提条件、时长 ===== -->
+    <learningOverview id="template-overview">
+      <title>[模块标题] — 概述</title>
+      <learningOverviewbody>
+        <prereqs>
+          <ul>
+            <li>已完成[前置模块]</li>
+            <li>[其他前提条件]</li>
+          </ul>
+        </prereqs>
+        <objectives>
+          <ul>
+            <li>目标 1 — 学员将能够完成</li>
+            <li>目标 2</li>
+            <li>目标 3</li>
+          </ul>
+        </objectives>
+        <duration>
+          <learningTime type="instructorLed">
+            <value>X</value>
+            <unit>小时</unit>
+          </learningTime>
+        </duration>
+        <audience experience="[初级|中级|高级]">
+          <job>技术员</job>
+        </audience>
+      </learningOverviewbody>
+    </learningOverview>
+
+    <!-- ===== 学习内容：核心教学主体 ===== -->
+    <learningContent id="template-content">
+      <title>[模块标题] — 内容</title>
+      <learningContentbody>
+        <section id="section-1">
+          <title>主题 1：[科目]</title>
+          <p>核心教学文本。可包含概念类说明、任务类操作流程和参考类数据。</p>
+          <fig>
+            <title>示意图</title>
+            <image href="illustration.png"/>
+          </fig>
+        </section>
+        <section id="section-2">
+          <title>主题 2：[科目]</title>
+          <p>其他内容。</p>
+        </section>
+        <!-- ===== 实践/练习 ===== -->
+        <learningPractice id="template-practice">
+          <title>动手练习</title>
+          <learningPracticebody>
+            <p>学员练习说明。</p>
+          </learningPracticebody>
+        </learningPractice>
+      </learningContentbody>
+    </learningContent>
+
+    <!-- ===== 学习总结：回顾与评估 ===== -->
+    <learningSummary id="template-summary">
+      <title>[模块标题] — 总结</title>
+      <learningSummarybody>
+        <summary>
+          <ul>
+            <li>关键要点 1</li>
+            <li>关键要点 2</li>
+          </ul>
+        </summary>
+        <glossref href="[术语文件].dita"/>
+        <assessments>
+          <learningAssessment id="template-assessment">
+            <title>知识检查</title>
+            <learningAssessmentbody>
+              <lcQuestion>问题内容？</lcQuestion>
+              <lcAnswerOption>
+                <lcAnswerContent>正确答案</lcAnswerContent>
+                <lcFeedback>解释说明。</lcFeedback>
+              </lcAnswerOption>
+              <lcAnswerOption>
+                <lcAnswerContent>干扰项</lcAnswerContent>
+                <lcFeedback>为何错误。</lcFeedback>
+              </lcAnswerOption>
+            </learningAssessmentbody>
+          </learningAssessment>
+        </assessments>
+        <nextsteps>
+          <p>继续学习[下一个模块]。</p>
+        </nextsteps>
+      </learningSummarybody>
+    </learningSummary>
+  </learningObjectbody>
+</learningObject>

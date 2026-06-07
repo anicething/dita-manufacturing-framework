@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="dr5000-technical-specifications"
+           xml:lang="en-US"
+           domains="(topic reference)
+                    (topic hi-d)
+                    (topic ut-d)"
+>
+  <title>MC-5000 Vertical Machining Center Technical Specifications</title>
+  <shortdesc>Complete technical specifications for the MC-5000 VMC, including spindle, axis travel, table capacity, and utility requirements.</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="engineer" job="applications" experiencelevel="all"/>
+      <audience type="maintenance" job="technician" experiencelevel="experienced"/>
+      <category>Specifications</category>
+      <category>Technical Reference</category>
+      <prodinfo>
+        <prodname>MC-5000 VMC</prodname>
+        <vrmlist>
+          <vrm version="2.1" release="A" modification="3"/>
+        </vrmlist>
+      </prodinfo>
+      <othermeta name="content-type" content="reference"/>
+      <othermeta name="reuse-target" content="80%"/>
+      <othermeta name="document-status" content="approved"/>
+      <othermeta name="approval-date" content="2026-03-15"/>
+    </metadata>
+  </prolog>
+  <refbody>
+    <!-- ===================== SPINDLE ===================== -->
+    <section id="spindle-specifications">
+      <title>Spindle Specifications</title>
+      <simpletable id="spindle-table" relcolwidth="0.35 0.25 0.40">
+        <sthead>
+          <stentry>Parameter</stentry>
+          <stentry>Value</stentry>
+          <stentry>Notes</stentry>
+        </sthead>
+        <strow>
+          <stentry>Spindle taper</stentry>
+          <stentry>BT40 / CAT40</stentry>
+          <stentry>DIN 69871 / ANSI B5.50</stentry>
+        </strow>
+        <strow>
+          <stentry>Max. spindle speed</stentry>
+          <stentry>12,000 RPM</stentry>
+          <stentry>Optional: 15,000 RPM (high-speed package)</stentry>
+        </strow>
+        <strow>
+          <stentry>Spindle motor power (S1)</stentry>
+          <stentry>15 kW (20 HP)</stentry>
+          <stentry>Continuous duty rating</stentry>
+        </strow>
+        <strow>
+          <stentry>Spindle motor power (S6-40%)</stentry>
+          <stentry>22 kW (29.5 HP)</stentry>
+          <stentry>Intermittent duty, 40% duty cycle</stentry>
+        </strow>
+        <strow>
+          <stentry>Max. torque (S1)</stentry>
+          <stentry>120 Nm</stentry>
+          <stentry>At 1,500 RPM base speed</stentry>
+        </strow>
+        <strow>
+          <stentry>Cooling method</stentry>
+          <stentry>Oil-air lubrication + jacket cooling</stentry>
+          <stentry>Ambient temp ≤ 40°C</stentry>
+        </strow>
+        <strow>
+          <stentry>Spindle bearing type</stentry>
+          <stentry>Hybrid ceramic ball bearings</stentry>
+          <stentry>Front: 2x angular contact, Rear: 1x cylindrical roller</stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <!-- ===================== AXIS TRAVEL ===================== -->
+    <section id="axis-travel">
+      <title>Axis Travel &amp; Feed Rates</title>
+      <simpletable id="axis-table" relcolwidth="0.25 0.15 0.15 0.15 0.30">
+        <sthead>
+          <stentry>Axis</stentry>
+          <stentry>Travel (mm)</stentry>
+          <stentry>Rapid Traverse</stentry>
+          <stentry>Cutting Feed</stentry>
+          <stentry>Drive System</stentry>
+        </sthead>
+        <strow>
+          <stentry>X-axis</stentry>
+          <stentry>800</stentry>
+          <stentry>36 m/min</stentry>
+          <stentry>1 – 12,000 mm/min</stentry>
+          <stentry>Direct-drive ball screw (40 mm dia.)</stentry>
+        </strow>
+        <strow>
+          <stentry>Y-axis</stentry>
+          <stentry>550</stentry>
+          <stentry>36 m/min</stentry>
+          <stentry>1 – 12,000 mm/min</stentry>
+          <stentry>Direct-drive ball screw (40 mm dia.)</stentry>
+        </strow>
+        <strow>
+          <stentry>Z-axis</stentry>
+          <stentry>550</stentry>
+          <stentry>30 m/min</stentry>
+          <stentry>1 – 10,000 mm/min</stentry>
+          <stentry>Direct-drive ball screw (40 mm dia.) with brake</stentry>
+        </strow>
+        <strow>
+          <stentry>B-axis (optional)</stentry>
+          <stentry>±120°</stentry>
+          <stentry>25 RPM</stentry>
+          <stentry>N/A</stentry>
+          <stentry>Direct-drive torque motor</stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <!-- ===================== WORKTABLE ===================== -->
+    <section id="worktable-specs">
+      <title>Worktable</title>
+      <simpletable id="worktable-table" relcolwidth="0.35 0.25 0.40">
+        <sthead>
+          <stentry>Parameter</stentry>
+          <stentry>Value</stentry>
+          <stentry>Notes</stentry>
+        </sthead>
+        <strow>
+          <stentry>Table size (L × W)</stentry>
+          <stentry>1,000 mm × 550 mm</stentry>
+          <stentry></stentry>
+        </strow>
+        <strow>
+          <stentry>Max. table load</stentry>
+          <stentry>800 kg</stentry>
+          <stentry>Uniformly distributed load</stentry>
+        </strow>
+        <strow>
+          <stentry>T-slot size</stentry>
+          <stentry>18H7 × 5 slots × 100 mm pitch</stentry>
+          <stentry>DIN 650 standard</stentry>
+        </strow>
+        <strow>
+          <stentry>Distance spindle nose to table</stentry>
+          <stentry>150 – 700 mm</stentry>
+          <stentry>Adjustable range</stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <!-- ===================== TOOL CHANGER ===================== -->
+    <section id="atc-specs">
+      <title>Automatic Tool Changer (ATC)</title>
+      <simpletable id="atc-table" relcolwidth="0.35 0.25 0.40">
+        <sthead>
+          <stentry>Parameter</stentry>
+          <stentry>Value</stentry>
+          <stentry>Notes</stentry>
+        </sthead>
+        <strow>
+          <stentry>Tool magazine capacity</stentry>
+          <stentry>24 tools</stentry>
+          <stentry>Optional: 30 tools (swing-arm type)</stentry>
+        </strow>
+        <strow>
+          <stentry>Max. tool diameter (adjacent empty)</stentry>
+          <stentry>80 mm (150 mm)</stentry>
+          <stentry>With adjacent pockets empty</stentry>
+        </strow>
+        <strow>
+          <stentry>Max. tool length</stentry>
+          <stentry>300 mm</stentry>
+          <stentry></stentry>
+        </strow>
+        <strow>
+          <stentry>Max. tool weight</stentry>
+          <stentry>8 kg</stentry>
+          <stentry></stentry>
+        </strow>
+        <strow>
+          <stentry>Tool change time (chip-to-chip)</stentry>
+          <stentry>3.5 seconds</stentry>
+          <stentry></stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <!-- ===================== ACCURACY ===================== -->
+    <section id="accuracy-specs">
+      <title>Positioning Accuracy (ISO 230-2)</title>
+      <simpletable id="accuracy-table" relcolwidth="0.35 0.25 0.40">
+        <sthead>
+          <stentry>Parameter</stentry>
+          <stentry>Value</stentry>
+          <stentry>Standard</stentry>
+        </sthead>
+        <strow>
+          <stentry>Positioning accuracy</stentry>
+          <stentry>±5 μm</stentry>
+          <stentry>ISO 230-2 (VDI/DGQ 3441)</stentry>
+        </strow>
+        <strow>
+          <stentry>Repeatability</stentry>
+          <stentry>±2 μm</stentry>
+          <stentry>ISO 230-2</stentry>
+        </strow>
+        <strow>
+          <stentry>Spindle run-out (at taper)</stentry>
+          <stentry>≤ 3 μm</stentry>
+          <stentry>ISO 230-7</stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <!-- ===================== UTILITY ===================== -->
+    <section id="utility-requirements">
+      <title>Utility Requirements</title>
+      <simpletable id="utility-table" relcolwidth="0.35 0.25 0.40">
+        <sthead>
+          <stentry>Parameter</stentry>
+          <stentry>Value</stentry>
+          <stentry>Notes</stentry>
+        </sthead>
+        <strow>
+          <stentry>Power supply</stentry>
+          <stentry>380 V / 3-phase / 50 Hz</stentry>
+          <stentry>Optional: 480 V / 60 Hz</stentry>
+        </strow>
+        <strow>
+          <stentry>Total connected load</stentry>
+          <stentry>35 kVA</stentry>
+          <stentry></stentry>
+        </strow>
+        <strow>
+          <stentry>Compressed air pressure</stentry>
+          <stentry>0.5 – 0.7 MPa</stentry>
+          <stentry>Dry, oil-free air</stentry>
+        </strow>
+        <strow>
+          <stentry>Compressed air consumption</stentry>
+          <stentry>120 L/min (at 0.6 MPa)</stentry>
+          <stentry></stentry>
+        </strow>
+        <strow>
+          <stentry>Coolant tank capacity</stentry>
+          <stentry>300 L</stentry>
+          <stentry>Water-soluble coolant</stentry>
+        </strow>
+        <strow>
+          <stentry>Machine footprint (L × W × H)</stentry>
+          <stentry>2,800 × 2,400 × 2,800 mm</stentry>
+          <stentry>Includes chip conveyor</stentry>
+        </strow>
+        <strow>
+          <stentry>Machine weight</stentry>
+          <stentry>6,500 kg</stentry>
+          <stentry>Net weight</stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <!-- ===================== OPTIONS ===================== -->
+    <section id="available-options">
+      <title>Factory Options</title>
+      <sl>
+        <sli>High-speed spindle package (15,000 RPM)</sli>
+        <sli>30-tool swing-arm ATC</li>
+        <sli>B-axis rotary table (nC-axis, ±120°)</li>
+        <sli>Chip flush system (through-spindle coolant at 70 bar)</li>
+        <sli>Renishaw OMP40-2 touch probe</li>
+        <sli>Tool breakage detection system</li>
+        <sli>Mist collector (electrostatic type)</li>
+        <sli>Automated door with interlock</li>
+      </sl>
+    </section>
+  </refbody>
+</reference>

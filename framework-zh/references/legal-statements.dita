@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="legal-statements">
+  <title>Legal Statements / 法律声明</title>
+  <shortdesc>Centralized legal boilerplate for all product documentation.</shortdesc>
+  <prolog>
+    <metadata>
+      <publisher>
+        <keyword keyref="company-name"/>
+      </publisher>
+    </metadata>
+  </prolog>
+  <refbody>
+    <!-- ===================== ENGLISH ===================== -->
+    <section id="copyright-en">
+      <title>Copyright Notice (English)</title>
+      <p id="copyright-en-text">Copyright © <keyword keyref="copyright-year"/>
+        <keyword keyref="company-name"/>. All rights reserved.</p>
+      <p id="rights-en-text">No part of this document may be reproduced, transmitted,
+        or stored in a retrieval system without prior written permission from
+        <keyword keyref="company-name"/>.</p>
+    </section>
+
+    <section id="disclaimer-en">
+      <title>Disclaimer (English)</title>
+      <p id="disclaimer-en-text"><keyword keyref="company-name"/> makes no warranty,
+        express or implied, regarding the accuracy, completeness, or suitability
+        of the information in this document. Specifications are subject to change
+        without notice.</p>
+    </section>
+
+    <section id="trademark-en">
+      <title>Trademark Notice (English)</title>
+      <p id="trademark-en-text"><keyword keyref="company-short"/> and the
+        <keyword keyref="company-short"/> logo are trademarks of
+        <keyword keyref="company-name"/>. All other trademarks are the property
+        of their respective owners.</p>
+    </section>
+
+    <!-- ===================== CHINESE ===================== -->
+    <section id="copyright-zh">
+      <title>版权声明（中文）</title>
+      <p id="copyright-zh-text">版权所有 © <keyword keyref="copyright-year"/>
+        <keyword keyref="company-legal-zh"/>。保留所有权利。</p>
+      <p id="rights-zh-text">未经 <keyword keyref="company-legal-zh"/>
+        事先书面许可，不得以任何形式复制、传播或存储本文档的任何部分。</p>
+    </section>
+
+    <section id="disclaimer-zh">
+      <title>免责声明（中文）</title>
+      <p id="disclaimer-zh-text"><keyword keyref="company-legal-zh"/> 对本文档中
+        信息的准确性、完整性或适用性不作任何明示或暗示的保证。规格如有变更，恕不另行通知。</p>
+    </section>
+
+    <section id="trademark-zh">
+      <title>商标声明（中文）</title>
+      <p id="trademark-zh-text"><keyword keyref="company-legal-zh"/> 及其徽标
+        是 <keyword keyref="company-legal-zh"/> 的商标。所有其他商标均为其各自所有者财产。</p>
+    </section>
+  </refbody>
+</reference>

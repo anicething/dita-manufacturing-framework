@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme//EN" "subjectScheme.dtd">
+<subjectScheme id="template-subject-scheme">
+  <title>元数据受控值 — DITA 制造框架</title>
+  <shortdesc>定义框架中所有元数据属性的允许值，确保一致的过滤和报告。</shortdesc>
+
+  <!-- ===== 方案处理器 ===== -->
+  <schemehandler>
+    <topicref href="http://docs.oasis-open.org/dita/v1.3/authoritative/
+                    base-type/scheme.shell.ditamap"/>
+  </schemehandler>
+
+  <!-- ===== 读者/受众 ===== -->
+  <hasInstance>
+    <subjectdef keys="audience">
+      <subjectdef keys="operator">
+        <topicmeta><navtitle>操作员</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="maintenance">
+        <topicmeta><navtitle>维护技术员</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="engineer">
+        <topicmeta><navtitle>工程师</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="field-service">
+        <topicmeta><navtitle>现场服务</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="trainer">
+        <topicmeta><navtitle>培训师</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="all">
+        <topicmeta><navtitle>所有读者</navtitle></topicmeta>
+      </subjectdef>
+    </subjectdef>
+  </hasInstance>
+  <enumerationdef>
+    <attributedef name="audience"/>
+    <subjectdef keyref="audience"/>
+  </enumerationdef>
+
+  <!-- ===== 内容类型 ===== -->
+  <hasInstance>
+    <subjectdef keys="content-type">
+      <subjectdef keys="concept">
+        <topicmeta><navtitle>概念</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="task">
+        <topicmeta><navtitle>任务</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="reference">
+        <topicmeta><navtitle>参考</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="troubleshooting">
+        <topicmeta><navtitle>故障排查</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="glossary-entry">
+        <topicmeta><navtitle>术语条目</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="hazard-statement">
+        <topicmeta><navtitle>危险声明</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="task-requirements">
+        <topicmeta><navtitle>任务前提条件</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="learning-object">
+        <topicmeta><navtitle>学习对象</navtitle></topicmeta>
+      </subjectdef>
+    </subjectdef>
+  </hasInstance>
+  <enumerationdef>
+    <attributedef name="content-type"/>
+    <subjectdef keyref="content-type"/>
+  </enumerationdef>
+
+  <!-- ===== 文档状态 ===== -->
+  <hasInstance>
+    <subjectdef keys="document-status">
+      <subjectdef keys="draft">
+        <topicmeta><navtitle>草稿</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="review">
+        <topicmeta><navtitle>审核中</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="approved">
+        <topicmeta><navtitle>已批准</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="published">
+        <topicmeta><navtitle>已发布</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="archived">
+        <topicmeta><navtitle>已归档</navtitle></topicmeta>
+      </subjectdef>
+    </subjectdef>
+  </hasInstance>
+  <enumerationdef>
+    <attributedef name="document-status"/>
+    <subjectdef keyref="document-status"/>
+  </enumerationdef>
+
+  <!-- ===== 产品 ===== -->
+  <hasInstance>
+    <subjectdef keys="product">
+      <subjectdef keys="MC-5000">
+        <topicmeta><navtitle>MC-5000 立式加工中心</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="MC-8000">
+        <topicmeta><navtitle>MC-8000 五轴加工中心</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="DR-2000">
+        <topicmeta><navtitle>DR-2000 高速雕铣机</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="common">
+        <topicmeta><navtitle>共享/通用</navtitle></topicmeta>
+      </subjectdef>
+    </subjectdef>
+  </hasInstance>
+  <enumerationdef>
+    <attributedef name="product"/>
+    <subjectdef keyref="product"/>
+  </enumerationdef>
+
+  <!-- ===== 危害严重性 ===== -->
+  <hasInstance>
+    <subjectdef keys="hazard-severity">
+      <subjectdef keys="danger">
+        <topicmeta><navtitle>危险 — 将导致死亡或严重伤害</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="warning">
+        <topicmeta><navtitle>警告 — 可能导致死亡或严重伤害</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="caution">
+        <topicmeta><navtitle>注意 — 可能导致轻微或中度伤害</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="notice">
+        <topicmeta><navtitle>提示 — 仅造成财产损失</navtitle></topicmeta>
+      </subjectdef>
+    </subjectdef>
+  </hasInstance>
+  <enumerationdef>
+    <attributedef name="hazard-severity"/>
+    <subjectdef keyref="hazard-severity"/>
+  </enumerationdef>
+
+  <!-- ===== 技能等级（人员） ===== -->
+  <hasInstance>
+    <subjectdef keys="skill-level">
+      <subjectdef keys="level-1">
+        <topicmeta><navtitle>1 级 — 实习生（需监督）</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="level-2">
+        <topicmeta><navtitle>2 级 — 初级技术员</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="level-3">
+        <topicmeta><navtitle>3 级 — 有经验技术员</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="level-4">
+        <topicmeta><navtitle>4 级 — 高级技术员</navtitle></topicmeta>
+      </subjectdef>
+      <subjectdef keys="level-5">
+        <topicmeta><navtitle>5 级 — 专家技术员/工程师</navtitle></topicmeta>
+      </subjectdef>
+    </subjectdef>
+  </hasInstance>
+  <enumerationdef>
+    <attributedef name="skill-level"/>
+    <subjectdef keyref="skill-level"/>
+  </enumerationdef>
+
+  <!-- ===== 语言 ===== -->
+  <hasInstance>
+    <subjectdef keys="language">
+      <subjectdef keys="en-US"><topicmeta><navtitle>英语（美国）</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="zh-CN"><topicmeta><navtitle>简体中文</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="de-DE"><topicmeta><navtitle>德语</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="fr-FR"><topicmeta><navtitle>法语</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="es-ES"><topicmeta><navtitle>西班牙语</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="ja-JP"><topicmeta><navtitle>日语</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="ko-KR"><topicmeta><navtitle>韩语</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="pt-BR"><topicmeta><navtitle>葡萄牙语（巴西）</navtitle></topicmeta></subjectdef>
+      <subjectdef keys="it-IT"><topicmeta><navtitle>意大利语</navtitle></topicmeta></subjectdef>
+    </subjectdef>
+  </hasInstance>
+  <enumerationdef>
+    <attributedef name="xml:lang"/>
+    <subjectdef keyref="language"/>
+  </enumerationdef>
+</subjectScheme>

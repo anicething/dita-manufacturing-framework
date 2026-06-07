@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="hazard-flying-chips"
+            xml:lang="en-US"
+            domains="(topic reference)
+                     (topic hi-d)">
+  <title>Hazard: Flying Chips During Machining</title>
+  <shortdesc>Hot, sharp metal chips ejected at high velocity during
+             cutting operations pose eye and skin injury risks.</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="operator" job="all" experiencelevel="all"/>
+      <category>Safety</category>
+      <category>Hazard</category>
+      <prodinfo>
+        <prodname>MC-5000 VMC</prodname>
+        <vrmlist>
+          <vrm version="2.1" release="A" modification="3"/>
+        </vrmlist>
+      </prodinfo>
+      <othermeta name="content-type" content="hazard-statement"/>
+      <othermeta name="hazard-type" content="mechanical"/>
+      <othermeta name="severity" content="caution"/>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section id="primary-statement">
+      <title>Safety Warning</title>
+      <p hazard="">
+        <hazardstatement type="caution">
+          <messagepanel>
+            <typeofhazard>Flying chips and cutting debris</typeofhazard>
+            <consequence>Severe eye injury or skin laceration</consequence>
+            <howtoavoid>
+              Always wear safety glasses with side shields when the
+              machine door is open or during chip clearing. Keep the
+              machine door closed during all cutting operations.
+            </howtoavoid>
+          </messagepanel>
+        </hazardstatement>
+      </p>
+    </section>
+
+    <section id="description">
+      <title>Hazard Description</title>
+      <p>During milling, drilling, and tapping operations on the
+         MC-5000 VMC, cutting tools generate metal chips that are
+         ejected at velocities up to <b>30 m/s</b>. These chips are:</p>
+      <ul>
+        <li><b>Sharp</b> — can penetrate skin and cause lacerations</li>
+        <li><b>Hot</b> — can reach 200–400°C immediately after cutting</li>
+        <li><b>Projectile</b> — can bounce off shields and reach the operator</li>
+      </ul>
+      <p>The primary risk period is during chip clearing and
+         part inspection when the door may be briefly opened.</p>
+    </section>
+
+    <section id="risk-assessment">
+      <title>Risk Assessment (ISO 12100)</title>
+      <simpletable id="risk-table" relcolwidth="0.25 0.15 0.15 0.15 0.30">
+        <sthead>
+          <stentry>Scenario</stentry>
+          <stentry>Severity</stentry>
+          <stentry>Probability</stentry>
+          <stentry>Risk Level</stentry>
+          <stentry>Mitigation</stentry>
+        </sthead>
+        <strow>
+          <stentry>Door open while spindle running</stentry>
+          <stentry>S2 (Serious)</stentry>
+          <stentry>P1 (Unlikely)</stentry>
+          <stentry>Low</stentry>
+          <stentry>Interlock stops spindle if door opens</stentry>
+        </strow>
+        <strow>
+          <stentry>Manual chip clearing with door open</stentry>
+          <stentry>S2 (Serious)</stentry>
+          <stentry>P3 (Occasional)</stentry>
+          <stentry>Medium</stentry>
+          <stentry>PPE + interlock + chip guard</stentry>
+        </strow>
+        <strow>
+          <stentry>Chip bouncing from conveyor</stentry>
+          <stentry>S1 (Minor)</stentry>
+          <stentry>P2 (Rare)</stentry>
+          <stentry>Low</stentry>
+          <stentry>Conveyor cover + PPE</stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <section id="controls">
+      <title>Required Controls</title>
+      <ul>
+        <li>Machine interlock system (Zone 1 door) — automatically stops
+            spindle if door is opened</li>
+        <li>PPE: ANSI Z87.1 rated safety glasses with side shields</li>
+        <li>PPE: Cut-resistant gloves during chip handling</li>
+        <li>Machine chip guard at the door bottom (height: 150 mm)</li>
+      </ul>
+    </section>
+
+    <section id="standards">
+      <title>Applicable Standards</title>
+      <ul>
+        <li>ISO 12100:2010 — Risk assessment and risk reduction</li>
+        <li>ISO 13849-1 — Safety-related parts of control systems</li>
+        <li>ISO 14120 — Guards (interlocking devices)</li>
+        <li>ANSI Z87.1 — Occupational and educational eye protection</li>
+      </ul>
+    </section>
+  </refbody>
+</reference>

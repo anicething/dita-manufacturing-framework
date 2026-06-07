@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="spindle-alignment-procedure"
+      xml:lang="en-US"
+      domains="(topic task)
+               (topic hi-d)
+               (topic ut-d)"
+>
+  <title>Aligning the MC-5000 Spindle Using Laser Calibration</title>
+  <shortdesc>Perform precision spindle alignment on the MC-5000 VMC using the Haimer Ziegler laser alignment system to ensure concentricity within ±3 μm.</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="maintenance" job="technician" experiencelevel="experienced"/>
+      <category>Maintenance</category>
+      <category>Calibration</category>
+      <prodinfo>
+        <prodname>MC-5000 VMC</prodname>
+        <vrmlist>
+          <vrm version="2.1" release="A" modification="3"/>
+        </vrmlist>
+      </prodinfo>
+      <othermeta name="content-type" content="task"/>
+      <othermeta name="maintenance-interval" content="Every 1,000 operating hours"/>
+      <othermeta name="required-skill-level" content="Level 3 Technician"/>
+      <othermeta name="estimated-time" content="45 minutes"/>
+      <othermeta name="related-safety-topic" content="dr5000-safety-system"/>
+    </metadata>
+  </prolog>
+  <taskbody>
+    <prereq>
+      <p>Before starting the alignment procedure:</p>
+      <ul>
+        <li>Ensure the machine is in <b>Maintenance Mode</b> (key switch position M).</li>
+        <li>Verify the machine has been cooled down for at least 30 minutes after last operation.</li>
+        <li>Confirm all safety interlocks (see <xref href="MC5000-SAFETY-CONCEPT.dita"/>.
+        <li>Prepare the following tools:
+          <ul>
+            <li>Haimer Ziegler laser alignment kit (P/N: HZ-5000-KIT)</li>
+            <li>Torque wrench (5–50 Nm, calibrated)</li>
+            <li>Cleaning solvent and lint-free wipes</li>
+            <li>Dial indicator with magnetic base (resolution: 1 μm)</li>
+          </ul>
+        </li>
+        <li>Review the machine's maintenance log for previous alignment history.</li>
+      </ul>
+    </prereq>
+    <steps id="alignment-steps">
+      <step id="prepare-machine">
+        <cmd>Prepare the machine for alignment.</cmd>
+        <info>
+          <ol>
+            <li>Power off the main disconnect switch and lockout/tagout (LOTO).</li>
+            <li>Open the front door and clean the spindle taper using solvent and lint-free wipes.</li>
+            <li>Inspect the spindle taper for nicks, scoring, or wear. Do not proceed if damage is visible.</li>
+            <li>Mount the laser emitter (HZ-5000-EMIT) into the spindle taper and tighten by hand.</li>
+          </ol>
+        </info>
+        <stepresult>The machine is prepared and the laser emitter is seated in the spindle taper.</stepresult>
+      </step>
+      <step id="mount-target">
+        <cmd>Mount the laser target assembly on the worktable.</cmd>
+        <info>
+          <ol>
+            <li>Clean the worktable T-slot surface.</li>
+            <li>Mount the HZ-5000-TARGET bracket using two M16 T-nuts at position X=200, Y=150.</li>
+            <li>Align the target face perpendicular to the spindle axis using the built-in bubble level.</li>
+            <li>Tighten the bracket bolts to 35 Nm using the torque wrench.</li>
+          </ol>
+        </info>
+        <stepresult>The laser target is rigidly mounted on the worktable.</stepresult>
+      </step>
+      <step id="perform-alignment">
+        <cmd>Perform the laser alignment measurement.</cmd>
+        <info>
+          <ol>
+            <li>Power on the machine and enter Maintenance Mode at the HMI.</li>
+            <li>Navigate to <menucascade><uicontrol>Diagnostics</uicontrol><uicontrol>Spindle</uicontrol><uicontrol>Laser Alignment</uicontrol></menucascade>.</li>
+            <li>Rotate the spindle manually to 0 degrees reference position.</li>
+            <li>On the HZ-5000 controller, press <uicontrol>Start Measurement</uicontrol>.</li>
+            <li>Read the displayed X and Y offset values on the controller screen.</li>
+          </ol>
+        </info>
+        <stepresult>The laser alignment controller displays the spindle offset in both X and Y axes.</stepresult>
+      </step>
+      <step id="adjust-spindle">
+        <cmd>Adjust the spindle head based on measurement results.</cmd>
+        <info>
+          <p>Interpret the measurement results:</p>
+          <simpletable id="adjustment-table" relcolwidth="0.25 0.25 0.50">
+            <sthead>
+              <stentry>Offset Value</stentry>
+              <stentry>Status</stentry>
+              <stentry>Action</stentry>
+            </sthead>
+            <strow>
+              <stentry>≤ ±3 μm</stentry>
+              <stentry>Within spec</stentry>
+              <stentry>No adjustment needed. Proceed to final verification.</stentry>
+            </strow>
+            <strow>
+              <stentry>±3 to ±10 μm</stentry>
+              <stentry>Minor misalignment</stentry>
+              <stentry>Slight adjustment recommended using fine-adjustment screws (1/4 turn increments).</stentry>
+            </strow>
+            <strow>
+              <stentry>> ±10 μm</stentry>
+              <stentry>Major misalignment</stentry>
+              <stentry>Full mechanical alignment required. Refer to <xref href="MC5000-MAINTENANCE-MANUAL.dita#spindle-realignment"/>.</stentry>
+            </strow>
+          </simpletable>
+          <note type="caution">Never exceed 1/2 turn on any single adjustment screw without repeating the measurement. Overtightening can strain the spindle housing.</note>
+        </info>
+        <stepresult>The spindle head is adjusted to within the tolerance range.</stepresult>
+      </step>
+      <step id="verify">
+        <cmd>Verify the alignment.</cmd>
+        <info>
+          <ol>
+            <li>Repeat the laser measurement (Step 3) to confirm X and Y offsets.</li>
+            <li>Record the final offset values in the maintenance log (HMI: <menucascade><uicontrol>Maintenance</uicontrol><uicontrol>Log</uicontrol><uicontrol>Spindle Alignment</uicontrol></menucascade>).</li>
+            <li>Remove the laser emitter and target assembly.</li>
+            <li>Perform a 5-minute test run at 3,000 RPM, monitoring spindle vibration (< 0.5 mm/s RMS).</li>
+          </ol>
+        </info>
+        <stepresult>Alignment is verified and recorded in the system.</stepresult>
+      </step>
+    </steps>
+    <postreq>
+      <p>After completing the alignment:</p>
+      <ul>
+        <li>Close and tag the maintenance log entry.</li>
+        <li>Return the Haimer Ziegler kit to the tool crib (verify all components present).</li>
+        <li>If the next scheduled maintenance is within 50 hours, proceed to perform the <xref href="#spindle-alignment-procedure/lubricate-ball-screws">ball screw lubrication</xref> procedure.</li>
+      </ul>
+    </postreq>
+  </taskbody>
+</task>

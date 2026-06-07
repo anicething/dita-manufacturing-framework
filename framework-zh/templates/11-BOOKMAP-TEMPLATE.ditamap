@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id="template-bookmap"
+         xml:lang="zh-CN"
+         title="[产品名称] — [文档类型]"
+>
+  <booktitle>
+    <mainbooktitle>[产品名称] [文档类型]</mainbooktitle>
+    <booktitlealt>版本 X.X — [版本信息]</booktitlealt>
+    <navtitle>[简短导航标题]</navtitle>
+  </booktitle>
+
+  <bookmeta>
+    <author>示例文档团队</author>
+    <publisher>示例制造有限公司</publisher>
+    <copyright>
+      <copyryear year="2026"/>
+      <copyrholder>示例制造有限公司</copyrholder>
+    </copyright>
+    <bookid>
+      <booknumber>DOC-[产品]-[编号]-[语言]</booknumber>
+      <edition>X.X</edition>
+    </bookid>
+    <critdates>
+      <created date="2026-01-15"/>
+      <revised date="2026-06-01"/>
+    </critdates>
+    <prodinfo>
+      <prodname>[产品名称]</prodname>
+      <vrmlist>
+        <vrm version="X.X" release="X" modification="X"/>
+      </vrmlist>
+    </prodinfo>
+  </bookmeta>
+
+  <!-- ===== 前页 ===== -->
+  <frontmatter>
+    <booklists>
+      <toc/>
+      <figurelist/>
+      <tablelist/>
+      <abbrevlist/>
+    </booklists>
+    <notices/>
+    <preface href="[前言主题].dita">
+      <topicmeta><navtitle>前言</navtitle></topicmeta>
+    </preface>
+  </frontmatter>
+
+  <!-- ===== 章节 ===== -->
+  <chapter id="ch-safety" navtitle="安全">
+    <topicref href="[安全概述].dita" navtitle="安全概述"/>
+    <topicref href="[危险声明].dita" navtitle="危险声明"/>
+  </chapter>
+
+  <chapter id="ch-installation" navtitle="安装">
+    <topicref href="[安装概述].dita" navtitle="安装概述"/>
+    <topicref href="[拆箱任务].dita" navtitle="拆箱"/>
+    <topicref href="[安装调试任务].dita" navtitle="安装与调试"/>
+  </chapter>
+
+  <chapter id="ch-operation" navtitle="操作">
+    <topicref href="[操作概述].dita" navtitle="操作概述"/>
+    <topicref href="[日常检查任务].dita" navtitle="日常检查"/>
+  </chapter>
+
+  <chapter id="ch-maintenance" navtitle="维护">
+    <topicref href="[维护概述].dita" navtitle="维护概述"/>
+    <topicref href="[主轴校准任务].dita" navtitle="主轴校准"/>
+  </chapter>
+
+  <chapter id="ch-troubleshooting" navtitle="故障排查">
+    <topicref href="[报警代码参考].dita" navtitle="报警代码参考"/>
+    <topicref href="[常见问题].dita" navtitle="常见问题"/>
+  </chapter>
+
+  <!-- ===== 后页 ===== -->
+  <backmatter>
+    <appendix id="app-specs" navtitle="技术规格">
+      <topicref href="[规格参考].dita"/>
+    </appendix>
+    <appendix id="app-glossary" navtitle="术语表">
+      <topicref href="[术语地图].ditamap"/>
+    </appendix>
+    <amendments/>
+    <indexlist/>
+  </backmatter>
+</bookmap>

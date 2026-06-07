@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE metadata PUBLIC "-//OASIS//DTD DITA Metadata//EN" "metadata.dtd">
+<!--
+  Metadata Template (T4)
+  Copy this block into any topic's <prolog> section.
+  Replace all bracketed [placeholders] with your values.
+  All values must come from the Subject Scheme (see framework/).
+-->
+<metadata>
+  <!-- === DOCUMENT IDENTIFICATION === -->
+  <data name="docid" value="[DOC-PROD-NNN-vX.Y]"/>
+  <data name="internal-id" value="[topic-id]"/>
+
+  <!-- === CLASSIFICATION === -->
+  <data name="product" value="[MC-5000|MC-8000|DR-2000|common]"/>
+  <data name="product-version" value="[X.X+]"/>
+  <data name="audience" value="[operator|maintenance|engineer|field-service|trainer|all]"/>
+  <data name="topic-type" value="[concept|task|reference|troubleshooting|glossary-entry|hazard-statement|task-requirements|learning-object]"/>
+
+  <!-- === COMPLIANCE & STATUS === -->
+  <data name="status" value="[draft|review|approved|published|archived]"/>
+  <data name="security-level" value="[public|internal|confidential]"/>
+  <data name="iso-relevant" value="[yes|no]"/>
+
+  <!-- === REVIEW & MAINTENANCE === -->
+  <data name="created-date" value="[YYYY-MM-DD]"/>
+  <data name="revised-date" value="[YYYY-MM-DD]"/>
+  <data name="author" value="[Author Name]"/>
+  <data name="reviewed-by" value="[Reviewer Name]"/>
+  <data name="next-review-date" value="[YYYY-MM-DD]"/>
+  <data name="review-frequency" value="[quarterly|biannual|annual]"/>
+
+  <!-- === LOCALIZATION === -->
+  <data name="translatable" value="[yes|no]"/>
+  <data name="translation-status" value="[original|translated]"/>
+  <data name="language" value="[en-US|zh-CN|de-DE|fr-FR|es-ES|ja-JP|ko-KR|pt-BR|it-IT]"/>
+</metadata>

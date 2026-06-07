@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE troubleshooting PUBLIC "-//OASIS//DTD DITA Troubleshooting//EN" "troubleshooting.dtd">
+<troubleshooting id="alarm-700016-troubleshooting"
+                xml:lang="en-US"
+                domains="(topic troubleshooting)
+                         (topic hi-d)"
+>
+  <title>Troubleshooting: Coolant Pressure Low (Alarm 700016)</title>
+  <shortdesc>Diagnose and resolve MC-5000 alarm 700016, which indicates coolant
+             pressure has dropped below the 0.3 MPa threshold.</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="maintenance" job="technician" experiencelevel="experienced"/>
+      <category>Troubleshooting</category>
+      <prodinfo>
+        <prodname>MC-5000 VMC</prodname>
+        <vrmlist>
+          <vrm version="2.1" release="A" modification="3"/>
+        </vrmlist>
+      </prodinfo>
+      <othermeta name="content-type" content="troubleshooting"/>
+      <othermeta name="alarm-code" content="700016"/>
+      <othermeta name="severity" content="warning"/>
+      <othermeta name="estimated-repair-time" content="15-60 minutes"/>
+    </metadata>
+  </prolog>
+  <troublebody>
+    <condition>
+      <p>Alarm code <b>700016</b> is displayed on the SINUMERIK ONE HMI.
+         The coolant pressure reading on the diagnostics screen is below
+         <b>0.3 MPa</b> (normal operating range: 0.4–0.6 MPa).</p>
+      <p>The machine will halt spindle rotation and cutting operations
+         automatically until pressure is restored.</p>
+    </condition>
+
+    <!-- Cause 1: Filter Clogged -->
+    <cause id="cause-filter-clogged">
+      <p><b>Probable cause (80%):</b> Coolant return filter is clogged with
+         chips or debris from normal machining operations.</p>
+      <remedy id="remedy-clean-filter">
+        <cmd>Perform LOTO on the coolant pump circuit.</cmd>
+      </remedy>
+      <remedy>
+        <cmd>Open the coolant tank hatch at the rear of the machine (Zone 4 —
+            requires key-lock reset after closing).</cmd>
+      </remedy>
+      <remedy>
+        <cmd>Remove the return filter element (P/N: F-0800-01) and inspect.</cmd>
+        <info>If the filter element is visibly clogged with chips or
+               sludge, proceed to clean it. If the element is damaged,
+               replace it with a new one (P/N: F-0800-01-R).
+               See <xref href="../../topics/zh-CN/new-types/COOLANT-FILTER-TASK.dita">Coolant Filter Replacement Task</xref>.</info>
+      </remedy>
+      <remedy>
+        <cmd>Reassemble the filter housing, close the hatch (key-lock engage),
+            remove LOTO, and restart the coolant pump from the HMI.</cmd>
+        <stepresult>Verify in HMI Diagnostics that coolant pressure
+                    returns to 0.4–0.6 MPa. Clear alarm 700016.</stepresult>
+      </remedy>
+    </cause>
+
+    <!-- Cause 2: Pump Impeller Damage -->
+    <cause id="cause-pump-damage">
+      <p><b>Probable cause (15%):</b> Coolant pump impeller is worn or
+         damaged, reducing flow capacity.</p>
+      <remedy>
+        <cmd>Perform LOTO on the coolant pump circuit at the main
+            electrical panel.</cmd>
+      </remedy>
+      <remedy>
+        <cmd>Drain the coolant tank into a waste container
+            (capacity: 300 L).</cmd>
+      </remedy>
+      <remedy>
+        <cmd>Disconnect pump inlet and outlet piping, then remove the
+            pump assembly from the tank.</cmd>
+      </remedy>
+      <remedy>
+        <cmd>Inspect the impeller for cracks, worn vanes, or foreign
+            object damage.</cmd>
+        <info>Compare against the impeller wear limit template
+               (see Maintenance Gauge Kit). Replace impeller if vane
+               thickness is below 2 mm.</info>
+      </remedy>
+      <remedy>
+        <cmd>Reinstall or replace the pump assembly (P/N: P-1200-01),
+            refill coolant, remove LOTO, and test.</cmd>
+        <stepresult>Pump runs without abnormal noise.
+                    Coolant pressure 0.4–0.6 MPa at 50 Hz.</stepresult>
+      </remedy>
+    </cause>
+
+    <!-- Cause 3: Low Coolant Level -->
+    <cause id="cause-low-level">
+      <p><b>Probable cause (5%):</b> Coolant level has dropped below the
+         pump inlet due to evaporation, leakage, or recent maintenance
+         without refill.</p>
+      <remedy>
+        <cmd>Check the coolant level sight glass on the tank.
+            Level should be between MIN and MAX marks.</cmd>
+      </remedy>
+      <remedy>
+        <cmd>If below MIN, top up with approved coolant mixture
+            (5–8% concentration, water-soluble).</cmd>
+      </remedy>
+      <remedy>
+        <cmd>If level drops repeatedly, inspect for leaks at all
+            hose connections, the pump seal, and the tank itself.</cmd>
+      </remedy>
+    </cause>
+  </troublebody>
+</troubleshooting>

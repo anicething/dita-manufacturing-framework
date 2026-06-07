@@ -1,0 +1,165 @@
+/* @theme dita-training
+ * DITA Training Theme
+ * Based on Marp default with manufacturing-enterprise styling
+ */
+
+@import "default";
+
+:root {
+  --primary: #1a5276;
+  --secondary: #2e86c1;
+  --accent: #e67e22;
+  --success: #27ae60;
+  --warning: #f39c12;
+  --danger: #e74c3c;
+  --light-bg: #f8f9fa;
+  --dark-text: #2c3e50;
+  --code-bg: #282c34;
+  --code-text: #abb2bf;
+}
+
+/* Title slide */
+section.title {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+section.title h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+  color: white;
+}
+
+section.title h2 {
+  font-size: 1.3em;
+  font-weight: 300;
+  color: rgba(255,255,255,0.85);
+}
+
+section.title p {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.9em;
+}
+
+/* Section divider */
+section.divider {
+  background: var(--primary);
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+section.divider h1 {
+  font-size: 2.2em;
+  color: white;
+}
+
+section.divider p {
+  color: rgba(255,255,255,0.75);
+}
+
+/* Content slides */
+section {
+  font-size: 1.8rem;
+  padding: 2em;
+  background: white;
+  color: var(--dark-text);
+}
+
+section h1 {
+  font-size: 2em;
+  color: var(--primary);
+  border-bottom: 3px solid var(--secondary);
+  padding-bottom: 0.2em;
+}
+
+section h2 {
+  font-size: 1.5em;
+  color: var(--primary);
+}
+
+section h3 {
+  font-size: 1.2em;
+  color: var(--secondary);
+}
+
+section code {
+  background: var(--code-bg);
+  color: var(--code-text);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+section pre {
+  background: var(--code-bg);
+  color: var(--code-text);
+  border-radius: 8px;
+  padding: 1em;
+  font-size: 0.75em;
+  line-height: 1.4;
+}
+
+section table {
+  font-size: 0.75em;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+section th {
+  background: var(--primary);
+  color: white;
+  padding: 0.4em 0.6em;
+}
+
+section td {
+  border: 1px solid #ddd;
+  padding: 0.3em 0.6em;
+}
+
+section blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 1em;
+  margin: 1em 0;
+  background: #fef9e7;
+}
+
+section ul li, section ol li {
+  margin: 0.3em 0;
+}
+
+/* Exercise boxes */
+section.exercise {
+  border-top: 8px solid var(--success);
+}
+
+section.exercise h1::before {
+  content: "⚡ ";
+}
+
+/* Warning/note callouts */
+section.note {
+  border-left: 8px solid var(--warning);
+}
+
+section.tip {
+  border-left: 8px solid var(--secondary);
+}
+
+/* Two-column layout */
+section.columns {
+  display: flex;
+}
+
+section.columns > div {
+  flex: 1;
+  padding: 0 1em;
+}
+
+/* Key point highlight */
+section.keypoint {
+  border: 3px solid var(--accent);
+  border-radius: 12px;
+}

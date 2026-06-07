@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossentry.dtd">
+<glossentry id="template-glossary-entry"
+            xml:lang="zh-CN"
+            domains="(topic glossentry)"
+>
+  <glossterm>[术语名称]</glossterm>
+  <glossdef>
+    <p>对该术语给出清晰、简洁的定义。用一两句话即可。
+       如果该术语有多个含义，请包含领域上下文。</p>
+  </glossdef>
+  <prolog>
+    <metadata>
+      <audience type="all"/>
+      <category>Glossary</category>
+      <othermeta name="content-type" content="glossary-entry"/>
+      <othermeta name="glossary-domain" content="[safety|technical|commercial|legal]"/>
+      <othermeta name="translatable" content="yes"/>
+    </metadata>
+  </prolog>
+
+  <!-- 可选：替代形式（首字母缩写、缩写、表面形式） -->
+  <glossAlternative>
+    <glossSurfaceForm>[如有需要，填写完整表面形式]</glossSurfaceForm>
+    <glossAcronym>[首字母缩写]</glossAcronym>
+    <glossAbbreviation>[缩写]</glossAbbreviation>
+  </glossAlternative>
+
+  <!-- 可选：相关术语 -->
+  <glossRelated>
+    <glossxref href="[相关术语文件].dita"/>
+  </glossRelated>
+</glossentry>

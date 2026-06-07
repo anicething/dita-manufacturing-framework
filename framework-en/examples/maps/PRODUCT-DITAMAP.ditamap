@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="dr5000-product-documentation"
+     xml:lang="en-US"
+     domains="(map mapgroup-d)"
+     title="MC-5000 Vertical Machining Center — Product Documentation"
+>
+  <topicmeta>
+    <navtitle>MC-5000 VMC Documentation</navtitle>
+    <shortdesc>Complete documentation set for the MC-5000 Vertical Machining Center, covering safety, operation, maintenance, and technical reference.</shortdesc>
+    <prodinfo>
+      <prodname>MC-5000 VMC</prodname>
+      <vrmlist>
+        <vrm version="2.1" release="A" modification="3"/>
+      </vrmlist>
+    </prodinfo>
+    <audience type="operator" job="operation" experiencelevel="all"/>
+    <audience type="maintenance" job="technician" experiencelevel="experienced"/>
+    <audience type="engineer" job="applications" experiencelevel="all"/>
+  </topicmeta>
+
+  <!-- ===== Front Matter ===== -->
+  <frontmatter>
+    <bookmeta>
+      <author>ExampleCorp Documentation Team</author>
+      <publisher>Example Manufacturing Co., Ltd.</publisher>
+      <copyright>
+        <copyryear year="2026"/>
+        <copyrholder>Example Manufacturing Co., Ltd.</copyrholder>
+      </copyright>
+      <prodinfo>
+        <prodname>MC-5000 VMC</prodname>
+        <vrmlist>
+          <vrm version="2.1" release="A" modification="3"/>
+        </vrmlist>
+      </prodinfo>
+    </bookmeta>
+  </frontmatter>
+
+  <!-- ===== Chapter 1: Safety ===== -->
+  <chapter id="safety" navtitle="Safety">
+    <topicref href="../topics/MC5000-SAFETY-CONCEPT.dita" navtitle="Safety System Overview">
+      <topicref href="../topics/MC5000-EMERGENCY-STOP.dita" navtitle="Emergency Stop Procedures" processing-role="resource-only">
+        <topicmeta>
+          <navtitle>Emergency Stop Procedures</navtitle>
+          <shortdesc>Pending — content under review by safety engineering.</shortdesc>
+        </topicmeta>
+      </topicref>
+    </topicref>
+  </chapter>
+
+  <!-- ===== Chapter 2: Maintenance ===== -->
+  <chapter id="maintenance" navtitle="Maintenance">
+    <topicref href="../topics/SPINDLE-ALIGNMENT-TASK.dita" navtitle="Spindle Laser Alignment"/>
+    <topicref href="../topics/MC5000-LUBRICATION.dita" navtitle="Lubrication Schedule" processing-role="resource-only">
+      <topicmeta>
+        <navtitle>Lubrication Schedule</navtitle>
+        <shortdesc>Pending — content scheduled for Q3 2026.</shortdesc>
+      </topicmeta>
+    </topicref>
+  </chapter>
+
+  <!-- ===== Chapter 3: Technical Reference ===== -->
+  <chapter id="specifications" navtitle="Technical Reference">
+    <topicref href="../topics/MC5000-SPECS-REFERENCE.dita" navtitle="Technical Specifications"/>
+  </chapter>
+
+  <!-- ===== Chapter 4: Operations ===== -->
+  <chapter id="operations" navtitle="Operations">
+    <topicref href="../topics/MC5000-BASIC-OPERATION.dita" navtitle="Basic Operation" processing-role="resource-only">
+      <topicmeta>
+        <navtitle>Basic Operation</navtitle>
+        <shortdesc>Pending — planned for Month 4 of rollout.</shortdesc>
+      </topicmeta>
+    </topicref>
+  </chapter>
+
+  <!-- ===== Appendices ===== -->
+  <backmatter>
+    <topicref href="../topics/MC5000-MAINTENANCE-LOG.dita" navtitle="Maintenance Log Template">
+      <topicmeta>
+        <navtitle>Appendix A: Maintenance Log Template</navtitle>
+      </topicmeta>
+    </topicref>
+  </backmatter>
+
+  <!-- ===== Relationship Table (Cross-References) ===== -->
+  <reltable id="cross-references">
+    <relheader>
+      <relcolspec type="concept" label="Concept"/>
+      <relcolspec type="task" label="Task"/>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref href="../topics/MC5000-SAFETY-CONCEPT.dita"/>
+      </relcell>
+      <relcell>
+        <topicref href="../topics/SPINDLE-ALIGNMENT-TASK.dita"/>
+      </relcell>
+    </relrow>
+  </reltable>
+</map>

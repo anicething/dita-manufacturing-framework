@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="dr5000-technical-specifications-zh"
+           xml:lang="zh-CN"
+           domains="(topic reference)
+                    (topic hi-d)
+                    (topic ut-d)"
+>
+  <title>MC-5000 立式加工中心技术规格</title>
+  <shortdesc>MC-5000 立式加工中心的完整技术规格，包括主轴、轴行程、工作台能力和公用设施要求。</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="engineer" job="applications" experiencelevel="all"/>
+      <audience type="maintenance" job="technician" experiencelevel="experienced"/>
+      <category>规格参数</category>
+      <category>技术参考</category>
+      <prodinfo>
+        <prodname>MC-5000 立式加工中心</prodname>
+        <vrmlist>
+          <vrm version="2.1" release="A" modification="3"/>
+        </vrmlist>
+      </prodinfo>
+      <othermeta name="content-type" content="reference"/>
+      <othermeta name="reuse-target" content="80%"/>
+      <othermeta name="document-status" content="approved"/>
+      <othermeta name="approval-date" content="2026-03-15"/>
+    </metadata>
+  </prolog>
+  <refbody>
+    <!-- ===================== 主轴 ===================== -->
+    <section id="spindle-specifications-zh">
+      <title>主轴规格</title>
+      <simpletable id="spindle-table-zh" relcolwidth="0.35 0.25 0.40">
+        <sthead>
+          <stentry>参数</stentry>
+          <stentry>数值</stentry>
+          <stentry>备注</stentry>
+        </sthead>
+        <strow>
+          <stentry>主轴锥孔</stentry>
+          <stentry>BT40 / CAT40</stentry>
+          <stentry>DIN 69871 / ANSI B5.50</stentry>
+        </strow>
+        <strow>
+          <stentry>最高主轴转速</stentry>
+          <stentry>12,000 RPM</stentry>
+          <stentry>可选：15,000 RPM（高速套件）</stentry>
+        </strow>
+        <strow>
+          <stentry>主轴电机功率（S1）</stentry>
+          <stentry>15 kW（20 HP）</stentry>
+          <stentry>连续工作制</stentry>
+        </strow>
+        <strow>
+          <stentry>主轴电机功率（S6-40%）</stentry>
+          <stentry>22 kW（29.5 HP）</stentry>
+          <stentry>断续工作制，40% 负载持续率</stentry>
+        </strow>
+        <strow>
+          <stentry>最大扭矩（S1）</stentry>
+          <stentry>120 Nm</stentry>
+          <stentry>在 1,500 RPM 基准转速下</stentry>
+        </strow>
+        <strow>
+          <stentry>冷却方式</stentry>
+          <stentry>油气润滑 + 夹套冷却</stentry>
+          <stentry>环境温度 ≤ 40°C</stentry>
+        </strow>
+        <strow>
+          <stentry>主轴轴承类型</stentry>
+          <stentry>混合陶瓷球轴承</stentry>
+          <stentry>前：2 个角接触轴承，后：1 个圆柱滚子轴承</stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <!-- ===================== 轴行程 ===================== -->
+    <section id="axis-travel-zh">
+      <title>轴行程与进给速度</title>
+      <simpletable id="axis-table-zh" relcolwidth="0.25 0.15 0.15 0.15 0.30">
+        <sthead>
+          <stentry>轴</stentry>
+          <stentry>行程（mm）</stentry>
+          <stentry>快速移动</stentry>
+          <stentry>切削进给</stentry>
+          <stentry>驱动系统</stentry>
+        </sthead>
+        <strow>
+          <stentry>X 轴</stentry>
+          <stentry>800</stentry>
+          <stentry>36 m/min</stentry>
+          <stentry>1 – 12,000 mm/min</stentry>
+          <stentry>直驱滚珠丝杠（直径 40 mm）</stentry>
+        </strow>
+        <strow>
+          <stentry>Y 轴</stentry>
+          <stentry>550</stentry>
+          <stentry>36 m/min</stentry>
+          <stentry>1 – 12,000 mm/min</stentry>
+          <stentry>直驱滚珠丝杠（直径 40 mm）</stentry>
+        </strow>
+        <strow>
+          <stentry>Z 轴</stentry>
+          <stentry>550</stentry>
+          <stentry>30 m/min</stentry>
+          <stentry>1 – 10,000 mm/min</stentry>
+          <stentry>直驱滚珠丝杠（直径 40 mm）带制动器</stentry>
+        </strow>
+        <strow>
+          <stentry>B 轴（可选）</stentry>
+          <stentry>±120°</stentry>
+          <stentry>25 RPM</stentry>
+          <stentry>不适用</stentry>
+          <stentry>直驱力矩电机</stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <!-- ===================== 工作台 ===================== -->
+    <section id="worktable-specs-zh">
+      <title>工作台</title>
+      <simpletable id="worktable-table-zh" relcolwidth="0.35 0.25 0.40">
+        <sthead>
+          <stentry>参数</stentry>
+          <stentry>数值</stentry>
+          <stentry>备注</stentry>
+        </sthead>
+        <strow>
+          <stentry>工作台尺寸（长 × 宽）</stentry>
+          <stentry>1,000 mm × 550 mm</stentry>
+          <stentry></stentry>
+        </strow>
+        <strow>
+          <stentry>最大工作台承重</stentry>
+          <stentry>800 kg</stentry>
+          <stentry>均匀分布载荷</stentry>
+        </strow>
+        <strow>
+          <stentry>T 型槽规格</stentry>
+          <stentry>18H7 × 5 槽 × 100 mm 间距</stentry>
+          <stentry>DIN 650 标准</stentry>
+        </strow>
+        <strow>
+          <stentry>主轴鼻端至工作台距离</stentry>
+          <stentry>150 – 700 mm</stentry>
+          <stentry>可调范围</stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <!-- ===================== 刀库 ===================== -->
+    <section id="atc-specs-zh">
+      <title>自动换刀装置（ATC）</title>
+      <simpletable id="atc-table-zh" relcolwidth="0.35 0.25 0.40">
+        <sthead>
+          <stentry>参数</stentry>
+          <stentry>数值</stentry>
+          <stentry>备注</stentry>
+        </sthead>
+        <strow>
+          <stentry>刀库容量</stentry>
+          <stentry>24 把刀</stentry>
+          <stentry>可选：30 把刀（摆动臂式）</stentry>
+        </strow>
+        <strow>
+          <stentry>最大刀具直径（相邻空位）</stentry>
+          <stentry>80 mm（150 mm）</stentry>
+          <stentry>相邻刀位为空时</stentry>
+        </strow>
+        <strow>
+          <stentry>最大刀具长度</stentry>
+          <stentry>300 mm</stentry>
+          <stentry></stentry>
+        </strow>
+        <strow>
+          <stentry>最大刀具重量</stentry>
+          <stentry>8 kg</stentry>
+          <stentry></stentry>
+        </strow>
+        <strow>
+          <stentry>换刀时间（切屑到切屑）</stentry>
+          <stentry>3.5 秒</stentry>
+          <stentry></stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <!-- ===================== 精度 ===================== -->
+    <section id="accuracy-specs-zh">
+      <title>定位精度（ISO 230-2 / GB/T 17421.2）</title>
+      <simpletable id="accuracy-table-zh" relcolwidth="0.35 0.25 0.40">
+        <sthead>
+          <stentry>参数</stentry>
+          <stentry>数值</stentry>
+          <stentry>标准</stentry>
+        </sthead>
+        <strow>
+          <stentry>定位精度</stentry>
+          <stentry>±5 μm</stentry>
+          <stentry>ISO 230-2 / GB/T 17421.2</stentry>
+        </strow>
+        <strow>
+          <stentry>重复定位精度</stentry>
+          <stentry>±2 μm</stentry>
+          <stentry>ISO 230-2 / GB/T 17421.2</stentry>
+        </strow>
+        <strow>
+          <stentry>主轴跳动（锥孔处）</stentry>
+          <stentry>≤ 3 μm</stentry>
+          <stentry>ISO 230-7</stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <!-- ===================== 公用设施 ===================== -->
+    <section id="utility-requirements-zh">
+      <title>公用设施要求</title>
+      <simpletable id="utility-table-zh" relcolwidth="0.35 0.25 0.40">
+        <sthead>
+          <stentry>参数</stentry>
+          <stentry>数值</stentry>
+          <stentry>备注</stentry>
+        </sthead>
+        <strow>
+          <stentry>电源</stentry>
+          <stentry>380 V / 3 相 / 50 Hz</stentry>
+          <stentry>可选：480 V / 60 Hz</stentry>
+        </strow>
+        <strow>
+          <stentry>总连接负载</stentry>
+          <stentry>35 kVA</stentry>
+          <stentry></stentry>
+        </strow>
+        <strow>
+          <stentry>压缩空气压力</stentry>
+          <stentry>0.5 – 0.7 MPa</stentry>
+          <stentry>干燥无油压缩空气</stentry>
+        </strow>
+        <strow>
+          <stentry>压缩空气消耗量</stentry>
+          <stentry>120 L/min（0.6 MPa 时）</stentry>
+          <stentry></stentry>
+        </strow>
+        <strow>
+          <stentry>冷却液箱容量</stentry>
+          <stentry>300 L</stentry>
+          <stentry>水溶性冷却液</stentry>
+        </strow>
+        <strow>
+          <stentry>机床占地面积（长 × 宽 × 高）</stentry>
+          <stentry>2,800 × 2,400 × 2,800 mm</stentry>
+          <stentry>含排屑器</stentry>
+        </strow>
+        <strow>
+          <stentry>机床重量</stentry>
+          <stentry>6,500 kg</stentry>
+          <stentry>净重</stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <!-- ===================== 选配项 ===================== -->
+    <section id="available-options-zh">
+      <title>出厂选配项</title>
+      <sl>
+        <sli>高速主轴套件（15,000 RPM）</sli>
+        <sli>30 把刀摆动臂式刀库</sli>
+        <sli>B 轴回转工作台（nC 轴，±120°）</sli>
+        <sli>切削液冲洗系统（主轴中心出水，70 bar）</sli>
+        <sli>雷尼绍 OMP40-2 接触式测头</li>
+        <sli>刀具破损检测系统</li>
+        <sli>油雾收集器（静电式）</li>
+        <sli>自动门带互锁装置</sli>
+      </sl>
+    </section>
+  </refbody>
+</reference>

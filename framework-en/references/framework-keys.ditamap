@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="framework-keys">
+  <title>Framework Global Key Definitions / 框架全局 Key 定义</title>
+
+  <!-- ================================================================ -->
+  <!-- COMPANY VARIABLES / 公司变量 -->
+  <!-- ================================================================ -->
+  <keydef keys="company-name">
+    <topicmeta>
+      <keywords>
+        <keyword>ExampleCorp Manufacturing Co., Ltd.</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="company-abbr">
+    <topicmeta>
+      <keywords>
+        <keyword>ECM</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="company-short">
+    <topicmeta>
+      <keywords>
+        <keyword>ExampleCorp</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="company-legal-en">
+    <topicmeta>
+      <keywords>
+        <keyword>ExampleCorp Manufacturing Co., Ltd.</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="company-legal-zh">
+    <topicmeta>
+      <keywords>
+        <keyword>示例制造有限公司</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+
+  <!-- ================================================================ -->
+  <!-- PRODUCT VARIABLES / 产品变量 -->
+  <!-- ================================================================ -->
+  <keydef keys="product-series">
+    <topicmeta>
+      <keywords>
+        <keyword>MC Series</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="product-flagship">
+    <topicmeta>
+      <keywords>
+        <keyword>MC-5000 5-Axis Machining Center</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="product-mid">
+    <topicmeta>
+      <keywords>
+        <keyword>MC-4000 Vertical Machining Center</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="product-entry">
+    <topicmeta>
+      <keywords>
+        <keyword>MC-3000 Compact Machining Center</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+
+  <!-- ================================================================ -->
+  <!-- STANDARDS / 标准 -->
+  <!-- ================================================================ -->
+  <keydef keys="standard-iso12100">
+    <topicmeta>
+      <keywords>
+        <keyword>ISO 12100:2010</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="standard-iso9001">
+    <topicmeta>
+      <keywords>
+        <keyword>ISO 9001:2015</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="standard-iso14001">
+    <topicmeta>
+      <keywords>
+        <keyword>ISO 14001:2015</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="standard-iso27001">
+    <topicmeta>
+      <keywords>
+        <keyword>ISO 27001:2022</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="standard-ce">
+    <topicmeta>
+      <keywords>
+        <keyword>CE Marking (Machine Directive 2006/42/EC)</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+
+  <!-- ================================================================ -->
+  <!-- LEGAL / DOCUMENT CONTROL / 法律与文档控制 -->
+  <!-- ================================================================ -->
+  <keydef keys="copyright-year">
+    <topicmeta>
+      <keywords>
+        <keyword>2026</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="doc-version">
+    <topicmeta>
+      <keywords>
+        <keyword>v1.1</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="doc-status">
+    <topicmeta>
+      <keywords>
+        <keyword>Approved</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+  <keydef keys="doc-confidentiality">
+    <topicmeta>
+      <keywords>
+        <keyword>Confidential — Internal Use Only</keyword>
+      </keywords>
+    </topicmeta>
+  </keydef>
+
+  <!-- ================================================================ -->
+  <!-- LEGAL BOILERPLATE (conref targets) / 法律样板 -->
+  <!-- ================================================================ -->
+  <keydef keys="legal-statements" href="legal-statements.dita" processing-role="resource-only"/>
+
+  <!-- ================================================================ -->
+  <!-- LANGUAGE-SPECIFIC COMPANY INFO / 各语言公司信息 -->
+  <!-- ================================================================ -->
+  <keydef keys="company-info-en" href="company-variables.dita" processing-role="resource-only"/>
+  <keydef keys="company-info-zh" href="zh-CN/company-variables.dita" processing-role="resource-only"/>
+</map>

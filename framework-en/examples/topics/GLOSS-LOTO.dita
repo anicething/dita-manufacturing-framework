@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossentry.dtd">
+<glossentry id="gloss-lockout-tagout"
+            xml:lang="en-US"
+            domains="(topic glossentry)">
+  <glossterm>Lockout/Tagout (LOTO)</glossterm>
+  <glossdef>
+    <p>A safety procedure that isolates energy sources from machinery
+       and locks the disconnect device in the OFF position before
+       maintenance or service work begins. An identifying tag is
+       attached to the lock with the worker's name, date, and reason.</p>
+  </glossdef>
+  <prolog>
+    <metadata>
+      <audience type="all"/>
+      <category>Glossary</category>
+      <category>Safety</category>
+      <othermeta name="content-type" content="glossary-entry"/>
+      <othermeta name="glossary-domain" content="safety"/>
+      <othermeta name="translatable" content="yes"/>
+      <othermeta name="iso-reference" content="ISO 14118"/>
+    </metadata>
+  </prolog>
+  <glossAlternative>
+    <glossSurfaceForm>Lockout and Tagout</glossSurfaceForm>
+    <glossAcronym>LOTO</glossAcronym>
+  </glossAlternative>
+  <glossRelated>
+    <glossxref href="GLOSS-INTERLOCK.dita"/>
+    <glossxref href="GLOSS-ZERO-ENERGY.dita"/>
+  </glossRelated>
+</glossentry>

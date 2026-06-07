@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="dr5000-safety-system"
+         xml:lang="en-US"
+         domains="(topic concept)
+                  (topic hi-d)
+                  (topic ut-d)"
+>
+  <title>MC-5000 Safety System Overview</title>
+  <shortdesc>The MC-5000 Vertical Machining Center integrates a three-layer safety architecture that protects operators, equipment, and workpieces during automated and manual operations.</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="operator" job="maintenance" experiencelevel="experienced"/>
+      <category>Safety</category>
+      <category>System Architecture</category>
+      <prodinfo>
+        <prodname>MC-5000 VMC</prodname>
+        <vrmlist>
+          <vrm version="2.1" release="A" modification="3"/>
+        </vrmlist>
+      </prodinfo>
+      <othermeta name="content-type" content="concept"/>
+      <othermeta name="reuse-target" content="50%"/>
+      <othermeta name="iso-standards" content="ISO 12100, ISO 13849-1, ISO 14120"/>
+    </metadata>
+  </prolog>
+  <conbody>
+    <section id="architecture-overview">
+      <title>Safety Architecture</title>
+      <p>The MC-5000 safety system follows a <b>three-layer architecture</b> designed to meet ISO 13849-1 (PLr) and ISO 12100 requirements:</p>
+      <dl>
+        <dlentry>
+          <dt>Layer 1 — Physical Safeguards</dt>
+          <dd>Interlocked doors, light curtains, emergency stops (E-Stop), and chip guards. These provide the primary barrier between the operator and hazardous motion.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>Layer 2 — Control System</dt>
+          <dd>Siemens SINUMERIK ONE safety-integrated PLC with dual-channel redundant I/O. Monitors door status, spindle load, axis positioning, and coolant flow.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>Layer 3 — Software Monitoring</dt>
+          <dd>Real-time diagnostics, safe speed monitoring, safe torque off (STO), and safe brake control (SBC). All safety functions comply with ISO 13849-1 Category 3 / PLd.</dd>
+        </dlentry>
+      </dl>
+    </section>
+    <section id="safety-interlocks">
+      <title>Safety Interlock Zones</title>
+      <p>The MC-5000 defines four interlock zones, each with specific behavior when breached:</p>
+      <simpletable id="interlock-table" relcolwidth="0.25 0.35 0.20 0.20">
+        <sthead>
+          <stentry>Zone</stentry>
+          <stentry>Coverage Area</stentry>
+          <stentry>Trigger Action</stentry>
+          <stentry>Reset Method</stentry>
+        </sthead>
+        <strow>
+          <stentry>Zone 1</stentry>
+          <stentry>Main door and side windows</stentry>
+          <stentry>Immediate spindle stop + axis hold</stentry>
+          <stentry>Manual reset at HMI</stentry>
+        </strow>
+        <strow>
+          <stentry>Zone 2</stentry>
+          <stentry>Light curtain on loading area</stentry>
+          <stentry>Rapid axis deceleration (≤ 50 ms)</stentry>
+          <stentry>Auto-reset after clearing</stentry>
+        </strow>
+        <strow>
+          <stentry>Zone 3</stentry>
+          <stentry>Chip conveyor access panel</stentry>
+          <stentry>Conveyor motor cutoff</stentry>
+          <stentry>Manual reset at panel</stentry>
+        </strow>
+        <strow>
+          <stentry>Zone 4</stentry>
+          <stentry>Coolant tank maintenance hatch</stentry>
+          <stentry>Coolant pump shutdown + tagout</stentry>
+          <stentry>Key-lock reset</stentry>
+        </strow>
+      </simpletable>
+    </section>
+    <section id="compliance">
+      <title>Regulatory Compliance</title>
+      <p>The MC-5000 safety system is certified against the following standards:</p>
+      <ul>
+        <li><b>ISO 12100</b> — Risk assessment and risk reduction methodology</li>
+        <li><b>ISO 13849-1</b> — Safety-related parts of control systems (Category 3, PLd)</li>
+        <li><b>ISO 14120</b> — Guards and interlocking devices</li>
+        <li><b>ISO 13855</b> — Positioning of safeguards with respect to approach speeds</li>
+        <li><b>GB/T 15706</b> — Chinese national standard equivalent (mandatory for domestic sales)</li>
+      </ul>
+    </section>
+  </conbody>
+</concept>

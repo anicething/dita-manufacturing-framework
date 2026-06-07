@@ -1,0 +1,26 @@
+<!--
+  ================================================================
+  DITA Entity Definitions — Variable Management
+  Framework-wide XML entities for legacy compatibility
+  ================================================================
+  Last updated: 2026-06-07
+  ================================================================
+-->
+
+<!-- COMPANY / 公司 -->
+<!ENTITY company-name    "ExampleCorp Manufacturing Co., Ltd.">
+<!ENTITY company-abbr    "ECM">
+<!ENTITY company-short   "ExampleCorp">
+
+<!-- PRODUCTS / 产品 -->
+<!ENTITY product-series  "MC Series">
+<!ENTITY product-flagship "MC-5000 5-Axis Machining Center">
+
+<!-- STANDARDS / 标准 -->
+<!ENTITY standard-iso12100 "ISO 12100:2010">
+<!ENTITY standard-iso9001  "ISO 9001:2015">
+
+<!-- DOCUMENT CONTROL / 文档控制 -->
+<!ENTITY copyright-year  "2026">
+<!ENTITY doc-version     "v1.1">
+<!ENTITY doc-status      "Approved">

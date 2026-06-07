@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE troubleshooting PUBLIC "-//OASIS//DTD DITA Troubleshooting//EN" "troubleshooting.dtd">
+<troubleshooting id="template-troubleshooting"
+                xml:lang="zh-CN"
+                domains="(topic troubleshooting)
+                         (topic hi-d)
+                         (topic ut-d)"
+>
+  <title>故障排除：[报警代码 / 故障症状标题]</title>
+  <shortdesc>诊断并解决[问题的简要描述]。</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="maintenance" job="technician" experiencelevel="experienced"/>
+      <category>Troubleshooting</category>
+      <prodinfo>
+        <prodname>[产品名称]</prodname>
+        <vrmlist>
+          <vrm version="X.X" release="X" modification="X"/>
+        </vrmlist>
+      </prodinfo>
+      <othermeta name="content-type" content="troubleshooting"/>
+      <othermeta name="alarm-code" content="[code, e.g. 700016]"/>
+      <othermeta name="severity" content="[warning|critical|informational]"/>
+    </metadata>
+  </prolog>
+  <troublebody>
+    <condition>
+      <p>描述可观察到的症状。操作员看到了什么？
+         显示了什么报警代码？哪些行为不正常？</p>
+      <p>适用时包含定量阈值（例如，
+         「压力降至 0.3 MPa 以下」）。</p>
+    </condition>
+
+    <!-- ===== 原因1（最有可能） ===== -->
+    <cause>
+      <p><b>可能原因（XX%）：</b> 根本原因的简要描述。</p>
+      <remedy>
+        <cmd>补救措施的第一步。</cmd>
+        <info>附加详细信息、对任务主题的引用或备注。</info>
+        <stepresult>确认此步骤有效的标志。</stepresult>
+      </remedy>
+      <remedy>
+        <cmd>如果第一步未能解决，则执行第二步。</cmd>
+        <info>进一步的详细信息或交叉引用。</info>
+      </remedy>
+    </cause>
+
+    <!-- ===== 原因2（不太可能） ===== -->
+    <cause>
+      <p><b>可能原因（XX%）：</b> 替代根本原因。</p>
+      <remedy>
+        <cmd>针对此原因的补救步骤。</cmd>
+        <info>辅助内容。</info>
+      </remedy>
+    </cause>
+
+    <!-- ===== 原因3（罕见） ===== -->
+    <cause>
+      <p><b>可能原因（&lt; 5%）：</b> 罕见但已记录的原因。</p>
+      <remedy>
+        <cmd>针对此罕见原因的补救步骤。</cmd>
+      </remedy>
+    </cause>
+  </troublebody>
+</troubleshooting>

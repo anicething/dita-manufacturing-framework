@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE troubleshooting PUBLIC "-//OASIS//DTD DITA Troubleshooting//EN" "troubleshooting.dtd">
+<troubleshooting id="template-troubleshooting"
+                xml:lang="en-US"
+                domains="(topic troubleshooting)
+                         (topic hi-d)
+                         (topic ut-d)"
+>
+  <title>Troubleshooting: [Alarm Code / Symptom Title]</title>
+  <shortdesc>Diagnose and resolve [brief description of the problem].</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="maintenance" job="technician" experiencelevel="experienced"/>
+      <category>Troubleshooting</category>
+      <prodinfo>
+        <prodname>[Product Name]</prodname>
+        <vrmlist>
+          <vrm version="X.X" release="X" modification="X"/>
+        </vrmlist>
+      </prodinfo>
+      <othermeta name="content-type" content="troubleshooting"/>
+      <othermeta name="alarm-code" content="[code, e.g. 700016]"/>
+      <othermeta name="severity" content="[warning|critical|informational]"/>
+    </metadata>
+  </prolog>
+  <troublebody>
+    <condition>
+      <p>Describe the observable symptom. What does the operator see?
+         What alarm code is displayed? What behavior is abnormal?</p>
+      <p>Include quantitative thresholds where applicable (e.g.,
+         "Pressure drops below 0.3 MPa").</p>
+    </condition>
+
+    <!-- ===== Cause 1 (most likely) ===== -->
+    <cause>
+      <p><b>Probable cause (XX%):</b> Brief description of the root cause.</p>
+      <remedy>
+        <cmd>The first step of the remedy.</cmd>
+        <info>Additional details, references to Task topics, or notes.</info>
+        <stepresult>What confirms this step worked.</stepresult>
+      </remedy>
+      <remedy>
+        <cmd>Second step if the first didn't resolve.</cmd>
+        <info>Further detail or cross‑reference.</info>
+      </remedy>
+    </cause>
+
+    <!-- ===== Cause 2 (less likely) ===== -->
+    <cause>
+      <p><b>Probable cause (XX%):</b> Alternative root cause.</p>
+      <remedy>
+        <cmd>Remedy steps for this cause.</cmd>
+        <info>Supporting content.</info>
+      </remedy>
+    </cause>
+
+    <!-- ===== Cause 3 (rare) ===== -->
+    <cause>
+      <p><b>Probable cause (&lt; 5%):</b> Rare but documented cause.</p>
+      <remedy>
+        <cmd>Remedy steps for this rare cause.</cmd>
+      </remedy>
+    </cause>
+  </troublebody>
+</troubleshooting>

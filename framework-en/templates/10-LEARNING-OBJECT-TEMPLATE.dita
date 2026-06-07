@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE learningObject PUBLIC "-//OASIS//DTD DITA Learning Object//EN" "learningObject.dtd">
+<learningObject id="template-learning-module"
+                xml:lang="en-US"
+                domains="(topic learningObject)"
+>
+  <title>Training Module: [Module Title]</title>
+  <shortdesc>Complete training module covering [subject].</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="operator" job="training" experiencelevel="novice"/>
+      <category>Training</category>
+      <othermeta name="content-type" content="learning-object"/>
+      <othermeta name="duration" content="[hours] hours"/>
+      <othermeta name="module-type" content="[classroom|e-learning|blended]"/>
+      <othermeta name="certification-relevant" content="[yes|no]"/>
+    </metadata>
+  </prolog>
+  <learningObjectbody>
+    <!-- ===== Learning Overview: objectives, prerequisites, duration ===== -->
+    <learningOverview id="template-overview">
+      <title>[Module Title] — Overview</title>
+      <learningOverviewbody>
+        <prereqs>
+          <ul>
+            <li>Completed [prerequisite module]</li>
+            <li>[Additional prerequisites]</li>
+          </ul>
+        </prereqs>
+        <objectives>
+          <ul>
+            <li>Objective 1 — what the learner will be able to do</li>
+            <li>Objective 2</li>
+            <li>Objective 3</li>
+          </ul>
+        </objectives>
+        <duration>
+          <learningTime type="instructorLed">
+            <value>X</value>
+            <unit>hours</unit>
+          </learningTime>
+        </duration>
+        <audience experience="[novice|intermediate|expert]">
+          <job>Technician</job>
+        </audience>
+      </learningOverviewbody>
+    </learningOverview>
+
+    <!-- ===== Learning Content: core instructional body ===== -->
+    <learningContent id="template-content">
+      <title>[Module Title] — Content</title>
+      <learningContentbody>
+        <section id="section-1">
+          <title>Topic 1: [Subject]</title>
+          <p>Core instructional text. Can include Concept‑style explanations,
+             Task‑style procedures, and Reference‑style data.</p>
+          <fig>
+            <title>Illustration</title>
+            <image href="illustration.png"/>
+          </fig>
+        </section>
+        <section id="section-2">
+          <title>Topic 2: [Subject]</title>
+          <p>Additional content.</p>
+        </section>
+        <!-- ===== Practice / Exercise ===== -->
+        <learningPractice id="template-practice">
+          <title>Hands-on Exercise</title>
+          <learningPracticebody>
+            <p>Exercise instructions for the learner.</p>
+          </learningPracticebody>
+        </learningPractice>
+      </learningContentbody>
+    </learningContent>
+
+    <!-- ===== Learning Summary: recap and assessment ===== -->
+    <learningSummary id="template-summary">
+      <title>[Module Title] — Summary</title>
+      <learningSummarybody>
+        <summary>
+          <ul>
+            <li>Key takeaway 1</li>
+            <li>Key takeaway 2</li>
+          </ul>
+        </summary>
+        <glossref href="[glossary-file].dita"/>
+        <assessments>
+          <learningAssessment id="template-assessment">
+            <title>Knowledge Check</title>
+            <learningAssessmentbody>
+              <lcQuestion>Question text?</lcQuestion>
+              <lcAnswerOption>
+                <lcAnswerContent>Correct answer</lcAnswerContent>
+                <lcFeedback>Explanation.</lcFeedback>
+              </lcAnswerOption>
+              <lcAnswerOption>
+                <lcAnswerContent>Distractor</lcAnswerContent>
+                <lcFeedback>Why this is incorrect.</lcFeedback>
+              </lcAnswerOption>
+            </learningAssessmentbody>
+          </learningAssessment>
+        </assessments>
+        <nextsteps>
+          <p>Proceed to [next module].</p>
+        </nextsteps>
+      </learningSummarybody>
+    </learningSummary>
+  </learningObjectbody>
+</learningObject>

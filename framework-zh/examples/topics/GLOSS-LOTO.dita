@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossentry.dtd">
+<glossentry id="gloss-lockout-tagout-zh"
+            xml:lang="zh-CN"
+            domains="(topic glossentry)">
+  <glossterm>锁定/挂牌（LOTO）</glossterm>
+  <glossdef>
+    <p>一种安全程序，在开始维护或维修工作之前，将能源与机械设备隔离，
+       并将断开装置锁定在 OFF 位置。锁具上悬挂标签，标明操作人员
+       姓名、日期和操作原因。</p>
+  </glossdef>
+  <prolog>
+    <metadata>
+      <audience type="all"/>
+      <category>术语表</category>
+      <category>安全</category>
+      <othermeta name="content-type" content="glossary-entry"/>
+      <othermeta name="glossary-domain" content="safety"/>
+      <othermeta name="translatable" content="yes"/>
+      <othermeta name="iso-reference" content="ISO 14118 / GB/T 24669"/>
+    </metadata>
+  </prolog>
+  <glossAlternative>
+    <glossSurfaceForm>锁定和挂牌</glossSurfaceForm>
+    <glossAcronym>LOTO</glossAcronym>
+  </glossAlternative>
+  <glossRelated>
+    <glossxref href="GLOSS-INTERLOCK.dita"/>
+    <glossxref href="GLOSS-ZERO-ENERGY.dita"/>
+  </glossRelated>
+</glossentry>

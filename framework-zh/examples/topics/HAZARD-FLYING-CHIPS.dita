@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="hazard-flying-chips-zh"
+            xml:lang="zh-CN"
+            domains="(topic reference)
+                     (topic hi-d)">
+  <title>危害说明：加工过程中飞溅的切屑</title>
+  <shortdesc>切削加工过程中高速飞出的高温、锋利的金属切屑有造成眼部
+             和皮肤受伤的风险。</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="operator" job="all" experiencelevel="all"/>
+      <category>安全</category>
+      <category>危害</category>
+      <prodinfo>
+        <prodname>MC-5000 立式加工中心</prodname>
+        <vrmlist>
+          <vrm version="2.1" release="A" modification="3"/>
+        </vrmlist>
+      </prodinfo>
+      <othermeta name="content-type" content="hazard-statement"/>
+      <othermeta name="hazard-type" content="mechanical"/>
+      <othermeta name="severity" content="caution"/>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section id="primary-statement-zh">
+      <title>安全警告</title>
+      <p hazard="">
+        <hazardstatement type="caution">
+          <messagepanel>
+            <typeofhazard>飞溅的切屑和切削碎屑</typeofhazard>
+            <consequence>严重眼部伤害或皮肤划伤</consequence>
+            <howtoavoid>
+              机床门打开或清理切屑时务必佩戴带有侧护板的
+              安全护目镜。所有切削操作期间保持机床门关闭。
+            </howtoavoid>
+          </messagepanel>
+        </hazardstatement>
+      </p>
+    </section>
+
+    <section id="description-zh">
+      <title>危害描述</title>
+      <p>MC-5000 立式加工中心在铣削、钻孔和攻丝操作过程中，
+         切削刀具产生高速飞出的金属切屑，速度可达 <b>30 m/s</b>。
+         这些切屑：</p>
+      <ul>
+        <li><b>锋利</b> — 可刺穿皮肤并造成割伤</li>
+        <li><b>高温</b> — 切削后瞬间可达 200–400°C</li>
+        <li><b>弹射</b> — 经防护板反弹后仍可能触及操作人员</li>
+      </ul>
+      <p>主要风险时段为清理切屑和检查工件时，此时机床门可能短暂打开。</p>
+    </section>
+
+    <section id="risk-assessment-zh">
+      <title>风险评估（GB/T 15706）</title>
+      <simpletable id="risk-table-zh" relcolwidth="0.25 0.15 0.15 0.15 0.30">
+        <sthead>
+          <stentry>场景</stentry>
+          <stentry>严重性</stentry>
+          <stentry>概率</stentry>
+          <stentry>风险等级</stentry>
+          <stentry>防护措施</stentry>
+        </sthead>
+        <strow>
+          <stentry>主轴运行时门打开</stentry>
+          <stentry>S2（严重）</stentry>
+          <stentry>P1（不太可能）</stentry>
+          <stentry>低</stentry>
+          <stentry>互锁装置在门开时停止主轴</stentry>
+        </strow>
+        <strow>
+          <stentry>门打开时手动清理切屑</stentry>
+          <stentry>S2（严重）</stentry>
+          <stentry>P3（偶尔）</stentry>
+          <stentry>中</stentry>
+          <stentry>PPE + 互锁 + 切屑防护罩</stentry>
+        </strow>
+        <strow>
+          <stentry>切屑从排屑器弹出</stentry>
+          <stentry>S1（轻微）</stentry>
+          <stentry>P2（罕见）</stentry>
+          <stentry>低</stentry>
+          <stentry>排屑器罩盖 + PPE</stentry>
+        </strow>
+      </simpletable>
+    </section>
+
+    <section id="controls-zh">
+      <title>必需的控制措施</title>
+      <ul>
+        <li>机床互锁系统（区域 1 门）— 开门时自动停止主轴</li>
+        <li>PPE：符合 GB/T 14866 要求的安全护目镜（带侧护板）</li>
+        <li>PPE：处理切屑时使用防割手套</li>
+        <li>机床门下部的切屑防护板（高度：150 mm）</li>
+      </ul>
+    </section>
+
+    <section id="standards-zh">
+      <title>适用标准</title>
+      <ul>
+        <li>GB/T 15706 — 风险评估与风险降低</li>
+        <li>GB/T 16855.1 — 控制系统安全相关部件</li>
+        <li>GB/T 19876 — 防护装置（联锁装置）</li>
+        <li>GB/T 14866 — 个体防护装备 眼护具</li>
+      </ul>
+    </section>
+  </refbody>
+</reference>

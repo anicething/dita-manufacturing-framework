@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="company-variables">
+  <title>Company Information (English)</title>
+  <conbody>
+    <p id="company-fullname">ExampleCorp Manufacturing Co., Ltd.</p>
+    <p id="company-address">No. 123, Innovation Road, Science Park, Hsinchu 30078, Taiwan</p>
+    <p id="company-phone">+886-3-578-1234</p>
+    <p id="company-fax">+886-3-578-5678</p>
+    <p id="company-email">info@examplecorp.com</p>
+    <p id="company-website">www.examplecorp.com</p>
+    <p id="company-registration">Company Registration: 12345678 (Taiwan)</p>
+  </conbody>
+</concept>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE troubleshooting PUBLIC "-//OASIS//DTD DITA Troubleshooting//EN" "troubleshooting.dtd">
+<troubleshooting id="alarm-700016-troubleshooting-zh"
+                xml:lang="zh-CN"
+                domains="(topic troubleshooting)
+                         (topic hi-d)"
+>
+  <title>故障排查：冷却液压力低（报警 700016）</title>
+  <shortdesc>诊断并解决 MC-5000 报警 700016，该报警表示冷却液压力已降至 0.3 MPa 阈值以下。</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="maintenance" job="technician" experiencelevel="experienced"/>
+      <category>故障排查</category>
+      <prodinfo>
+        <prodname>MC-5000 立式加工中心</prodname>
+        <vrmlist>
+          <vrm version="2.1" release="A" modification="3"/>
+        </vrmlist>
+      </prodinfo>
+      <othermeta name="content-type" content="troubleshooting"/>
+      <othermeta name="alarm-code" content="700016"/>
+      <othermeta name="severity" content="warning"/>
+      <othermeta name="estimated-repair-time" content="15-60 分钟"/>
+    </metadata>
+  </prolog>
+  <troublebody>
+    <condition>
+      <p>SINUMERIK ONE HMI 上显示报警代码 <b>700016</b>。
+         诊断画面中的冷却液压力读数低于 <b>0.3 MPa</b>
+         （正常工作范围：0.4–0.6 MPa）。</p>
+      <p>机床将自动停止主轴旋转和切削操作，直至压力恢复。</p>
+    </condition>
+
+    <!-- 原因 1：过滤器堵塞 -->
+    <cause id="cause-filter-clogged-zh">
+      <p><b>可能原因（80%）：</b>冷却液回液过滤器被加工过程中产生的切屑或碎屑堵塞。</p>
+      <remedy id="remedy-clean-filter-zh">
+        <cmd>对冷却液泵电路执行锁定/挂牌（LOTO）。</cmd>
+      </remedy>
+      <remedy>
+        <cmd>打开机床后方的冷却液箱检修口（区域 4 — 关闭后需用钥匙锁复位）。</cmd>
+      </remedy>
+      <remedy>
+        <cmd>拆下回液过滤器滤芯（料号：F-0800-01）并检查。</cmd>
+        <info>如果滤芯明显被切屑或油泥堵塞，进行清洁。
+               如果滤芯损坏，更换新滤芯（料号：F-0800-01-R）。
+               参见 <xref href="../../topics/zh-CN/new-types/COOLANT-FILTER-TASK.dita">冷却液过滤器更换操作</xref>。</info>
+      </remedy>
+      <remedy>
+        <cmd>重新安装过滤器壳体、关闭检修口（锁好钥匙锁）、
+            解除 LOTO，在 HMI 上重新启动冷却液泵。</cmd>
+        <stepresult>在 HMI 诊断画面确认冷却液压力恢复至 0.4–0.6 MPa。
+                    清除报警 700016。</stepresult>
+      </remedy>
+    </cause>
+
+    <!-- 原因 2：泵叶轮损坏 -->
+    <cause id="cause-pump-damage-zh">
+      <p><b>可能原因（15%）：</b>冷却液泵叶轮磨损或损坏，导致流量下降。</p>
+      <remedy>
+        <cmd>在主配电柜对冷却液泵电路执行 LOTO。</cmd>
+      </remedy>
+      <remedy>
+        <cmd>将冷却液箱排空至废液桶中（容量：300 L）。</cmd>
+      </remedy>
+      <remedy>
+        <cmd>断开泵进口和出口管道，从箱体上拆下泵组件。</cmd>
+      </remedy>
+      <remedy>
+        <cmd>检查叶轮是否有裂纹、叶片磨损或异物损伤。</cmd>
+        <info>与维护量具套件中的叶轮磨损极限样板对比。
+               叶片厚度低于 2 mm 时应更换叶轮。</info>
+      </remedy>
+      <remedy>
+        <cmd>重新安装或更换泵组件（料号：P-1200-01）、
+            补充冷却液、解除 LOTO 并进行测试。</cmd>
+        <stepresult>泵运行无异常噪音。
+                    50 Hz 下冷却液压力为 0.4–0.6 MPa。</stepresult>
+      </remedy>
+    </cause>
+
+    <!-- 原因 3：冷却液不足 -->
+    <cause id="cause-low-level-zh">
+      <p><b>可能原因（5%）：</b>冷却液因蒸发、泄漏或最近维护后未补充而低于泵入口。</p>
+      <remedy>
+        <cmd>检查箱体上的冷却液液位视窗。液位应在 MIN 和 MAX 标记之间。</cmd>
+      </remedy>
+      <remedy>
+        <cmd>如果低于 MIN，补充批准的冷却液混合液（浓度 5–8%，水溶性）。</cmd>
+      </remedy>
+      <remedy>
+        <cmd>如果液位反复下降，检查所有软管接头、泵密封件和箱体是否有泄漏。</cmd>
+      </remedy>
+    </cause>
+  </troublebody>
+</troubleshooting>

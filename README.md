@@ -1,295 +1,182 @@
-# DITA Governance Framework - Manufacturing Enterprise
+# DITA Manufacturing Framework / DITA 制造框架
 
-**Organization:** Manufacturing Enterprise  
-**Setup Type:** Starting Fresh  
-**Team Size:** 50+ people  
-**Products:** Multiple  
-**Languages:** Multi-language support (5 Tier-1 + 4 Tier-2)  
-**Compliance:** ISO 27001, ISO 9001, ISO 14001  
-**Status:** ✅ Ready for Implementation
+**DITA Governance Framework for Manufacturing Enterprises**
+**面向制造企业的 DITA 治理框架**
+
+Version / 版本: v1.1 | Date / 日期: 2026-06-07
+License / 许可: MIT
 
 ---
 
-## 📚 Quick Navigation
+## Introduction / 简介
 
-### 🏛️ **Governance & Strategy**
-- **[01. Governance Charter](01-GOVERNANCE/01-DITA-GOVERNANCE-CHARTER.md)** - Vision, governance structure, compliance requirements
-- **[02. Content Ownership Matrix](01-GOVERNANCE/02-CONTENT-OWNERSHIP-MATRIX.md)** - Who owns what
-- **[03. Change Authority](01-GOVERNANCE/03-CHANGE-AUTHORITY-MATRIX.md)** - Approval authorities
+The DITA Manufacturing Framework is a complete governance and authoring framework for manufacturing enterprises adopting DITA (Darwin Information Typing Architecture). Designed for organizations with 50+ team members, multiple product lines, and multi-language requirements, it provides everything needed to launch and sustain a structured documentation practice -- from governance charters and content architecture to ready-to-use XML templates and CI/CD pipelines.
 
-### 🏗️ **Architecture & Design**
-- **[01. Content Architecture](02-ARCHITECTURE/01-CONTENT-ARCHITECTURE.md)** - Information structure, reuse strategy
-- **[02. Metadata Schema](02-ARCHITECTURE/02-METADATA-SCHEMA.md)** - Required fields and validation
-- **[03. Topic Templates](02-ARCHITECTURE/03-TOPIC-TEMPLATES.md)** - Concept, Task, Reference structures
+本框架为采用 DITA（Darwin Information Typing Architecture）的制造企业提供完整的治理与写作框架。面向 50 人以上团队、多产品线、多语言需求的组织，涵盖从治理章程、内容架构到即用 XML 模板和 CI/CD 流水线的全方位支持。
 
-### ✍️ **Style & Standards**
-- **[01. Style Guide](03-STYLE-GUIDE/01-STYLE-GUIDE.md)** - Writing principles, terminology, formatting
-- **[02. Glossary](03-STYLE-GUIDE/02-GLOSSARY.md)** - Approved terms and definitions
-- **[03. Quality Checklist](03-STYLE-GUIDE/03-QUALITY-CHECKLIST.md)** - Pre-publication verification
-
-### 🔄 **Workflows & Processes**
-- **[01. Approval Workflow](04-WORKFLOWS/01-APPROVAL-WORKFLOW.md)** - 10-step process with SLAs
-- **[02. Git Workflow](04-WORKFLOWS/02-GIT-WORKFLOW.md)** - Branching strategy and PR process
-- **[03. Review Criteria](04-WORKFLOWS/03-REVIEW-CRITERIA.md)** - Feedback templates
-
-### 🛠️ **Tools & Setup**
-- **[01. Tool Setup Guide](05-TOOLS/01-TOOL-SETUP.md)** - oXygen, DITA-OT, TMS, CI/CD
-- **[02. GitHub Configuration](05-TOOLS/02-GITHUB-CONFIGURATION.md)** - Repository setup
-- **[03. CI/CD Pipeline](05-TOOLS/03-CI-CD-PIPELINE.md)** - GitHub Actions automation
-
-### 📦 **Templates (Ready to Use)**
-- **[01. Concept Topic Template](06-TEMPLATES/01-CONCEPT-TOPIC-TEMPLATE.dita)** - XML template
-- **[02. Task Topic Template](06-TEMPLATES/02-TASK-TOPIC-TEMPLATE.dita)** - XML template
-- **[03. Reference Topic Template](06-TEMPLATES/03-REFERENCE-TOPIC-TEMPLATE.dita)** - XML template
-- **[04. Metadata Template](06-TEMPLATES/04-METADATA-TEMPLATE.xml)** - Boilerplate metadata
-- **[05. Map Template](06-TEMPLATES/05-DITAMAP-TEMPLATE.ditamap)** - Map structure
-
-### 📖 **Training & Onboarding**
-- **[01. Onboarding Guide](07-TRAINING/01-ONBOARDING-GUIDE.md)** - 4-week training program
-- **[02. Quick Start](07-TRAINING/02-QUICK-START.md)** - First day guide
-- **[03. Training Exercises](07-TRAINING/03-TRAINING-EXERCISES.md)** - Hands-on projects
-- **[04. Certification](07-TRAINING/04-CERTIFICATION-CHECKLIST.md)** - Assessment criteria
-
-### 🚀 **Publishing & Automation**
-- **[01. GitHub Actions](08-CI-CD/01-GITHUB-ACTIONS.yml)** - Publishing pipeline
-- **[02. DITA-OT Config](08-CI-CD/02-DITA-OT-CONFIG.md)** - Transformation setup
-- **[03. Publishing SLA](08-CI-CD/03-PUBLISHING-SLA.md)** - Timelines and metrics
+**Compliance Standards:** ISO 27001, ISO 9001, ISO 14001
+**Technology Stack:** DITA 1.3, oXygen XML Editor, DITA-OT
 
 ---
 
-## 🎯 Key Features
+## Project Structure / 项目结构
 
-✅ **Complete Governance Framework**
-- Governance committee structure
-- Content ownership matrix
-- Change authority workflows
-- ISO compliance built-in
+The framework is organized into two fully self-contained language versions. Each includes governance, training, examples, templates, and references specific to that language.
 
-✅ **Content Architecture**
-- Topic distribution: 40% Concept / 40% Task / 20% Reference
-- Content reuse strategy: 35-40% target
-- Metadata schema with validation
-- Specialization guidelines
-
-✅ **Manufacturing-Specific**
-- Safety and compliance focus
-- Multi-product coordination
-- Environmental management (ISO 14001)
-- Quality management (ISO 9001)
-
-✅ **Multi-Language Support**
-- Tier-1: English, German, French, Spanish, Chinese (Simplified)
-- Tier-2: Japanese, Korean, Portuguese (Brazil), Italian
-- Localization workflow
-- Translation memory integration
-
-✅ **Team Coordination**
-- 10-step approval workflow with SLAs
-- 5 review stages (SME → Compliance → Editorial → Approval)
-- Git branching strategy
-- Escalation procedures
-
-✅ **Automation**
-- CI/CD pipeline (GitHub Actions)
-- Multi-channel publishing (HTML5, PDF, Mobile)
-- Automated quality checks
-- Search indexing
-
-✅ **Training & Support**
-- 4-week onboarding program (40 hours)
-- Quick start guide
-- Hands-on exercises
-- Certification process
-
----
-
-## 📊 Implementation Timeline
-
-```
-Month 1-2: Setup & Training
-  Week 1: Review governance framework
-  Week 2: Committee approval & setup
-  Week 3-4: Team training (40 hours)
-
-Month 3-4: Pilot Project
-  Select one product
-  Create 50-100 topics
-  Test publishing pipeline
-  Validate workflow
-
-Month 5-6: Expand Rollout
-  Onboard additional products
-  Setup localization workflow
-  Implement CI/CD pipeline
-
-Month 7-9: Optimization
-  Refine reuse patterns
-  Automate publishing
-  Setup multi-language support
-  Performance tuning
-
-Month 10-12: Full Production
-  Complete documentation migration
-  Achieve 35-40% content reuse
-  Pass ISO compliance audit
-  Production support
-```
-
----
-
-## 📈 Success Metrics (Track Quarterly)
-
-| Metric | Target | Method |
-|--------|--------|--------|
-| **Content Reuse** | 35-40% | Manual audit |
-| **Publishing Cycle** | < 2 hours | CI/CD logs |
-| **Approval SLA** | < 8 business days | Workflow tracking |
-| **Customer Satisfaction** | > 4.0/5.0 | User surveys |
-| **Translation Time** | < 1 week | TMS reports |
-| **Topic Completeness** | > 95% | Metadata review |
-| **Localization Cost** | -30-35% | Budget analysis |
-| **Error Rate** | < 2% | QA audits |
-
----
-
-## 💼 Budget & Resources
-
-### Year 1 Investment
-```
-Personnel (50% allocation):        $500,000
-Tools (oXygen, TMS, CI/CD):        $150,000
-Training & Onboarding:             $75,000
-Localization (5 languages):        $200,000
-Infrastructure/Publishing:         $100,000
-─────────────────────────────────────────
-TOTAL YEAR 1:                      $1,025,000
-
-Expected ROI (Year 2-3):
-- Reduced localization cost:       $150,000/year
-- Reduced documentation time:      $200,000/year
-- Improved customer support:       $100,000/year
-─────────────────────────────────────────
-Total annual benefit:              $450,000
-```
-
----
-
-## 🚀 Getting Started
-
-### For Leadership/Governance Committee
-1. **Review:** [Governance Charter](01-GOVERNANCE/01-DITA-GOVERNANCE-CHARTER.md)
-2. **Understand:** [Content Ownership Matrix](01-GOVERNANCE/02-CONTENT-OWNERSHIP-MATRIX.md)
-3. **Approve:** Governance framework
-4. **Schedule:** Monthly DGC meetings
-
-### For Technical Writers
-1. **Learn:** [Style Guide](03-STYLE-GUIDE/01-STYLE-GUIDE.md)
-2. **Understand:** [Approval Workflow](04-WORKFLOWS/01-APPROVAL-WORKFLOW.md)
-3. **Study:** [Topic Templates](02-ARCHITECTURE/03-TOPIC-TEMPLATES.md)
-4. **Begin:** Training program
-
-### For IT/Infrastructure
-1. **Setup:** [Tool Setup Guide](05-TOOLS/01-TOOL-SETUP.md)
-2. **Configure:** [GitHub Configuration](05-TOOLS/02-GITHUB-CONFIGURATION.md)
-3. **Implement:** [CI/CD Pipeline](05-TOOLS/03-CI-CD-PIPELINE.md)
-4. **Test:** Publishing workflow
-
-### For Product Managers
-1. **Review:** [Content Architecture](02-ARCHITECTURE/01-CONTENT-ARCHITECTURE.md)
-2. **Understand:** [Governance Charter](01-GOVERNANCE/01-DITA-GOVERNANCE-CHARTER.md) (section 3: Content Ownership)
-3. **Plan:** Product documentation schedule
-4. **Participate:** In approval workflow
-
----
-
-## 📋 Repository Structure
+框架分为两个完全自包含的语言版本，每个版本包含对应的治理、培训、示例、模板和引用。
 
 ```
 dita-manufacturing-framework/
-├── 01-GOVERNANCE/
-│   ├── 01-DITA-GOVERNANCE-CHARTER.md
-│   ├── 02-CONTENT-OWNERSHIP-MATRIX.md
-│   └── 03-CHANGE-AUTHORITY-MATRIX.md
-├── 02-ARCHITECTURE/
-│   ├── 01-CONTENT-ARCHITECTURE.md
-│   ├── 02-METADATA-SCHEMA.md
-│   └── 03-TOPIC-TEMPLATES.md
-├── 03-STYLE-GUIDE/
-│   ├── 01-STYLE-GUIDE.md
-│   ├── 02-GLOSSARY.md
-│   └── 03-QUALITY-CHECKLIST.md
-├── 04-WORKFLOWS/
-│   ├── 01-APPROVAL-WORKFLOW.md
-│   ├── 02-GIT-WORKFLOW.md
-│   └── 03-REVIEW-CRITERIA.md
-├── 05-TOOLS/
-│   ├── 01-TOOL-SETUP.md
-│   ├── 02-GITHUB-CONFIGURATION.md
-│   └── 03-CI-CD-PIPELINE.md
-├── 06-TEMPLATES/
-│   ├── 01-CONCEPT-TOPIC-TEMPLATE.dita
-│   ├── 02-TASK-TOPIC-TEMPLATE.dita
-│   ├── 03-REFERENCE-TOPIC-TEMPLATE.dita
-│   ├── 04-METADATA-TEMPLATE.xml
-│   └── 05-DITAMAP-TEMPLATE.ditamap
-├── 07-TRAINING/
-│   ├── 01-ONBOARDING-GUIDE.md
-│   ├── 02-QUICK-START.md
-│   ├── 03-TRAINING-EXERCISES.md
-│   └── 04-CERTIFICATION-CHECKLIST.md
-├── 08-CI-CD/
-│   ├── 01-GITHUB-ACTIONS.yml
-│   ├── 02-DITA-OT-CONFIG.md
-│   └── 03-PUBLISHING-SLA.md
-├── README.md (this file)
+├── framework-en/                   # English governance documents / 英文框架文档
+│   ├── GOVERNANCE/                 # Governance charter, ownership, change authority
+│   ├── ARCHITECTURE/               # Content architecture, metadata, topic types
+│   ├── STYLE-GUIDE/                # Writing standards, glossary, quality checklist
+│   ├── WORKFLOWS/                  # Approval workflows, Git strategy, review criteria
+│   ├── TOOLS/                      # Tool setup, version control, CI/CD pipeline
+│   ├── TRAINING/                   # Framework onboarding + DITA curriculum slides (novice/professional/expert)
+│   ├── CI-CD/                      # CI/CD pipeline, DITA-OT config, publishing SLA
+│   ├── PUBLISHING/                 # Cross-format consistency
+│   ├── examples/                   # Examples: governance, maps, metadata, topics
+│   ├── templates/                  # 12 DITA XML templates (Concept, Task, Reference, etc.)
+│   ├── references/                 # Reusable DITA keys, variables, entities
+│   ├── IMPLEMENTATION-GUIDE.md     # 6-month adoption roadmap
+│   ├── RISK-CONTROL-STRATEGY.md    # Risk register and controls
+│   ├── INDEX.md                    # Document registry
+│   ├── README.md
+│   └── CONTRIBUTING.md
+├── framework-zh/                   # 简体中文框架文档 / Simplified Chinese framework
+│   ├── GOVERNANCE/
+│   ├── ARCHITECTURE/
+│   ├── STYLE-GUIDE/
+│   ├── WORKFLOWS/
+│   ├── TOOLS/
+│   ├── TRAINING/
+│   ├── CI-CD/
+│   ├── PUBLISHING/
+│   ├── examples/                   # 示例：maps, topics
+│   ├── templates/                  # 12 个 DITA XML 模板
+│   ├── references/                 # Reusable DITA keys, variables, entities
+│   ├── IMPLEMENTATION-GUIDE.md
+│   ├── RISK-CONTROL-STRATEGY.md
+│   ├── INDEX.md
+│   ├── README.md
+│   └── CONTRIBUTING.md
+├── README.md                       # This file / 本文件
 ├── CONTRIBUTING.md
-├── LICENSE (MIT)
-└── .gitignore
+└── LICENSE
 ```
 
 ---
 
-## 🤝 Contributing
+## Quick Navigation / 快速导航
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
-- How to propose changes
-- Review process
-- Governance committee approval
-- Documentation standards
+### Two Language Versions / 双语言版本
 
----
-
-## 📞 Support
-
-For questions or issues:
-1. Check relevant documentation section
-2. Review [FAQ](docs/FAQ.md) (coming soon)
-3. Contact Documentation Governance Committee
-4. Open an issue in this repository
+| Section / 部分 | English / 英文 | Chinese / 中文 | Description / 说明 |
+|----------------|----------------|----------------|---------------------|
+| **Framework / 框架** | [framework-en/](framework-en/) | [framework-zh/](framework-zh/) | Core governance, architecture, and templates (language-specific) |
+| **Templates / 模板** | Included in each framework directory — see `framework-en/templates/` and `framework-zh/templates/` | | 12 ready-to-use DITA XML templates (per language) |
+| **Examples / 示例** | Included in each framework directory — see `framework-en/examples/` and `framework-zh/examples/` | | Worked examples using Example Manufacturing scenarios |
 
 ---
 
-## 📄 License
+## Framework Module Details / 框架模块详情
 
-MIT License - See [LICENSE](LICENSE) for details
-
----
-
-## ✅ Checklist: Ready to Begin?
-
-- [ ] Leadership reviewed Governance Charter
-- [ ] Governance Committee approved framework
-- [ ] Tools ordered/configured (oXygen, TMS, etc.)
-- [ ] GitHub repository setup complete
-- [ ] CI/CD pipeline configured
-- [ ] Team training scheduled
-- [ ] Pilot product selected
-- [ ] First batch of writers ready to begin
+| Module / 模块 | English | Chinese | Content / 内容 |
+|---------------|---------|---------|-----------------|
+| **Governance / 治理** | [GOVERNANCE/](framework-en/GOVERNANCE/) | [GOVERNANCE/](framework-zh/GOVERNANCE/) | Charter, content ownership, change authority |
+| **Architecture / 架构** | [ARCHITECTURE/](framework-en/ARCHITECTURE/) | [ARCHITECTURE/](framework-zh/ARCHITECTURE/) | Content design, metadata schema, topic types, variable management |
+| **Implementation / 落地指南** | [IMPLEMENTATION-GUIDE.md](framework-en/IMPLEMENTATION-GUIDE.md) | [IMPLEMENTATION-GUIDE.md](framework-zh/IMPLEMENTATION-GUIDE.md) | 6-month adoption roadmap, team roles, risk register, KPIs |
+| **Style Guide / 风格指南** | [STYLE-GUIDE/](framework-en/STYLE-GUIDE/) | [STYLE-GUIDE/](framework-zh/STYLE-GUIDE/) | Writing standards, glossary, quality checks |
+| **Workflows / 工作流** | [WORKFLOWS/](framework-en/WORKFLOWS/) | [WORKFLOWS/](framework-zh/WORKFLOWS/) | Approval process, Git branching, reviews |
+| **Tools / 工具** | [TOOLS/](framework-en/TOOLS/) | [TOOLS/](framework-zh/TOOLS/) | oXygen, DITA-OT, TMS, version control setup |
+| **Training / 培训** | [TRAINING/](framework-en/TRAINING/) | [TRAINING/](framework-zh/TRAINING/) | Onboarding program, exercises, certification |
+| **CI/CD** | [CI-CD/](framework-en/CI-CD/) | [CI-CD/](framework-zh/CI-CD/) | CI/CD pipeline, DITA-OT, publishing SLA |
+| **Publishing / 发布控制** | [PUBLISHING/](framework-en/PUBLISHING/) | [PUBLISHING/](framework-zh/PUBLISHING/) | Cross-format consistency (HTML5/PDF/Mobile), CSS strategy, testing |
 
 ---
 
-**Last Updated:** 2026-06-06  
-**Next Review:** Q3 2026  
-**Version:** 1.0
+## Key Features / 核心特性
 
-🎉 **Your DITA governance framework is ready for implementation!**
+- **Complete Governance Framework** -- committee structure, ownership matrix, change authority, ISO compliance built-in
+- **Content Architecture** -- topic distribution (40% Concept / 40% Task / 20% Reference), 35-40% reuse target
+- **Manufacturing-Specific** -- safety and compliance focus, multi-product coordination, environmental management
+- **Multi-Language Support** -- Tier-1 (EN, DE, FR, ES, zh-CN) + Tier-2 (JA, KO, PT-BR, IT)
+- **Team Coordination** -- 10-step approval workflow with SLAs, 5 review stages
+- **Automation** -- CI/CD pipeline, multi-channel publishing (HTML5, PDF, Mobile)
+- **12 DITA Templates** -- Concept, Task, Reference, Troubleshooting, Glossary, Hazard Statement, Task Requirements, Learning Object, Ditamap, Bookmap, Subject Scheme, and Metadata
+
+---
+
+## Getting Started / 入门指南
+
+### For Leadership / 领导层
+
+1. Review the [Governance Charter](framework-en/GOVERNANCE/01-DITA-GOVERNANCE-CHARTER.md) / 阅读[治理章程](framework-zh/GOVERNANCE/01-DITA-GOVERNANCE-CHARTER.md)
+2. Understand the [Content Ownership Matrix](framework-en/GOVERNANCE/02-CONTENT-OWNERSHIP-MATRIX.md) / 了解[内容所有权矩阵](framework-zh/GOVERNANCE/02-CONTENT-OWNERSHIP-MATRIX.md)
+3. Approve the governance framework and schedule monthly DGC meetings
+
+### For Technical Writers / 技术写作人员
+
+1. Study the [Style Guide](framework-en/STYLE-GUIDE/01-STYLE-GUIDE.md) / 学习[风格指南](framework-zh/STYLE-GUIDE/01-STYLE-GUIDE.md)
+2. Understand the [Approval Workflow](framework-en/WORKFLOWS/01-APPROVAL-WORKFLOW.md) / 了解[审批流程](framework-zh/WORKFLOWS/01-APPROVAL-WORKFLOW.md)
+3. Review [Topic Templates](framework-en/ARCHITECTURE/03-TOPIC-TEMPLATES.md) / 查看[主题模板](framework-zh/ARCHITECTURE/03-TOPIC-TEMPLATES.md)
+4. Begin the 4-week training program / 开始 4 周培训计划
+
+### For IT/Infrastructure / IT 基础设施团队
+
+1. Follow the [Tool Setup Guide](framework-en/TOOLS/01-TOOL-SETUP.md) / 按[工具设置指南](framework-zh/TOOLS/01-TOOL-SETUP.md)操作
+2. Implement the [CI/CD Pipeline](framework-en/CI-CD/01-CICD-PIPELINE.md) / 实施 [CI/CD 流水线](framework-zh/CI-CD/01-CICD-PIPELINE.md)
+
+### For Product Managers / 产品经理
+
+1. Review [Content Architecture](framework-en/ARCHITECTURE/01-CONTENT-ARCHITECTURE.md) / 查看[内容架构](framework-zh/ARCHITECTURE/01-CONTENT-ARCHITECTURE.md)
+2. Understand governance and content ownership / 了解治理和内容所有权
+3. Plan product documentation schedule and participate in approval workflow
+
+---
+
+## Worked Examples / 示例文档
+
+Examples, templates, and references are distributed alongside the framework documents — each language version has its own copies within `framework-en/` and `framework-zh/`.
+
+示例文档、模板和参考资料跟随框架文档分发，中英文各自独立存放在 `framework-en/` 和 `framework-zh/` 中。
+
+- **English examples:** [framework-en/examples/README.md](framework-en/examples/README.md) — complete, real-world DITA documentation for Example Manufacturing Co., Ltd.
+- **English templates:** [framework-en/templates/README.md](framework-en/templates/README.md) — 12 ready-to-use DITA XML templates with English placeholder content
+- **English references:** `framework-en/references/` — reusable keys, variables, and entities
+- **Chinese examples:** [framework-zh/examples/README.md](framework-zh/examples/README.md) — 中文示例文档
+- **Chinese templates:** [framework-zh/templates/README.md](framework-zh/templates/README.md) — 12 个中文 DITA XML 模板
+- **Chinese references:** `framework-zh/references/` — 可复用的键、变量和实体
+
+---
+
+## How to Use This Framework / 如何使用本框架
+
+1. **Governance Committee**: Start with `framework-en/GOVERNANCE/` to understand roles and responsibilities
+2. **Content Architects**: Review `framework-en/ARCHITECTURE/` for information design and reuse strategy
+3. **Technical Writers**: Begin with `framework-en/STYLE-GUIDE/` and `framework-en/templates/`, then study `framework-en/examples/`
+4. **IT/DevOps**: Configure tools via `framework-en/TOOLS/` and set up CI/CD from `framework-en/CI-CD/`
+5. **Chinese-language teams**: Use `framework-zh/` for Chinese-specific guidance
+
+All framework documents are available in both English (source) and Simplified Chinese.
+
+所有框架文档均提供英文（源语言）和简体中文版本。
+
+---
+
+## Contributing / 参与贡献
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on proposing changes, review processes, and documentation standards.
+
+---
+
+## License / 许可
+
+MIT License -- see [LICENSE](LICENSE) for details.
+
+---
+
+**Last Updated / 最后更新:** 2026-06-07
+**Next Review / 下次评审:** Q3 2026
+**Version / 版本:** 1.1

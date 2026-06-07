@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="spindle-alignment-procedure-zh"
+      xml:lang="zh-CN"
+      domains="(topic task)
+               (topic hi-d)
+               (topic ut-d)"
+>
+  <title>使用激光校准仪调整 MC-5000 主轴</title>
+  <shortdesc>使用海默-齐格勒激光校准系统对 MC-5000 立式加工中心进行主轴精度校准，确保同轴度在 ±3 μm 以内。</shortdesc>
+  <prolog>
+    <metadata>
+      <audience type="maintenance" job="technician" experiencelevel="experienced"/>
+      <category>维护</category>
+      <category>校准</category>
+      <prodinfo>
+        <prodname>MC-5000 立式加工中心</prodname>
+        <vrmlist>
+          <vrm version="2.1" release="A" modification="3"/>
+        </vrmlist>
+      </prodinfo>
+      <othermeta name="content-type" content="task"/>
+      <othermeta name="maintenance-interval" content="每运行 1,000 小时"/>
+      <othermeta name="required-skill-level" content="3 级技师"/>
+      <othermeta name="estimated-time" content="45 分钟"/>
+      <othermeta name="related-safety-topic" content="dr5000-safety-system-zh"/>
+    </metadata>
+  </prolog>
+  <taskbody>
+    <prereq>
+      <p>开始校准操作之前：</p>
+      <ul>
+        <li>确保机床处于<b>维护模式</b>（钥匙开关位置 M）。</li>
+        <li>确认机床已停机冷却至少 30 分钟。</li>
+        <li>确认所有安全互锁装置工作正常（参见 <xref href="MC5000-SAFETY-CONCEPT.dita"/>）。</li>
+        <li>准备以下工具：
+          <ul>
+            <li>海默-齐格勒激光校准套件（料号：HZ-5000-KIT）</li>
+            <li>扭矩扳手（5–50 Nm，已校准）</li>
+            <li>清洁溶剂和无绒擦拭布</li>
+            <li>千分表及磁性表座（分辨率：1 μm）</li>
+          </ul>
+        </li>
+        <li>查阅机床维护日志，了解上次校准历史。</li>
+      </ul>
+    </prereq>
+    <steps id="alignment-steps-zh">
+      <step id="prepare-machine-zh">
+        <cmd>准备机床进行校准。</cmd>
+        <info>
+          <ol>
+            <li>关闭主断路器开关并执行锁定/挂牌（LOTO）。</li>
+            <li>打开前门，使用溶剂和无绒布清洁主轴锥孔。</li>
+            <li>检查主轴锥孔是否有划伤、压痕或磨损。如发现损伤，不得继续操作。</li>
+            <li>将激光发射器（HZ-5000-EMIT）装入主轴锥孔并用手拧紧。</li>
+          </ol>
+        </info>
+        <stepresult>机床已准备好，激光发射器已安装在主轴锥孔中。</stepresult>
+      </step>
+      <step id="mount-target-zh">
+        <cmd>在工作台上安装激光靶组件。</cmd>
+        <info>
+          <ol>
+            <li>清洁工作台 T 型槽表面。</li>
+            <li>使用两个 M16 T 型螺母在 X=200、Y=150 位置安装 HZ-5000-TARGET 支架。</li>
+            <li>使用内置气泡水平仪将靶面调整至垂直于主轴轴线。</li>
+            <li>使用扭矩扳手将支架螺栓拧紧至 35 Nm。</li>
+          </ol>
+        </info>
+        <stepresult>激光靶已牢固安装在工作台上。</stepresult>
+      </step>
+      <step id="perform-alignment-zh">
+        <cmd>执行激光校准测量。</cmd>
+        <info>
+          <ol>
+            <li>接通机床电源，在 HMI 界面进入维护模式。</li>
+            <li>导航至 <menucascade><uicontrol>诊断</uicontrol><uicontrol>主轴</uicontrol><uicontrol>激光校准</uicontrol></menucascade>。</li>
+            <li>手动将主轴旋转至 0 度参考位置。</li>
+            <li>在 HZ-5000 控制器上按下 <uicontrol>开始测量</uicontrol>。</li>
+            <li>读取控制器屏幕上显示的 X 轴和 Y 轴偏移值。</li>
+          </ol>
+        </info>
+        <stepresult>激光校准控制器显示主轴在 X 轴和 Y 轴上的偏移量。</stepresult>
+      </step>
+      <step id="adjust-spindle-zh">
+        <cmd>根据测量结果调整主轴头。</cmd>
+        <info>
+          <p>测量结果解读：</p>
+          <simpletable id="adjustment-table-zh" relcolwidth="0.25 0.25 0.50">
+            <sthead>
+              <stentry>偏移量</stentry>
+              <stentry>状态</stentry>
+              <stentry>操作步骤</stentry>
+            </sthead>
+            <strow>
+              <stentry>≤ ±3 μm</stentry>
+              <stentry>合格</stentry>
+              <stentry>无需调整。直接进入最终验证。</stentry>
+            </strow>
+            <strow>
+              <stentry>±3 至 ±10 μm</stentry>
+              <stentry>轻微偏差</stentry>
+              <stentry>使用微调螺钉进行轻微调整（每次旋转 1/4 圈）。</stentry>
+            </strow>
+            <strow>
+              <stentry>> ±10 μm</stentry>
+              <stentry>严重偏差</stentry>
+              <stentry>需要进行完整的机械调整。参见 <xref href="MC5000-MAINTENANCE-MANUAL.dita#spindle-realignment"/>。</stentry>
+            </strow>
+          </simpletable>
+          <note type="caution">任何单颗调整螺钉的旋转不得超过 1/2 圈，必须重新测量。过度拧紧可能导致主轴壳体变形。</note>
+        </info>
+        <stepresult>主轴头已调整至公差范围内。</stepresult>
+      </step>
+      <step id="verify-zh">
+        <cmd>验证校准结果。</cmd>
+        <info>
+          <ol>
+            <li>重复激光测量（步骤 3），确认 X 轴和 Y 轴偏移量。</li>
+            <li>将最终偏移值记录在维护日志中（HMI：<menucascade><uicontrol>维护</uicontrol><uicontrol>日志</uicontrol><uicontrol>主轴校准</uicontrol></menucascade>）。</li>
+            <li>拆除激光发射器和靶组件。</li>
+            <li>以 3,000 RPM 运行测试 5 分钟，监测主轴振动（< 0.5 mm/s RMS）。</li>
+          </ol>
+        </info>
+        <stepresult>校准已通过验证并记录在系统中。</stepresult>
+      </step>
+    </steps>
+    <postreq>
+      <p>完成校准后：</p>
+      <ul>
+        <li>关闭并签署维护日志条目。</li>
+        <li>将海默-齐格勒校准套件归还至工具库（确认所有组件齐全）。</li>
+        <li>如果下次计划维护在 50 小时内，继续执行滚珠丝杠润滑操作（参见 <xref href="#spindle-alignment-procedure-zh/lubricate-ball-screws">滚珠丝杠润滑</xref>）。</li>
+      </ul>
+    </postreq>
+  </taskbody>
+</task>
